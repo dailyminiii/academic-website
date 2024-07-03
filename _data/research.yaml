@@ -14,10 +14,25 @@ categories:
 
 projects:
 
+  - title: Badminton Swing Posture Analysis and Visualization using Deep Learning-based Encoder-Decoder Architecture
+    system-name: 
+    gif: assets/img/KCC2024.png
+    conference: KCC 2024 (Accepted)
+    conference-web: 
+    status: 
+    authors: Junhyuk Jang, <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: 
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: SportsHCI2
+    category: SportsHCI
+
   - title: Counterfactual Explanation-Based Badminton Motion Guidance Generation Using Wearable Sensors
     system-name: 
     gif: assets/img/CF.png
-    conference: ICRA Workshop on Wearable
+    conference: ICRA Workshop on Wearable 2024
     conference-web: 
     status: 
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
@@ -32,7 +47,7 @@ projects:
   - title: Intelligence Walker A Seamless Mobility Assist Device for the Elderly Performance
     system-name: 
     gif: assets/img/Haptic Walker.png
-    conference: ICRA Workshop on Wearable
+    conference: ICRA Workshop on Wearable 2024
     conference-web: 
     status: 
     authors: Yunho Choi, Dohyeon Yeo, Seokhyun Hwang, <u>Minwoo Seong</u>, Jaeyoung Moon, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
@@ -62,7 +77,7 @@ projects:
   - title: Engagnition A Multi-Dimensional Dataset for Engagement Recognition of Children with Autism Spectrum Disorder
     system-name: 
     gif: assets/img/Engagnition.png
-    conference: Scientific Data
+    conference: Scientific Data, 11, 299 (2024)
     conference-web: 
     status: 
     authors: Won Kim*, <u>Minwoo Seong*</u>, Kyung-Joong Kim, SeungJun Kim
@@ -77,7 +92,7 @@ projects:
   - title: MultiSenseBadminton Wearable Sensor–Based Biomechanical Dataset for Evaluation of Badminton Performance
     system-name: 
     gif: assets/img/MultiSenseBadminton.png
-    conference: Scientific Data
+    conference: Scientific Data, 11(1), 343, 2024
     conference-web: 
     status: 
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
@@ -107,7 +122,7 @@ projects:
   - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars Results from a Realistic Driving Simulation
     system-name: 
     gif: assets/img/AS.png
-    conference: Applied Sciences
+    conference: Applied Sciences, 13(8), 4952
     conference-web: 
     status: 
     authors: SeungJu Kim*, Jeongseok Oh*, <u>Minwoo Seong*</u>, Eunki Jeon, Yeonguk Moon, SeungJun Kim
