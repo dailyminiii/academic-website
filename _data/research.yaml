@@ -31,7 +31,7 @@ projects:
 
   - title: Intelligence Walker A Seamless Mobility Assist Device for the Elderly Performance
     system-name: 
-    gif: assets/img/Walker.png
+    gif: assets/img/Haptic Walker.png
     conference: ICRA Workshop on Wearable
     conference-web: 
     status: 
@@ -136,7 +136,7 @@ projects:
 
   - title: Deep Learning-Based Engagement Classification by Behavioral and Physiological Data of Children with Developmental Disability
     system-name: 
-    gif: assets/img/DL.png
+    gif: assets/img/ASD.png
     conference: HCI Korea 2022
     conference-web:
     status: 
