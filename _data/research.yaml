@@ -1,10 +1,10 @@
 categories:
 
   - data-filter: Autonomous Vehicle
-    category-name: AutonomousVehicle
+    category-name: Autonomous Vehicle
 
   - data-filter: SportsHCI
-    category-name: SportsHCI
+    category-name: Sports HCI
 
   - data-filter: A11y
     category-name: A11y
@@ -117,7 +117,7 @@ projects:
     slides: 
     talk: 
     tag: AV
-    category: AutonomousVehicle
+    category: Autonomous Vehicle
 
   - title: Virtual Reality Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments
     system-name: 
