@@ -1,20 +1,16 @@
 updates:
 
-  
-  desc: UbiComp Workshop Organizer
-  time: Oct. 2024
+  - picture: assets/img/updates_gan/lab_boy.jpg
+    desc: UbiComp Workshop Organizer 
+    time: Oct. 2024
 
-  # - picture: assets/img/updates_gan/lab_boy.jpg
-  #   desc: I will continue my <hightlight>PhD studies in robotics</hightlight> at the LEARN Lab. 
-  #   time: May 2024
+  - picture: assets/img/updates_gan/graduation_boy.jpg
+    desc: UbiComp Workshop Organizer 
+    time: Oct. 2024
 
-  # - picture: assets/img/updates_gan/graduation_boy.jpg
-  #   desc: I finished my <hightlight>undergrad studies in computer science</hightlight> at UTA.
-  #   time: May 2024
-
-  # - picture: assets/img/updates_gan/city_boy.jpg
-  #   desc: I will attend IROS 2023 in <hightlight>Detroit, Michigan</hightlight>. 
-  #   time: October 2023
+  - picture: assets/img/updates_gan/city_boy.jpg
+    desc: UbiComp Workshop Organizer 
+    time: Oct. 2023
   
   # - picture: assets/img/updates_gan/travel_boy.jpg
   #   desc: I will present at ISR 2023 in <hightlight>Stuttgart, Germany</hightlight>. 
