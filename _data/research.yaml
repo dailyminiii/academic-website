@@ -16,7 +16,7 @@ projects:
 
   - title: Counterfactual Explanation-Based Badminton Motion Guidance Generation Using Wearable Sensors
     system-name: 
-    gif: assets/img/demo_iotree.gif
+    gif: assets/img/CF.png
     conference: ICRA Workshop on Wearable
     conference-web: 
     status: 
@@ -31,7 +31,7 @@ projects:
 
   - title: Intelligence Walker A Seamless Mobility Assist Device for the Elderly Performance
     system-name: 
-    gif: assets/img/demo_iotree.gif
+    gif: assets/img/Walker.png
     conference: ICRA Workshop on Wearable
     conference-web: 
     status: 
@@ -61,7 +61,7 @@ projects:
 
   - title: Engagnition A Multi-Dimensional Dataset for Engagement Recognition of Children with Autism Spectrum Disorder
     system-name: 
-    gif: assets/img/demo_iotree.gif
+    gif: assets/img/Engagnition.png
     conference: Scientific Data
     conference-web: 
     status: 
@@ -76,7 +76,7 @@ projects:
 
   - title: MultiSenseBadminton Wearable Sensor–Based Biomechanical Dataset for Evaluation of Badminton Performance
     system-name: 
-    gif: assets/img/demo_iotree.gif
+    gif: assets/img/MultiSenseBadminton.png
     conference: Scientific Data
     conference-web: 
     status: 
@@ -91,7 +91,7 @@ projects:
 
   - title: MuLMINet Multi-Layer Multi-Input Transformer Network with Weighted Loss
     system-name: 
-    gif: assets/img/demo_iotree.gif
+    gif: assets/img/IJCAI Challenge.jpg
     conference: IJCAI 2023 CoachAI Badminton Challenge (Runner-Up Award 🏆)
     conference-web: 
     status: 
@@ -106,7 +106,7 @@ projects:
 
   - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars Results from a Realistic Driving Simulation
     system-name: 
-    gif: assets/img/demo_perfc.gif
+    gif: assets/img/Risky Simulation.png
     conference: Applied Sciences
     conference-web: 
     status: 
@@ -121,7 +121,7 @@ projects:
 
   - title: Virtual Reality Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments
     system-name: 
-    gif: assets/img/demo_extperfc.gif
+    gif: assets/img/VR Interface.png
     conference: KCC 2022 (Best Paper Award 🏆)
     conference-web: 
     status: 
@@ -136,7 +136,7 @@ projects:
 
   - title: Deep Learning-Based Engagement Classification by Behavioral and Physiological Data of Children with Developmental Disability
     system-name: 
-    gif: assets/img/demo_online.gif
+    gif: assets/img/DL.png
     conference: HCI Korea 2022
     conference-web:
     status: 
@@ -151,7 +151,7 @@ projects:
 
   - title: Surveys of User’s Perception Towards Foot Gesture and Exploration of Applicability
     system-name: 
-    gif: assets/img/demo_multiplanar.gif
+    gif: assets/img/Foot Gesture.png
     conference: HCI Korea 2022
     conference-web: 
     status: 
@@ -166,7 +166,7 @@ projects:
 
   - title: Sensor-based Interactive Contents for People with Developmental Disabilities and Exploration of Applicability.
     system-name: 
-    gif: assets/img/demo_scene_perception.gif
+    gif: assets/img/Interactive Design.png
     conference: HCI Korea 2021
     conference-web: 
     status:
