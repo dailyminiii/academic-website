@@ -9,58 +9,61 @@ categories:
   - data-filter: A11y
     category-name: A11y
 
+  - data-filter: ETC
+    category-name: ETC
+
 projects:
 
   - title: Sensor-based Interactive Contents for People with Developmental Disabilities and Exploration of Applicability.
     system-name: 
     gif: assets/img/demo_scene_perception.gif
-    conference: HCI Korea 2021 (01/01/2021)
+    conference: HCI Korea 2021
     conference-web: 
     status:
-    authors: Eunjin Seong, Won Kim, Jiwon Lee, <u>Minwoo Seong</u>, SeungJun Kim.
+    authors: Eunjin Seong, Won Kim, Jiwon Lee, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10530281
     code: 
     demo: 
     slides: 
     talk: 
-    abstract-less: 
-    abstract-more: 
+    #abstract-less: 
+    #abstract-more: 
     tag: A11y_contents
     category: A11y
 
-  - title: Online 3D Deformable Object Classification for Mobile Cobot Manipulation
+  - title: Deep Learning-Based Engagement Classification by Behavioral and Physiological Data of Children with Developmental Disability
     system-name: 
     gif: assets/img/demo_online.gif
-    conference: ISR Europe 2023 (Stuttgart, Baden-Wurttemberg, Germany)
-    conference-web: https://www.isr-robotics.org/isr
+    conference: HCI Korea 2022
+    conference-web:
     status: 
-    authors: <u>Khang Nguyen</u>, Tuan Dang, Manfred Huber.
-    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10363065
-    code: https://github.com/mkhangg/deformable_cobot
-    demo: https://youtu.be/qkgi3T6xYzI
-    slides: https://mkhangg.com/assets/slides/isr23_slides.pdf
-    talk: https://youtu.be/ATzyXtLAK6E
-    abstract-less: Vision-based object manipulation in assistive mobile cobots essentially relies on classifying the target objects based on their 3D shapes and features, whether they are deformed or not. In this work, we present an auto-generated dataset of deformed objects specific for assistive mobile cobot manipulation using an intuitive Laplacian-based mesh deformation procedure. We 
-    abstract-more: first determine the graspable region of the robot hand on the given object's mesh. Then, we uniformly sample handle points within the graspable region and perform deformation with multiple handle points based on the robot gripper configuration. In each deformation, we identify the orientation of handle points and prevent self-intersection to guarantee the object's physical meaning when multiple handle points are simultaneously applied to the mesh at different deformation intensities. We also introduce a lightweight neural network for 3D deformable object classification. Finally, we test our generated dataset on the Baxter robot with two 7-DOF arms, an integrated RGB-D camera, and a 3D deformable object classifier. The result shows that the robot is able to classify real-world deformed objects from point clouds captured at multiple views by the RGB-D camera.
-    tag: more_online
-    category: perception manipulation
+    authors: Subin Ok, <u>Minwoo Seong</u>, Won Kim, Hwaseung Jeon, Jiwon Lee, Kyung-Joong Kim, SeungJun Kim
+    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043877
+    code: 
+    demo: 
+    slides:
+    talk:
+    #abstract-less: Vision-based object manipulation in assistive mobile cobots essentially relies on classifying the target objects based on their 3D shapes and features, whether they are deformed or not. In this work, we present an auto-generated dataset of deformed objects specific for assistive mobile cobot manipulation using an intuitive Laplacian-based mesh deformation procedure. We 
+    #abstract-more: first determine the graspable region of the robot hand on the given object's mesh. Then, we uniformly sample handle points within the graspable region and perform deformation with multiple handle points based on the robot gripper configuration. In each deformation, we identify the orientation of handle points and prevent self-intersection to guarantee the object's physical meaning when multiple handle points are simultaneously applied to the mesh at different deformation intensities. We also introduce a lightweight neural network for 3D deformable object classification. Finally, we test our generated dataset on the Baxter robot with two 7-DOF arms, an integrated RGB-D camera, and a 3D deformable object classifier. The result shows that the robot is able to classify real-world deformed objects from point clouds captured at multiple views by the RGB-D camera.
+    tag: A11y_deep_learning
+    category: A11y
   
-  - title: Multiplanar Self-Calibration for Mobile Cobot 3D Object Manipulation using 2D Detectors and Depth Estimation
+  - title: Surveys of User’s Perception Towards Foot Gesture and Exploration of Applicability
     system-name: 
     gif: assets/img/demo_multiplanar.gif
-    conference: IROS 2023 (Detroit, MI, U.S.)
-    conference-web: https://ieee-iros.org/
+    conference: HCI Korea 2022
+    conference-web: 
     status: 
-    authors: Tuan Dang, <u>Khang Nguyen</u>, Manfred Huber.
-    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10341911
-    code: https://github.com/tuantdang/calib_cobot
-    demo: https://youtu.be/KrDJ22rvOAo
+    authors: Hwaseung Jeon, Jeongseok Oh, Eunjin Seong <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043851
+    code: 
+    demo: 
     slides: 
     talk: 
-    abstract-less: Calibration is the first and foremost step in dealing with sensor displacement errors that can appear during extended operation and off-time periods to enable robot object manipulation with precision. In this paper, we present a novel multiplanar self-calibration between the 
-    abstract-more: camera system and the robot's end-effector for 3D object manipulation. Our approach first takes the robot end-effector as ground truth to calibrate the camera’s position and orientation while the robot arm moves the object in multiple planes in 3D space, and a 2D state-of-the-art vision detector identifies the object’s center in the image coordinates system. The transformation between world coordinates and image coordinates is then computed using 2D pixels from the detector and 3D known points obtained by robot kinematics. Next, an integrated stereo-vision system estimates the distance between the camera and the object, resulting in 3D object localization. We test our proposed method on the Baxter robot with two 7-DOF arms and a 2D detector that can run in real time on an onboard GPU. After self-calibrating, our robot can localize objects in 3D using an RGB camera and depth image.
-    tag: more_multiplanar
-    category: perception manipulation
+    #abstract-less: Calibration is the first and foremost step in dealing with sensor displacement errors that can appear during extended operation and off-time periods to enable robot object manipulation with precision. In this paper, we present a novel multiplanar self-calibration between the 
+    #abstract-more: camera system and the robot's end-effector for 3D object manipulation. Our approach first takes the robot end-effector as ground truth to calibrate the camera’s position and orientation while the robot arm moves the object in multiple planes in 3D space, and a 2D state-of-the-art vision detector identifies the object’s center in the image coordinates system. The transformation between world coordinates and image coordinates is then computed using 2D pixels from the detector and 3D known points obtained by robot kinematics. Next, an integrated stereo-vision system estimates the distance between the camera and the object, resulting in 3D object localization. We test our proposed method on the Baxter robot with two 7-DOF arms and a 2D detector that can run in real time on an onboard GPU. After self-calibrating, our robot can localize objects in 3D using an RGB camera and depth image.
+    tag: ETC
+    category: ETC
 
   - title: An Efficient 2D & 3D Perception Software-Hardware Framework for Mobile Cobot
     system-name: ExtPerFC
