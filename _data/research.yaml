@@ -26,8 +26,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: 
-    #abstract-more: 
     tag: A11y_contents
     category: A11y
 
@@ -43,8 +41,6 @@ projects:
     demo: 
     slides:
     talk:
-    #abstract-less: Vision-based object manipulation in assistive mobile cobots essentially relies on classifying the target objects based on their 3D shapes and features, whether they are deformed or not. In this work, we present an auto-generated dataset of deformed objects specific for assistive mobile cobot manipulation using an intuitive Laplacian-based mesh deformation procedure. We 
-    #abstract-more: first determine the graspable region of the robot hand on the given object's mesh. Then, we uniformly sample handle points within the graspable region and perform deformation with multiple handle points based on the robot gripper configuration. In each deformation, we identify the orientation of handle points and prevent self-intersection to guarantee the object's physical meaning when multiple handle points are simultaneously applied to the mesh at different deformation intensities. We also introduce a lightweight neural network for 3D deformable object classification. Finally, we test our generated dataset on the Baxter robot with two 7-DOF arms, an integrated RGB-D camera, and a 3D deformable object classifier. The result shows that the robot is able to classify real-world deformed objects from point clouds captured at multiple views by the RGB-D camera.
     tag: A11y_deep_learning
     category: A11y
   
@@ -60,8 +56,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: Calibration is the first and foremost step in dealing with sensor displacement errors that can appear during extended operation and off-time periods to enable robot object manipulation with precision. In this paper, we present a novel multiplanar self-calibration between the 
-    #abstract-more: camera system and the robot's end-effector for 3D object manipulation. Our approach first takes the robot end-effector as ground truth to calibrate the camera’s position and orientation while the robot arm moves the object in multiple planes in 3D space, and a 2D state-of-the-art vision detector identifies the object’s center in the image coordinates system. The transformation between world coordinates and image coordinates is then computed using 2D pixels from the detector and 3D known points obtained by robot kinematics. Next, an integrated stereo-vision system estimates the distance between the camera and the object, resulting in 3D object localization. We test our proposed method on the Baxter robot with two 7-DOF arms and a 2D detector that can run in real time on an onboard GPU. After self-calibrating, our robot can localize objects in 3D using an RGB camera and depth image.
     tag: ETC
     category: ETC
 
@@ -77,8 +71,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: As the reliability of the robot's perception correlates with the number of integrated sensing modalities to tackle uncertainty, a practical solution to manage these sensors from different computers, operate them simultaneously, and maintain their real-time performance on the existing robotic system with minimal effort is needed. In this work, we present an end-to-end software-hardware 
-    #abstract-more: framework, namely <i>ExtPerFC</i>, that supports both conventional hardware and software components and integrates machine learning object detectors without requiring an additional dedicated graphic processor unit (GPU). We first design our framework to achieve real-time performance on the existing robotic system, guarantee configuration optimization, and concentrate on code reusability. We then mathematically model and utilize our transfer learning strategies for 2D object detection and fuse them into depth images for 3D depth estimation. Lastly, we systematically test the proposed framework on the Baxter robot with two 7-DOF arms, a four-wheel mobility base, and an Intel RealSense D435i RGB-D camera. The results show that the robot achieves real-time performance while executing other tasks (<i>e.g.</i>, map building, localization, navigation, object detection, arm moving, and grasping) simultaneously with available hardware like Intel onboard CPUs/GPUs on distributed computers. Also, to comprehensively control, program, and monitor the robot system, we design and introduce an end-user application.
     tag: ETC2
     category: ETC
 
@@ -94,8 +86,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: In this work, we present an end-to-end software-hardware framework that supports both conventional hardware and software components and integrates machine learning object detectors without requiring an additional dedicated graphic processor unit (GPU). We design our framework to achieve real-time performance on the robot system, guarantee such performance on 
-    #abstract-more: multiple computing devices, and concentrate on code reusability. We then utilize transfer learning strategies for 2D object detection and fuse them into depth images for 3D depth estimation. Lastly, we test the proposed framework on the Baxter robot with two 7-DOF arms and a four-wheel mobility base. The results show that the robot achieves real-time performance while executing other tasks (map building, localization, navigation, object detection, arm moving, and grasping) with available hardware like Intel onboard GPUs on distributed computers. Also, to comprehensively control, program, and monitor the robot system, we  design and introduce an end-user application.
     tag: AV
     category: AutonomousVehicle
 
@@ -111,8 +101,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: In this paper, we present a low-maintenance, wind-powered, batteryfree, biocompatible, tree wearable, and intelligent sensing system, namely <i>IoTree</i>, to monitor water and nutrient levels inside a living tree. <i>IoTree</i> system includes tiny-size, biocompatible, and implantable sensors that 
-    #abstract-more: continuously measure the impedance variations inside the living tree’s xylem, where water and nutrients are transported from the root to the upper parts. The collected data are then compressed and transmitted to a base station located at up to 1.8 kilometers (approximately 1.1 miles) away. The entire <i>IoTree</i> system is powered by wind energy and controlled by an adaptive computing technique called block-based intermittent computing, ensuring the forward progress and data consistency under intermittent power and allowing the firmware to execute with the most optimal memory and energy usage. We prototype <i>IoTree</i> that opportunistically performs sensing, data compression, and long-range communication tasks without batteries. During in-lab experiments, <i>IoTree</i> also obtains the accuracy of 91.08% and 90.51% in measuring 10 levels of nutrients, NH<sub>3</sub> and K<sub>2</sub>O, respectively. While tested with Burkwood Viburnum and White Bird trees in the indoor environment, <i>IoTree</i> data strongly correlated with multiple watering and fertilizing events. We also deployed <i>IoTree</i> on a grapevine farm for 30 days, and the system is able to provide sufficient measurements every day.
     tag: ETC3
     category: ETC
 
@@ -128,8 +116,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: In this paper, we present a low-maintenance, wind-powered, batteryfree, biocompatible, tree wearable, and intelligent sensing system, namely <i>IoTree</i>, to monitor water and nutrient levels inside a living tree. <i>IoTree</i> system includes tiny-size, biocompatible, and implantable sensors that 
-    #abstract-more: continuously measure the impedance variations inside the living tree’s xylem, where water and nutrients are transported from the root to the upper parts. The collected data are then compressed and transmitted to a base station located at up to 1.8 kilometers (approximately 1.1 miles) away. The entire <i>IoTree</i> system is powered by wind energy and controlled by an adaptive computing technique called block-based intermittent computing, ensuring the forward progress and data consistency under intermittent power and allowing the firmware to execute with the most optimal memory and energy usage. We prototype <i>IoTree</i> that opportunistically performs sensing, data compression, and long-range communication tasks without batteries. During in-lab experiments, <i>IoTree</i> also obtains the accuracy of 91.08% and 90.51% in measuring 10 levels of nutrients, NH<sub>3</sub> and K<sub>2</sub>O, respectively. While tested with Burkwood Viburnum and White Bird trees in the indoor environment, <i>IoTree</i> data strongly correlated with multiple watering and fertilizing events. We also deployed <i>IoTree</i> on a grapevine farm for 30 days, and the system is able to provide sufficient measurements every day.
     tag: SportsHCI1
     category: SportsHCI
 
@@ -145,8 +131,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: In this paper, we present a low-maintenance, wind-powered, batteryfree, biocompatible, tree wearable, and intelligent sensing system, namely <i>IoTree</i>, to monitor water and nutrient levels inside a living tree. <i>IoTree</i> system includes tiny-size, biocompatible, and implantable sensors that 
-    #abstract-more: continuously measure the impedance variations inside the living tree’s xylem, where water and nutrients are transported from the root to the upper parts. The collected data are then compressed and transmitted to a base station located at up to 1.8 kilometers (approximately 1.1 miles) away. The entire <i>IoTree</i> system is powered by wind energy and controlled by an adaptive computing technique called block-based intermittent computing, ensuring the forward progress and data consistency under intermittent power and allowing the firmware to execute with the most optimal memory and energy usage. We prototype <i>IoTree</i> that opportunistically performs sensing, data compression, and long-range communication tasks without batteries. During in-lab experiments, <i>IoTree</i> also obtains the accuracy of 91.08% and 90.51% in measuring 10 levels of nutrients, NH<sub>3</sub> and K<sub>2</sub>O, respectively. While tested with Burkwood Viburnum and White Bird trees in the indoor environment, <i>IoTree</i> data strongly correlated with multiple watering and fertilizing events. We also deployed <i>IoTree</i> on a grapevine farm for 30 days, and the system is able to provide sufficient measurements every day.
     tag: A11y1
     category: A11y
 
@@ -162,8 +146,6 @@ projects:
     demo: 
     slides: 
     talk: 
-    #abstract-less: In this paper, we present a low-maintenance, wind-powered, batteryfree, biocompatible, tree wearable, and intelligent sensing system, namely <i>IoTree</i>, to monitor water and nutrient levels inside a living tree. <i>IoTree</i> system includes tiny-size, biocompatible, and implantable sensors that 
-    #abstract-more: continuously measure the impedance variations inside the living tree’s xylem, where water and nutrients are transported from the root to the upper parts. The collected data are then compressed and transmitted to a base station located at up to 1.8 kilometers (approximately 1.1 miles) away. The entire <i>IoTree</i> system is powered by wind energy and controlled by an adaptive computing technique called block-based intermittent computing, ensuring the forward progress and data consistency under intermittent power and allowing the firmware to execute with the most optimal memory and energy usage. We prototype <i>IoTree</i> that opportunistically performs sensing, data compression, and long-range communication tasks without batteries. During in-lab experiments, <i>IoTree</i> also obtains the accuracy of 91.08% and 90.51% in measuring 10 levels of nutrients, NH<sub>3</sub> and K<sub>2</sub>O, respectively. While tested with Burkwood Viburnum and White Bird trees in the indoor environment, <i>IoTree</i> data strongly correlated with multiple watering and fertilizing events. We also deployed <i>IoTree</i> on a grapevine farm for 30 days, and the system is able to provide sufficient measurements every day.
     tag: ETC3
     category: ETC
 
@@ -179,7 +161,5 @@ projects:
     demo: https://youtu.be/o7bDM5yRbtw
     slides: 
     talk: 
-    #abstract-less: In this paper, we present a low-maintenance, wind-powered, batteryfree, biocompatible, tree wearable, and intelligent sensing system, namely <i>IoTree</i>, to monitor water and nutrient levels inside a living tree. <i>IoTree</i> system includes tiny-size, biocompatible, and implantable sensors that 
-    #abstract-more: continuously measure the impedance variations inside the living tree’s xylem, where water and nutrients are transported from the root to the upper parts. The collected data are then compressed and transmitted to a base station located at up to 1.8 kilometers (approximately 1.1 miles) away. The entire <i>IoTree</i> system is powered by wind energy and controlled by an adaptive computing technique called block-based intermittent computing, ensuring the forward progress and data consistency under intermittent power and allowing the firmware to execute with the most optimal memory and energy usage. We prototype <i>IoTree</i> that opportunistically performs sensing, data compression, and long-range communication tasks without batteries. During in-lab experiments, <i>IoTree</i> also obtains the accuracy of 91.08% and 90.51% in measuring 10 levels of nutrients, NH<sub>3</sub> and K<sub>2</sub>O, respectively. While tested with Burkwood Viburnum and White Bird trees in the indoor environment, <i>IoTree</i> data strongly correlated with multiple watering and fertilizing events. We also deployed <i>IoTree</i> on a grapevine farm for 30 days, and the system is able to provide sufficient measurements every day.
     tag: SportsHCI2
     category: SportsHCI
