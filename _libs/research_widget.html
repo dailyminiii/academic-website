@@ -17,13 +17,6 @@
             {% if project.demo %} | <a href="{{ project.demo }}" target="_blank" rel="noopener">[DEMO]</a> {% endif %}
             {% if project.slides %} | <a href="{{ project.slides }}" target="_blank" rel="noopener">[SLIDES]</a> {% endif %}
             {% if project.talk %} | <a href="{{ project.talk }}" target="_blank" rel="noopener">[TALK]</a> {% endif %}
-            <br>
-            <u><b><i>Abstract</i></b>:</u> 
-            {{ project.abstract-less }}
-            <span class="collapse" id="{{ project.tag }}">
-                {{ project.abstract-more }}
-            </span> 
-            <span> <a href="#{{ project.tag }}" data-toggle="collapse" onclick="toggleText(this)" id="link-{{ project.tag }}">... See More</a></span>
         </div>                       
     </div>
 </div>
