@@ -16,10 +16,21 @@ instagram: https://www.instagram.com/daily_miniii/
 
 # about me
 first-paragraph: I am a Ph.D. candidate at the <a href="https://sites.google.com/view/gist-hcis-lab" target="_blank" rel="noopener">Human-Centered Intelligent Systems (HCIS) Lab</a> affiliated with the <a href="https://www.gist.ac.kr/kr/main.html" target="_blank" rel="noopener">Gwangju Institute of Science and Technology (GIST) at Gwangju, South Korea</a>, supervised by <a href="https://scholar.google.co.kr/citations?user=AjfRd6wAAAAJ&hl=ko" target="_blank" rel="noopener">Dr. SeungJun Kim</a>.
+second-paragraph: Education
+GIST
+GSIT
+
 research-introduction: I am excited about creating Artificial Intelligence (AI) systems that focus on people and expanding how we experience music and sports with Virtual Reality (VR) and Augmented Reality (AR). A big part of my work is about using wearable sensors to collect a lot of data from people. This data is crucial for the AI systems I develop, which help give feedback to users, both in the real world and in virtual spaces. I aim to make the boundaries between technology and human experiences less distinct, leading to new and captivating ways for people to interact with technology.
-research-introduction: Education
 
 research-interests:
+  - field: SportsHCI
+    subfields: Racket sports training, AI-based motion guidance generation
+
+  - field: SportsHCI
+    subfields: Racket sports training, AI-based motion guidance generation
+
+  - field: SportsHCI
+    subfields: Racket sports training, AI-based motion guidance generation
 
   - field: SportsHCI
     subfields: Racket sports training, AI-based motion guidance generation
