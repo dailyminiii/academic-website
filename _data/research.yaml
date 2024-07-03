@@ -89,6 +89,21 @@ projects:
     tag: SportsHCI1
     category: SportsHCI
 
+  - title: MuLMINet Multi-Layer Multi-Input Transformer Network with Weighted Loss
+    system-name: 
+    gif: assets/img/demo_iotree.gif
+    conference: IJCAI 2023 CoachAI Badminton Challenge (Runner-Up Award 🏆)
+    conference-web: 
+    status: 
+    authors: <u>Minwoo Seong*</u>, Jeongseok Oh*, SeungJun Kim
+    pdf: https://arxiv.org/abs/2307.08262
+    code: https://github.com/stan5dard/IJCAI-CoachAI-Challenge-2023
+    demo: 
+    slides: 
+    talk: 
+    tag: SportsHCI1
+    category: SportsHCI
+
   - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars Results from a Realistic Driving Simulation
     system-name: 
     gif: assets/img/demo_perfc.gif
