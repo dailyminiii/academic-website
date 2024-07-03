@@ -4,23 +4,16 @@ profile-pic: assets/img/profile3.jpg
 
 # emoji indicator
 emoji: ✝
-desc-emoji: Christian
+desc-emoji: Christian, seongminwoo@gm.gist.ac.kr, +82 (010) 8380-7907
+
 
 # social links
 scholar: https://scholar.google.co.kr/citations?user=MYVwH3MAAAAJ&hl=ko
 researchgate: https://www.researchgate.net/profile/Seong_Minwoo
 github: https://github.com/dailyminiii
-youtube: https://www.youtube.com/channel/UCUCpgBdsKzO29vFWZjNM-7Q
-#projects:            # delete "show" or leave it blank to hide this icon
-orcid: https://orcid.org/0009-0007-5847-9666
-#contact: show            # delete "show" or leave it blank to hide this icon
 
-# information for contact card
-dept: IIT @ GIST
-lab: HCIS lab @ GIST
-email: seongminwoo@gm.gist.ac.kr
-phone: +82 (010) 8380-7907
-website: www.minwooseong.com
+youtube: https://www.youtube.com/channel/UCUCpgBdsKzO29vFWZjNM-7Q
+orcid: https://orcid.org/0009-0007-5847-9666
 
 # about me
 first-paragraph: I am a Ph.D. candidate at the <hightlight><a href="https://sites.google.com/view/gist-hcis-lab" target="_blank" rel="noopener">Human-Centered Intelligent Systems (HCIS) Lab</a></hightlight> affiliated with the <a href="https://www.gist.ac.kr/kr/main.html" target="_blank" rel="noopener">Gwangju Institute of Science and Technology (GIST) at Gwangju, South Korea</a> under the guidance of <a href="https://scholar.google.co.kr/citations?user=AjfRd6wAAAAJ&hl=ko" target="_blank" rel="noopener">Dr. SeungJun Kim</a>
