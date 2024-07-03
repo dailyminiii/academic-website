@@ -14,7 +14,7 @@ mini-projects:
 
   - title: In-car XR Halloween Contents
     system-name: 
-    gif: assets/img/demo_outdoor_nav.gif
+    gif: assets/img/XRcontents.gif
     event: 
     event-web: 
     team: 
@@ -26,7 +26,7 @@ mini-projects:
 
   - title: Robot Control for Piano Ensemble
     system-name: 
-    gif: assets/img/demo_outdoor_nav.gif
+    gif: assets/img/robotpiano.gif
     event: 
     event-web: 
     team: 
