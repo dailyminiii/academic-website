@@ -7,7 +7,7 @@
             {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
             <b>{{ project.title }}</b>
             <br>
-            <i><a href="{{ project.conference-web }}" target="_blank" rel="noopener">{{ project.conference }}</a></i> 
+            <i>{{ project.conference }}</i> 
             {% if project.status %} <b style = "color: #e74d3c">[{{ project.status }}]</b> {% endif %}
             <br>
             {{ project.authors }}
