@@ -46,7 +46,7 @@ projects:
 
   - title: ErgoPulse Electrifying Your Lower Body With Biomechanical Simulation-based Electrical Muscle Stimulation Haptic System in Virtual Reality
     system-name: 
-    gif: assets/img/demo_iotree.gif
+    gif: assets/img/ErgoPulse.gif
     conference: CHI 2024 (Honorable Mention Award 🏆)
     conference-web: 
     status: 
@@ -106,7 +106,7 @@ projects:
 
   - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars Results from a Realistic Driving Simulation
     system-name: 
-    gif: assets/img/Risky Simulation.png
+    gif: assets/img/AS.png
     conference: Applied Sciences
     conference-web: 
     status: 
