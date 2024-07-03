@@ -1,30 +1,32 @@
 categories:
 
-  - data-filter: perception manipulation
-    category-name: perception + manipulation
+  - data-filter: Autonomous Vehicle
+    category-name: Autonomous Vehicle
 
-  - data-filter: framework
-    category-name: framework
+  - data-filter: SportsHCI
+    category-name: SportsHCI
 
+  - data-filter: A11y
+    category-name: A11y
 
 projects:
 
-  - title: Real-Time 3D Semantic Scene Perception for Egocentric Robots with Binocular Vision
+  - title: Sensor-based Interactive Contents for People with Developmental Disabilities and Exploration of Applicability.
     system-name: 
     gif: assets/img/demo_scene_perception.gif
-    conference: arXiv (02/19/2024)
+    conference: HCI Korea 2021 (01/01/2021)
     conference-web: 
     status:
-    authors: <u>Khang Nguyen</u>, Tuan Dang, Manfred Huber.
-    pdf: https://arxiv.org/pdf/2402.11872.pdf
-    code: https://github.com/mkhangg/semantic_scene_perception
-    demo: https://youtu.be/-dho7l_r56U
+    authors: Eunjin Seong, Won Kim, Jiwon Lee, <u>Minwoo Seong</u>, SeungJun Kim.
+    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10530281
+    code: 
+    demo: 
     slides: 
     talk: 
-    abstract-less: Perceiving a three-dimensional (3D) scene with multiple objects while moving indoors is essential for vision-based mobile cobots, especially for enhancing their manipulation tasks. In this work, we present an end-to-end pipeline with instance segmentation, feature matching, and point-set registration for egocentric robots with binocular vision, and demonstrate the robot's 
-    abstract-more: grasping capability through the proposed pipeline. First, we design an RGB image-based segmentation approach for single-view 3D semantic scene segmentation, leveraging common object classes in 2D datasets to encapsulate 3D points into point clouds of object instances through corresponding depth maps. Next, 3D correspondences of two consecutive segmented point clouds are extracted based on matched keypoints between objects of interest in RGB images from the prior step. In addition, to be aware of spatial changes in 3D feature distribution, we also weigh each 3D point pair based on the estimated distribution using kernel density estimation (KDE), which subsequently gives robustness with less central correspondences while solving for rigid transformations between point clouds. Finally, we test our proposed pipeline on the 7-DOF dual-arm Baxter robot with a mounted Intel RealSense D435i RGB-D camera. The result shows that our robot can segment objects of interest, register multiple views while moving, and grasp the target object.
-    tag: more_scene_perception
-    category: perception manipulation
+    abstract-less: 
+    abstract-more: 
+    tag: A11y_contents
+    category: A11y
 
   - title: Online 3D Deformable Object Classification for Mobile Cobot Manipulation
     system-name: 
