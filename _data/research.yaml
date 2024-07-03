@@ -14,80 +14,35 @@ categories:
 
 projects:
 
-  - title: Sensor-based Interactive Contents for People with Developmental Disabilities and Exploration of Applicability.
+  - title: Counterfactual Explanation-Based Badminton Motion Guidance Generation Using Wearable Sensors
     system-name: 
-    gif: assets/img/demo_scene_perception.gif
-    conference: HCI Korea 2021
+    gif: assets/img/demo_iotree.gif
+    conference: ICRA Workshop on Wearable
     conference-web: 
-    status:
-    authors: Eunjin Seong, Won Kim, Jiwon Lee, <u>Minwoo Seong</u>, SeungJun Kim
-    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10530281
+    status: 
+    authors: <u>Minwoo Seong</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
+    pdf: https://arxiv.org/abs/2405.11802
     code: 
-    demo: 
+    demo: https://youtu.be/o7bDM5yRbtw
     slides: 
     talk: 
-    tag: A11y_contents
-    category: A11y
+    tag: SportsHCI2
+    category: SportsHCI
 
-  - title: Deep Learning-Based Engagement Classification by Behavioral and Physiological Data of Children with Developmental Disability
+  - title: Intelligence Walker A Seamless Mobility Assist Device for the Elderly Performance
     system-name: 
-    gif: assets/img/demo_online.gif
-    conference: HCI Korea 2022
-    conference-web:
-    status: 
-    authors: Subin Ok, <u>Minwoo Seong</u>, Won Kim, Hwaseung Jeon, Jiwon Lee, Kyung-Joong Kim, SeungJun Kim
-    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043877
-    code: 
-    demo: 
-    slides:
-    talk:
-    tag: A11y_deep_learning
-    category: A11y
-  
-  - title: Surveys of User’s Perception Towards Foot Gesture and Exploration of Applicability
-    system-name: 
-    gif: assets/img/demo_multiplanar.gif
-    conference: HCI Korea 2022
+    gif: assets/img/demo_iotree.gif
+    conference: ICRA Workshop on Wearable
     conference-web: 
     status: 
-    authors: Hwaseung Jeon, Jeongseok Oh, Eunjin Seong <u>Minwoo Seong</u>, SeungJun Kim
-    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043851
+    authors: Yunho Choi, Dohyeon Yeo, Seokhyun Hwang, <u>Minwoo Seong</u>, Jaeyoung Moon, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
+    pdf: https://drive.google.com/file/d/11CkcV7DG_XmIaWkefTII823E0TIXt1P8/view
     code: 
     demo: 
     slides: 
     talk: 
-    tag: ETC
+    tag: ETC3
     category: ETC
-
-  - title: Virtual Reality Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments
-    system-name: 
-    gif: assets/img/demo_extperfc.gif
-    conference: KCC 2022 (Best Paper Award 🏆)
-    conference-web: 
-    status: 
-    authors: <u>Minwoo Seong</u>, SeungJun Kim
-    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113699
-    code: 
-    demo: 
-    slides: 
-    talk: 
-    tag: ETC2
-    category: ETC
-
-  - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars Results from a Realistic Driving Simulation
-    system-name: 
-    gif: assets/img/demo_perfc.gif
-    conference: Applied Sciences
-    conference-web: 
-    status: 
-    authors: SeungJu Kim*, Jeongseok Oh*, <u>Minwoo Seong*</u>, Eunki Jeon, Yeonguk Moon, SeungJun Kim
-    pdf: https://www.mdpi.com/2076-3417/13/8/4952
-    code: 
-    demo: 
-    slides: 
-    talk: 
-    tag: AV
-    category: AutonomousVehicle
 
   - title: ErgoPulse Electrifying Your Lower Body With Biomechanical Simulation-based Electrical Muscle Stimulation Haptic System in Virtual Reality
     system-name: 
@@ -104,21 +59,6 @@ projects:
     tag: ETC3
     category: ETC
 
-  - title: MultiSenseBadminton Wearable Sensor–Based Biomechanical Dataset for Evaluation of Badminton Performance
-    system-name: 
-    gif: assets/img/demo_iotree.gif
-    conference: Scientific Data
-    conference-web: 
-    status: 
-    authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
-    pdf: https://www.nature.com/articles/s41597-024-03144-z
-    code: https://github.com/dailyminiii/MultiSenseBadminton
-    demo: 
-    slides: 
-    talk: 
-    tag: SportsHCI1
-    category: SportsHCI
-
   - title: Engagnition A Multi-Dimensional Dataset for Engagement Recognition of Children with Autism Spectrum Disorder
     system-name: 
     gif: assets/img/demo_iotree.gif
@@ -134,32 +74,111 @@ projects:
     tag: A11y1
     category: A11y
 
-  - title: Intelligence Walker A Seamless Mobility Assist Device for the Elderly Performance
+  - title: MultiSenseBadminton Wearable Sensor–Based Biomechanical Dataset for Evaluation of Badminton Performance
     system-name: 
     gif: assets/img/demo_iotree.gif
-    conference: ICRA Workshop on Wearable
+    conference: Scientific Data
     conference-web: 
     status: 
-    authors: Yunho Choi, Dohyeon Yeo, Seokhyun Hwang, <u>Minwoo Seong*</u>, Jaeyoung Moon, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
-    pdf: https://drive.google.com/file/d/11CkcV7DG_XmIaWkefTII823E0TIXt1P8/view
+    authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
+    pdf: https://www.nature.com/articles/s41597-024-03144-z
+    code: https://github.com/dailyminiii/MultiSenseBadminton
+    demo: 
+    slides: 
+    talk: 
+    tag: SportsHCI1
+    category: SportsHCI
+
+  - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars Results from a Realistic Driving Simulation
+    system-name: 
+    gif: assets/img/demo_perfc.gif
+    conference: Applied Sciences
+    conference-web: 
+    status: 
+    authors: SeungJu Kim*, Jeongseok Oh*, <u>Minwoo Seong*</u>, Eunki Jeon, Yeonguk Moon, SeungJun Kim
+    pdf: https://www.mdpi.com/2076-3417/13/8/4952
     code: 
     demo: 
     slides: 
     talk: 
-    tag: ETC3
-    category: ETC
+    tag: AV
+    category: AutonomousVehicle
 
-  - title: Counterfactual Explanation-Based Badminton Motion Guidance Generation Using Wearable Sensors
+  - title: Virtual Reality Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments
     system-name: 
-    gif: assets/img/demo_iotree.gif
-    conference: ICRA Workshop on Wearable
+    gif: assets/img/demo_extperfc.gif
+    conference: KCC 2022 (Best Paper Award 🏆)
     conference-web: 
     status: 
-    authors: <u>Minwoo Seong*</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
-    pdf: https://arxiv.org/abs/2405.11802
+    authors: <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113699
     code: 
-    demo: https://youtu.be/o7bDM5yRbtw
+    demo: 
     slides: 
     talk: 
-    tag: SportsHCI2
-    category: SportsHCI
+    tag: ETC2
+    category: ETC
+
+  - title: Deep Learning-Based Engagement Classification by Behavioral and Physiological Data of Children with Developmental Disability
+    system-name: 
+    gif: assets/img/demo_online.gif
+    conference: HCI Korea 2022
+    conference-web:
+    status: 
+    authors: Subin Ok, <u>Minwoo Seong</u>, Won Kim, Hwaseung Jeon, Jiwon Lee, Kyung-Joong Kim, SeungJun Kim
+    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043877
+    code: 
+    demo: 
+    slides:
+    talk:
+    tag: A11y_deep_learning
+    category: A11y
+
+  - title: Surveys of User’s Perception Towards Foot Gesture and Exploration of Applicability
+    system-name: 
+    gif: assets/img/demo_multiplanar.gif
+    conference: HCI Korea 2022
+    conference-web: 
+    status: 
+    authors: Hwaseung Jeon, Jeongseok Oh, Eunjin Seong <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043851
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: ETC
+    category: ETC
+
+  - title: Sensor-based Interactive Contents for People with Developmental Disabilities and Exploration of Applicability.
+    system-name: 
+    gif: assets/img/demo_scene_perception.gif
+    conference: HCI Korea 2021
+    conference-web: 
+    status:
+    authors: Eunjin Seong, Won Kim, Jiwon Lee, <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10530281
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: A11y_contents
+    category: A11y
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
