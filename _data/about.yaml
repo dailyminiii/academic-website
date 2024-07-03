@@ -1,6 +1,6 @@
 # basic information
 name: Minwoo Seong
-profile-pic: assets/img/profile.jpg
+profile-pic: assets/img/profile3.jpg
 
 # emoji indicator
 emoji: ✝
@@ -12,9 +12,9 @@ researchgate: https://www.researchgate.net/profile/Seong_Minwoo
 github: https://github.com/dailyminiii
 youtube: https://www.youtube.com/channel/UCUCpgBdsKzO29vFWZjNM-7Q
 resume: https://drive.google.com/file/d/1uZwP71LCJTdu6NXbo4TaMaeR3IAWUoEp/view?usp=sharing
-projects:            # delete "show" or leave it blank to hide this icon
+#projects:            # delete "show" or leave it blank to hide this icon
 orcid: https://orcid.org/0009-0007-5847-9666
-contact: show            # delete "show" or leave it blank to hide this icon
+#contact: show            # delete "show" or leave it blank to hide this icon
 
 # information for contact card
 dept: IIT @ GIST
@@ -24,14 +24,13 @@ phone: +82 (010) 8380-7907
 website: www.minwooseong.com
 
 # about me
-first-paragraph: I am a research assistant at the <hightlight>Learning and Adaptive Robotics (LEARN) Lab</hightlight> affiliated with the <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse" target="_blank" rel="noopener">University of Texas at Arlington</a> under the guidance of <a href="https://www.uta.edu/academics/faculty/profile?username=huber" target="_blank" rel="noopener">Dr. Manfred Huber</a>, building upon the research I initiated during my undergraduate studies here. (◕▿◕)
-second-paragraph: I grew up in <a href="https://en.wikipedia.org/wiki/Saigon" target="_blank" rel="noopener">Saigon, Vietnam</a>, and was fortunate to spend my most memorable time at the <a href="https://en.wikipedia.org/wiki/VNU-HCM_High_School_for_the_Gifted" target="_blank" rel="noopener">VNU-HCM High School for the Gifted</a> (informatics program of 2020) and previously <a href="https://en.wikipedia.org/wiki/Tr%E1%BA%A7n_%C4%90%E1%BA%A1i_Ngh%C4%A9a_High_School_for_the_Gifted" target="_blank" rel="noopener">TĐN Secondary School for the Gifted</a> (mathematics program of 2017) with very good friends - too many to name them here, where we played football (soccer) on concrete fields together afterschool.
-research-introduction: I do research in robotics, mainly focusing on applying <code>cognitive architectures to robotic grasping</code> to enable robots with a closely similar human grasping capability. Just imagine the robot enters the kitchen, finds a banana, grasps without crushing it, and brings it back to you.
+first-paragraph: I am a Ph.D. candidate at the <hightlight>Human-Centered Intelligent Systems (HCIS) Lab</hightlight> affiliated with the <a href="https://www.gist.ac.kr/kr/main.html" target="_blank" rel="noopener">Gwangju Institute of Science and Technology at Gwangju, South Korea</a> under the guidance of <a href="https://www.uta.edu/academics/faculty/profile?username=huber" target="_blank" rel="noopener">Dr. SeungJun Kimr</a>
+research-introduction: I am excited about creating Artificial Intelligence (AI) systems that focus on people and expanding how we experience music and sports with Virtual Reality (VR) and Augmented Reality (AR). A big part of my work is about using wearable sensors to collect a lot of data from people. This data is crucial for the AI systems I develop, which help give feedback to users, both in the real world and in virtual spaces. I aim to make the boundaries between technology and human experiences less distinct, leading to new and captivating ways for people to interact with technology.
 
 research-interests:
 
-  - field: Robotic Perception
-    subfields: semantic scene understanding, perception for grasping
+  - field: SportsHCI
+    subfields: Racket sports training, AI-based motion guidance generation
   
-  - field: Robotic Manipulation
-    subfields: learning to grasp, manipulative visual-motor skills
+  - field: Autonomous Vehicle
+    subfields: XR-based AV simulation, Risky simulation
