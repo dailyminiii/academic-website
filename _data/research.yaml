@@ -74,7 +74,7 @@ projects:
     tag: ETC2
     category: ETC
 
-  - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars: Results from a Realistic Driving Simulation
+  - title: Assessing the Impact of AR HUDs and Risk Level on User Experience in Self-Driving Cars Results from a Realistic Driving Simulation
     system-name: 
     gif: assets/img/demo_perfc.gif
     conference: Applied Sciences
@@ -89,7 +89,7 @@ projects:
     tag: AV
     category: AutonomousVehicle
 
-  - title: ErgoPulse: Electrifying Your Lower Body With Biomechanical Simulation-based Electrical Muscle Stimulation Haptic System in Virtual Reality
+  - title: ErgoPulse Electrifying Your Lower Body With Biomechanical Simulation-based Electrical Muscle Stimulation Haptic System in Virtual Reality
     system-name: 
     gif: assets/img/demo_iotree.gif
     conference: CHI 2024 (Honorable Mention Award 🏆)
@@ -104,7 +104,7 @@ projects:
     tag: ETC3
     category: ETC
 
-  - title: MultiSenseBadminton: Wearable Sensor–Based Biomechanical Dataset for Evaluation of Badminton Performance
+  - title: MultiSenseBadminton Wearable Sensor–Based Biomechanical Dataset for Evaluation of Badminton Performance
     system-name: 
     gif: assets/img/demo_iotree.gif
     conference: Scientific Data
@@ -119,7 +119,7 @@ projects:
     tag: SportsHCI1
     category: SportsHCI
 
-  - title: Engagnition: A Multi-Dimensional Dataset for Engagement Recognition of Children with Autism Spectrum Disorder
+  - title: Engagnition A Multi-Dimensional Dataset for Engagement Recognition of Children with Autism Spectrum Disorder
     system-name: 
     gif: assets/img/demo_iotree.gif
     conference: Scientific Data
@@ -134,7 +134,7 @@ projects:
     tag: A11y1
     category: A11y
 
-  - title: Intelligence Walker: A Seamless Mobility Assist Device for the Elderly Performance
+  - title: Intelligence Walker A Seamless Mobility Assist Device for the Elderly Performance
     system-name: 
     gif: assets/img/demo_iotree.gif
     conference: ICRA Workshop on Wearable
