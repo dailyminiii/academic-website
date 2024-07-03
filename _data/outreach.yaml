@@ -1,21 +1,6 @@
 mini-projects:
 
-  - title: Design and Manufacture of Motion Platform for XR-based Autonomous Vehicle Simulation
-    system-name: 
-    gif: assets/img/demo_outdoor_nav.gif
-    description: Lecture Term Project (May. 2022 ~ June. 2022)
-
-  - title: Reinforcement Learning Project - Geometry Friends
-    system-name: 
-    gif: assets/img/demo_outdoor_nav.gif
-    description: Lecture Term Project (May. 2022 ~ June. 2022)
-
-  - title: Force Control for Rendering Softness
-    system-name: 
-    gif: assets/img/demo_outdoor_nav.gif
-    description: Lecture Term Project (May. 2022 ~ June. 2022)
-
-  - title: Table Tennis Paddle Design and Content Production for Virtual Reality Interaction
+  - title: Immersive Contents Design using VR Piano
     system-name: 
     gif: assets/img/demo_outdoor_nav.gif
     event: 
@@ -24,19 +9,7 @@ mini-projects:
     post: 
     code: 
     demo: 
-    description: Lecture Term Project (May. 2022 ~ June. 2022)
-    prize: 
-
-  - title: Production of In-car XR content using Visuo-Haptic Co-location Technology
-    system-name: 
-    gif: assets/img/demo_outdoor_nav.gif
-    event: 
-    event-web: 
-    team: 
-    post: 
-    code: 
-    demo: 
-    description: Research Intern Project (Sep. 2021 ~ Dec. 2021)
+    description: VR Piano Contents Project (May. 2024 ~ Jun. 2024)
     prize: 
 
   - title: In-car XR Halloween Contents
@@ -61,28 +34,4 @@ mini-projects:
     code: 
     demo: 
     description: Lecture Term Project (May. 2021 ~ Jun. 2021)
-    prize: 
-
-  - title: Classification of the Multiple Instruments by Using Deep Learning Models
-    system-name:
-    gif: assets/img/demo_spidey.gif
-    event: 
-    event-web: 
-    team:
-    post: 
-    code: 
-    demo: 
-    description: Lecture Term Project (May. 2021 ~ Jun. 2021)
-    prize: 
-
-  - title: Life Prediction of the Solder Resistor with Fatigue Failure Mechanism
-    system-name: 
-    gif: assets/img/demo_iplanter.gif
-    event: 
-    event-web: 
-    team: 
-    post: 
-    code: 
-    demo: 
-    description: Research Intern Project (Jul. 2020 ~ Aug. 2020)
     prize: 
