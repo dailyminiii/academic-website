@@ -3,41 +3,74 @@ introduction: Not just about research, but also some happy moments of my life in
 pictures:
 
   - source: assets/img/Piano12.png
-    caption: (Recording & Video) Isnts she lovely - Funk Ver (2024.01.27)
+    caption: (Recording & Video) Isnts she lovely - Funk Ver
     year: 2024
+    
+  - source: assets/img/UbiComp 2023.png
+    caption: Attending UbiComp Conference in Cancun, Mexico
+    year: 2023
+
+  - source: assets/img/MIT 2023.png
+    caption: MIT Short term visiting
+    year: 2023
+
+  - source: assets/img/UIST 2022.png
+    caption: Attending UIST Conference in Bend, Oregon, USA
+    year: 2022
+
+  - source: assets/img/KCC 2022.png
+    caption: KCC 2022 presentation
+    year: 2022
+
+  - source: assets/img/MIT 2022_2.png
+    caption: MIT Short term visiting
+    year: 2022
+
+  - source: assets/img/MIT 2022_1.png
+    caption: MIT Short term visiting
+    year: 2022
+
 
   - source: assets/img/Piano11.png
-    caption: (Album) Join the album as a piano session (2021.05.13) 
+    caption: (Album) Join the album as a piano session 
     year: 2021
 
   - source: assets/img/Piano8.png
-    caption: (Arrangement & Video) Welove - The Light Fills the Room (2021.02.20)
+    caption: (Arrangement & Video) Welove - The Light Fills the Room
+    year: 2021
+
+  - source: assets/img/MIT 2021_2.png
+    caption: MIT Short term visiting
+    year: 2021
+
+  - source: assets/img/MIT 2021_1.png
+    caption: MIT Short term visiting
     year: 2021
 
   - source: assets/img/Piano7.png
-    caption: (Recording & Video) Misty - Piano Cover (2021.02.11)
+    caption: (Recording & Video) Misty - Piano Cover
     year: 2021
 
   - source: assets/img/Piano6.png
-    caption: (Arrangement & Video) IU - Celebrity (2021.01.31)
+    caption: (Arrangement & Video) IU - Celebrity
     year: 2021
 
   - source: assets/img/Piano5.png
-    caption: (Arrangement & Video) Jukjae - Lets Go See The Stars (2021.01.24)
+    caption: (Arrangement & Video) Jukjae - Lets Go See The Stars
     year: 2021
 
   - source: assets/img/Piano4.png
-    caption: (Arrangement & Piano & Video) BeWhy - My Star (2021.01.11)
+    caption: (Arrangement & Piano & Video) BeWhy - My Star
     year: 2021
 
   - source: assets/img/Piano3.png
-    caption: (Arrangement & Video) Jukjae - Lets Go See The Stars (2020.11.19)
+    caption: (Arrangement & Video) Jukjae - Lets Go See The Star
     year: 2020
 
   - source: assets/img/Piano2.png
-    caption: (Piano Cover & Video) Joe Hisaishi - One Summers Day (2020.09.13)
+    caption: (Piano Cover & Video) Joe Hisaishi - One Summers Day
     year: 2020
 
   - source: assets/img/Piano1.jpg
-    caption: (Loop Station & Video) ZICO - Any Song (2020.07.17)
+    caption: (Loop Station & Video) ZICO - Any Song
     year: 2020
