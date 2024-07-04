@@ -682,12 +682,6 @@ div.desc {
 } */
 
 /* Handle for gallery and pictures in gallery */
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* 항목 간격 조정을 space-around로 변경 */
-    gap: 10px; /* 갤러리 항목 간격 */
-}
 
 div.gallery {
     margin: 3px;
