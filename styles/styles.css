@@ -685,7 +685,7 @@ div.desc {
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around; /* 항목 간격 조정을 space-around로 변경 */
     gap: 10px; /* 갤러리 항목 간격 */
 }
 
@@ -693,10 +693,10 @@ div.gallery {
     margin: 3px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 212px;
+    width: calc(25% - 20px); /* 너비 조정 */
     max-width: 100%;
-    flex: 1 1 calc(25% - 20px); /* 너비 조정 */
     box-sizing: border-box; /* 패딩과 보더를 포함한 박스 크기 조정 */
+    flex-grow: 1; /* flex-grow를 추가하여 공간을 채우도록 설정 */
 }
 
 div.gallery img {
