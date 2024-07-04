@@ -647,7 +647,7 @@ code {
 }
 
 /* Handle for gallery and pictures in gallery */
-/* div.gallery {
+div.gallery {
     margin: 3px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -679,30 +679,8 @@ div.desc {
     bottom: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8); 
-} */
+} 
 
-/* Handle for gallery and pictures in gallery */
-
-div.gallery {
-    margin: 3px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: calc(25% - 20px); /* 너비 조정 */
-    max-width: 100%;
-    box-sizing: border-box; /* 패딩과 보더를 포함한 박스 크기 조정 */
-    flex-grow: 1; /* flex-grow를 추가하여 공간을 채우도록 설정 */
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 7px;
-}
-
-div.desc {
-    padding: 8px;
-    text-align: center;
-}
 
 /* Styles for update cards */
 .news-card {
