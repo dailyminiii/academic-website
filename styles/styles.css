@@ -647,7 +647,7 @@ code {
 }
 
 /* Handle for gallery and pictures in gallery */
-div.gallery {
+/* div.gallery {
     margin: 3px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -679,8 +679,29 @@ div.desc {
     bottom: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8); 
-} 
+}  */
 
+
+/* Handle for gallery and pictures in gallery */
+div.gallery {
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    float: left;
+    width: 212px;
+}
+div.gallery:nth-child(8n+1) {
+    clear: both;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+div.desc {
+    padding: 8px;
+    text-align: center;
+}
 
 /* Styles for update cards */
 .news-card {
