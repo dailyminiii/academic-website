@@ -648,12 +648,14 @@ code {
 
 
 /* Handle for gallery and pictures in gallery */
-div.gallery {
+/* div.gallery {
     margin: 3px;
     border: 1px solid #ccc;
     border-radius: 8px;
     float: left;
     width: 212px;
+    max-width: 100%;
+    margin: auto;
 }
 div.gallery:nth-child(8n+1) {
     clear: both;
@@ -666,7 +668,38 @@ div.gallery img {
 div.desc {
     padding: 8px;
     text-align: center;
+} */
+/* Handle for gallery and pictures in gallery */
+div.gallery {
+    /* 
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    float: left;
+    width: 212px;
+    */
+    max-width: 100%;
+    margin: auto;
 }
+
+div.gallery:nth-child(8n+1) {
+    clear: both;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%; /* 높이를 부모 요소에 맞추기 */
+    border-radius: 7px;
+    max-width: 800px; /* 이미지 최대 너비 설정 */
+    max-height: 600px; /* 이미지 최대 높이 설정 */
+    object-fit: cover; /* 이미지가 비율을 유지하며 잘리도록 설정 */
+}
+
+div.desc {
+    padding: 8px;
+    text-align: center;
+}
+
 
 
 /* Styles for update cards */
