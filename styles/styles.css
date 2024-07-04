@@ -647,18 +647,18 @@ code {
 }
 
 /* Handle for gallery and pictures in gallery */
-div.gallery {
+/* div.gallery {
     margin: 3px;
     border: 1px solid #ccc;
     border-radius: 8px;
     float: left;
-    width: 212px; /* 고정된 너비 */
+    width: 212px; 
     max-width: 100%;
     margin: auto;
-    position: relative; /* 자식 요소의 절대 위치를 설정할 수 있도록 함 */
-    width: 800px; /* 고정된 너비 */
-    height: 600px; /* 고정된 높이 */
-    overflow: hidden; /* 이미지가 부모 요소를 넘어서지 않도록 숨김 */
+    position: relative; 
+    width: 800px; 
+    height: 600px; 
+    overflow: hidden; 
 }
 div.gallery:nth-child(8n+1) {
     clear: both;
@@ -666,19 +666,48 @@ div.gallery:nth-child(8n+1) {
 div.gallery img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 이미지가 비율을 유지하며 잘리도록 설정 */
+    object-fit: cover; 
     border-radius: 7px;
-    position: absolute; /* 부모 요소를 기준으로 절대 위치 설정 */
+    position: absolute;
     top: 0;
     left: 0;
 }
 div.desc {
     padding: 8px;
     text-align: center;
-    position: absolute; /* 부모 요소의 절대 위치 설정 */
+    position: absolute; 
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경색 추가 */
+    background-color: rgba(255, 255, 255, 0.8); 
+} */
+
+/* Handle for gallery and pictures in gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* 갤러리 항목 간격 */
+}
+
+div.gallery {
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 212px;
+    max-width: 100%;
+    flex: 1 1 calc(25% - 20px); /* 너비 조정 */
+    box-sizing: border-box; /* 패딩과 보더를 포함한 박스 크기 조정 */
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+div.desc {
+    padding: 8px;
+    text-align: center;
 }
 
 /* Styles for update cards */
