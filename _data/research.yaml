@@ -60,6 +60,21 @@ projects:
     tag: A11y
     category: A11y
 
+  - title: TimelyTale: A Multimodal Dataset Assessing Passenger's Demands for Explanations in Highly Automated Vehicles
+    system-name: 
+    gif: assets/img/KCC2024.png
+    conference: Proceedings of the ACM on IMWUT
+    conference-web: 
+    status: 
+    authors: Gwangbin Kim, Seokhyun Hwang, <u>Minwoo Seong</u>, Dohyeon Yeo, Daniela Rus, SeungJun Kim
+    pdf: 
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: A11y
+    category: A11y
+
   - title: Badminton Swing Posture Analysis and Visualization using Deep Learning-based Encoder-Decoder Architecture
     system-name: 
     gif: assets/img/KCC2024.png
