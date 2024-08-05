@@ -31,7 +31,7 @@ projects:
 
   - title: Intelligent Seat Tactile Signal-Based 3D Sitting Pose Inference
     system-name: 
-    gif: assets/img/intelligentseat.png
+    gif: assets/img/Seat.png
     conference: UbiComp Companion 2024
     conference-web: 
     status: 
@@ -78,7 +78,7 @@ projects:
   - title: TimelyTale A Multimodal Dataset Assessing Passengers Demands for Explanations in Highly Automated Vehicles
     system-name: 
     gif: assets/img/TimelyTale.png
-    conference: Proceedings of the ACM on IMWUT
+    conference: Proceedings of the ACM on IMWUT 2024
     conference-web: 
     status: 
     authors: Gwangbin Kim, Seokhyun Hwang, <u>Minwoo Seong</u>, Dohyeon Yeo, Daniela Rus, SeungJun Kim
@@ -87,8 +87,8 @@ projects:
     demo: 
     slides: 
     talk: 
-    tag: A11y
-    category: A11y
+    tag: AutonomousVehicle
+    category: AutonomousVehicle
 
   - title: Badminton Swing Posture Analysis and Visualization using Deep Learning-based Encoder-Decoder Architecture
     system-name: 
