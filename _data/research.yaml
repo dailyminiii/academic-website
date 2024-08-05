@@ -17,7 +17,7 @@ projects:
   - title: Adaptive In-Vehicle Virtual Reality for Reducing Motion Sickness Manipulating Passenger Posture During Driving Events
     system-name: 
     gif: assets/img/In-Vehicle.png
-    conference: UbiComp Companion 2024
+    conference: UbiComp Companion 2024 (Accepted)
     conference-web: 
     status: 
     authors: Ahmed Elsharkawy, Aya Ataya, Dohyeon Yeo, <u>Minwoo Seong</u>, Seokhyun Hwang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
@@ -32,7 +32,7 @@ projects:
   - title: Intelligent Seat Tactile Signal-Based 3D Sitting Pose Inference
     system-name: 
     gif: assets/img/Seat.png
-    conference: UbiComp Companion 2024
+    conference: UbiComp Companion 2024 (Accepted)
     conference-web: 
     status: 
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Jaehee Lee, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
@@ -48,7 +48,7 @@ projects:
   - title: Exploring Potential Application Areas of Artificial Intelligence-Infused System for Engagement Recognition Insights from Special Education Experts 
     system-name: 
     gif: assets/img/asdd.jpg
-    conference: UbiComp Companion 2024
+    conference: UbiComp Companion 2024 (Accepted)
     conference-web: 
     status: 
     authors: Won Kim, <u>Minwoo Seong</u>, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
@@ -63,7 +63,7 @@ projects:
   - title: Interpretable, Inclusive, and Immersive Interaction for Ubiquitous AI-infused Physical Systems
     system-name: 
     gif: assets/img/I4U.png
-    conference: UbiComp Companion 2024
+    conference: UbiComp Companion 2024 (Accepted)
     conference-web: 
     status: 
     authors: Gwangbin Kim, <u>Minwoo Seong</u>, Dohyeon Yeo, Yumin Kang, SeungJun Kim
@@ -78,7 +78,7 @@ projects:
   - title: TimelyTale A Multimodal Dataset Assessing Passengers Demands for Explanations in Highly Automated Vehicles
     system-name: 
     gif: assets/img/TimelyTale.png
-    conference: Proceedings of the ACM on IMWUT 2024
+    conference: Proceedings of the ACM on IMWUT 2024 (Accepted)
     conference-web: 
     status: 
     authors: Gwangbin Kim, Seokhyun Hwang, <u>Minwoo Seong</u>, Dohyeon Yeo, Daniela Rus, SeungJun Kim
