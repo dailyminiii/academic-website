@@ -17,11 +17,11 @@ projects:
   - title: Adaptive In-Vehicle Virtual Reality for Reducing Motion Sickness Manipulating Passenger Posture During Driving Events
     system-name: 
     gif: assets/img/In-Vehicle.png
-    conference: UbiComp Companion 2024 (Accepted)
+    conference: UbiComp Companion 2024
     conference-web: 
     status: 
     authors: Ahmed Elsharkawy, Aya Ataya, Dohyeon Yeo, <u>Minwoo Seong</u>, Seokhyun Hwang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
-    pdf: 
+    pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3678381
     code: 
     demo: 
     slides: 
@@ -32,11 +32,11 @@ projects:
   - title: Intelligent Seat Tactile Signal-Based 3D Sitting Pose Inference
     system-name: 
     gif: assets/img/Seat.png
-    conference: UbiComp Companion 2024 (Accepted)
+    conference: UbiComp Companion 2024
     conference-web: 
     status: 
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Jaehee Lee, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
-    pdf: 
+    pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3678374
     code: 
     demo: 
     slides: 
@@ -48,11 +48,11 @@ projects:
   - title: Exploring Potential Application Areas of Artificial Intelligence-Infused System for Engagement Recognition Insights from Special Education Experts 
     system-name: 
     gif: assets/img/asdd.jpg
-    conference: UbiComp Companion 2024 (Accepted)
+    conference: UbiComp Companion 2024
     conference-web: 
     status: 
     authors: Won Kim, <u>Minwoo Seong</u>, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
-    pdf: 
+    pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3678376
     code: 
     demo: 
     slides: 
@@ -63,11 +63,11 @@ projects:
   - title: Interpretable, Inclusive, and Immersive Interaction for Ubiquitous AI-infused Physical Systems
     system-name: 
     gif: assets/img/I4U.png
-    conference: UbiComp Companion 2024 (Accepted)
+    conference: UbiComp Companion 2024
     conference-web: 
     status: 
     authors: Gwangbin Kim, <u>Minwoo Seong</u>, Dohyeon Yeo, Yumin Kang, SeungJun Kim
-    pdf: 
+    pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3677569
     code: 
     demo: 
     slides: 
@@ -78,11 +78,11 @@ projects:
   - title: TimelyTale A Multimodal Dataset Assessing Passengers Demands for Explanations in Highly Automated Vehicles
     system-name: 
     gif: assets/img/TimelyTale.png
-    conference: Proceedings of the ACM on IMWUT 2024 (Accepted)
+    conference: Proceedings of the ACM on IMWUT 2024
     conference-web: 
     status: 
     authors: Gwangbin Kim, Seokhyun Hwang, <u>Minwoo Seong</u>, Dohyeon Yeo, Daniela Rus, SeungJun Kim
-    pdf: 
+    pdf: https://dl.acm.org/doi/abs/10.1145/3678544
     code: 
     demo: 
     slides: 
@@ -93,11 +93,11 @@ projects:
   - title: Badminton Swing Posture Analysis and Visualization using Deep Learning-based Encoder-Decoder Architecture
     system-name: 
     gif: assets/img/KCC2024.png
-    conference: KCC 2024 (Honorable Mention Award 🏆 in Undergraduate Division)
+    conference: KCC 2024 (Best Paper Award 🏆 in Undergraduate Students)
     conference-web: 
     status: 
     authors: Junhyuk Jang, <u>Minwoo Seong</u>, SeungJun Kim
-    pdf: 
+    pdf: https://www.researchgate.net/profile/Minwoo-Seong/publication/383872848_Badminton_swing_posture_analysis_and_visualization_using_deep_learning-based_encoder-decoder_architecture/links/66defe14b1606e24c21cd2f6/Badminton-swing-posture-analysis-and-visualization-using-deep-learning-based-encoder-decoder-architecture.pdf
     code: 
     demo: 
     slides: 
