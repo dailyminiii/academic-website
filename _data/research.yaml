@@ -14,7 +14,7 @@ categories:
 
 projects:
 
-  - title: Adaptive Walker: User Intention and Environmentally Aware Intelligent Walker with High-resolution Tactile and IMU Sensor
+  - title: Adaptive Walker User Intention and Environmentally Aware Intelligent Walker with High-resolution Tactile and IMU Sensor
     system-name: 
     gif: assets/img/AdaptiveWalker.png
     conference: ICRA 2025
@@ -29,7 +29,7 @@ projects:
     tag: AutonomousVehicle
     category: AutonomousVehicle
 
-  - title: Effect of user perspective designs on XR-based motion guidance systems for real-world motor skills.
+  - title: Effect of user perspective designs on XR-based motion guidance systems for real-world motor skills
     system-name: 
     gif: assets/img/TaiChi MotionGuidance.png
     conference: HCI Korea 2025
