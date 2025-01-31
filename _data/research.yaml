@@ -14,6 +14,36 @@ categories:
 
 projects:
 
+  - title: Adaptive Walker: User Intention and Environmentally Aware Intelligent Walker with High-resolution Tactile and IMU Sensor
+    system-name: 
+    gif: assets/img/AdaptiveWalker.png
+    conference: ICRA 2025
+    conference-web: 
+    status: 
+    authors: Yunho Choi, Seokhyun Hwang, JaeYoung Moon, Hosu Lee, Dohyeon Yeo, <u>Minwoo Seong</u>, Yiyue Luo, SeungJun Kim, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
+    pdf: 
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: AutonomousVehicle
+    category: AutonomousVehicle
+
+  - title: Effect of user perspective designs on XR-based motion guidance systems for real-world motor skills.
+    system-name: 
+    gif: assets/img/TaiChi MotionGuidance.png
+    conference: HCI Korea 2025
+    conference-web: 
+    status: 
+    authors: Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: 
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: SportsHCI
+    category: SportsHCI
+
   - title: Adaptive In-Vehicle Virtual Reality for Reducing Motion Sickness Manipulating Passenger Posture During Driving Events
     system-name: 
     gif: assets/img/In-Vehicle.png
