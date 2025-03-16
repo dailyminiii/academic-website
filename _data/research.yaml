@@ -14,6 +14,21 @@ categories:
 
 projects:
 
+  - title: LEGOLAS Learning & Enhancing Golf Skills through LLM-Augmented System
+    system-name: 
+    gif: assets/img/LEGOLAS.gif
+    conference: CHI LBW 2025 (Accepted)
+    conference-web: 
+    status: 
+    authors: Kangbeen Ko, Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: 
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: SportsHCI
+    category: SportsHCI
+
   - title: Adaptive Walker User Intention and Environmentally Aware Intelligent Walker with High-resolution Tactile and IMU Sensor
     system-name: 
     gif: assets/img/AdaptiveWalker.png
