@@ -15,18 +15,18 @@ youtube: https://www.youtube.com/channel/UCUCpgBdsKzO29vFWZjNM-7Q
 instagram: https://www.instagram.com/daily_miniii/
 
 # about me
-first-paragraph: I am a Ph.D. candidate at the <a href="https://sites.google.com/view/gist-hcis-lab" target="_blank" rel="noopener">Human-Centered Intelligent Systems (HCIS) Lab</a> affiliated with the <a href="https://www.gist.ac.kr/kr/main.html" target="_blank" rel="noopener">Gwangju Institute of Science and Technology (GIST) at Gwangju, South Korea</a>, supervised by <a href="https://scholar.google.co.kr/citations?user=AjfRd6wAAAAJ&hl=ko" target="_blank" rel="noopener">Dr. SeungJun Kim</a>.
+first-paragraph: I am a Ph.D. candidate at the <a href="https://sites.google.com/view/gist-hcis-lab" target="_blank" rel="noopener">Human-Centered Intelligent Systems (HCIS) Lab</a> affiliated with the <a href="https://www.gist.ac.kr/kr/main.html" target="_blank" rel="noopener">Gwangju Institute of Science and Technology (GIST) at Gwangju, South Korea</a>, advised by <a href="https://scholar.google.co.kr/citations?user=AjfRd6wAAAAJ&hl=ko" target="_blank" rel="noopener">Dr. SeungJun Kim</a>.
 
-research-introduction: I am excited about creating Artificial Intelligence (AI) systems that focus on people and expanding how we experience music and sports with Virtual Reality (VR) and Augmented Reality (AR). A big part of my work is about using wearable sensors to collect a lot of data from people. This data is crucial for the AI systems I develop, which help give feedback to users, both in the real world and in virtual spaces. I aim to make the boundaries between technology and human experiences less distinct, leading to new and captivating ways for people to interact with technology.
+research-introduction: I design interactive AI systems that respond to the human body and behavior in real time. My work combines multimodal sensing—including muscle activity, movement, gaze, and physiological states—with adaptive feedback to support learning, engagement, and decision-making. I apply this approach across domains such as sports training, accessibility for children with Autism Spectrum Disorder, and human-vehicle interaction in autonomous driving. In these contexts, where expert instruction or hands-on experience may be limited, I aim to build systems that lower barriers to learning and promote embodied, inclusive, and personalized interaction. Looking ahead, I plan to establish the Smart Multimodal Wearable (SMW) Lab to continue exploring how sensing, feedback, and human-centered AI can expand opportunities for meaningful learning and support.
 
 research-interests:
   - field: SportsHCI
-    subfields: Racket sports training, AI-based motion guidance generation
+    subfields: AI-guided motion and muscle feedback, Racket sports coaching systems, Sensor-based motor learning
 
   - field: A11y
-    subfields: Engagement analysis of Autism Spectrum Disorder, Deep-learning-based intervention system design
+    subfields: Engagement modeling for Autism Spectrum Disorder, Deep learning for behavioral intervention
   
   - field: Autonomous Vehicle
-    subfields: XR-based AV simulation, Risky simulation
+    subfields: Driver behavior sensing and modeling, Risk-aware autonomous driving simulation, XR-based in-vehicle interaction design
 
   - field: <u>You can download my CV <hightlight><a href="https://drive.google.com/file/d/1uZwP71LCJTdu6NXbo4TaMaeR3IAWUoEp/view?usp=sharing" target="_blank" rel="noopener">here</a></hightlight></u>
