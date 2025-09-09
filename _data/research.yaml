@@ -16,11 +16,11 @@ projects:
 
   - title: ReD Shoes Actuated Footwear for Multisensory Redirected Walking in Virtual Reality
     system-name: 
-    gif: assets/img/LEGOLAS.gif
+    gif: assets/img/Redshoes.png
     conference: Virtual Reality (Accepted)
     conference-web: 
     status: 
-    authors: Ataya Aya, Elsharkawy Ahmed, Jieun Lee, Seokghyun Hwang, <u>Minwoo Seong</u>, SeungJun Kim
+    authors: Ataya Aya, Elsharkawy Ahmed, Jieun Lee, Seokhyun Hwang, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: 
     code: 
     demo: 
@@ -31,12 +31,27 @@ projects:
 
   - title: You’re the One Whom I’m Talking To The Role of Contextual External Human-Machine Interfaces in Multi-Road User Conflict Scenarios 
     system-name: 
-    gif: assets/img/LEGOLAS.gif
+    gif: assets/img/MultiUser.gif
     conference: IMWUT 2025
     conference-web: 
     status: 
     authors: Yumin Kang, Jeongju Park, Seokhyun Hwang, <u>Minwoo Seong</u>, Gwangbin Kim, SeungJun Kim
     pdf: https://dl.acm.org/doi/10.1145/3749473
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: AutonomousVehicle
+    category: AutonomousVehicle
+
+  - title: Adaptive Walker User Intention and Environmentally Aware Intelligent Walker with High-resolution Tactile and IMU Sensor
+    system-name: 
+    gif: assets/img/AdaptiveWalker.png
+    conference: ICRA 2025
+    conference-web: 
+    status: 
+    authors: Yunho Choi, Seokhyun Hwang, JaeYoung Moon, Hosu Lee, Dohyeon Yeo, <u>Minwoo Seong</u>, Yiyue Luo, SeungJun Kim, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
+    pdf: https://ieeexplore.ieee.org/abstract/document/11127691/
     code: 
     demo: 
     slides: 
@@ -59,25 +74,12 @@ projects:
     tag: SportsHCI
     category: SportsHCI
 
-  - title: Adaptive Walker User Intention and Environmentally Aware Intelligent Walker with High-resolution Tactile and IMU Sensor
-    system-name: 
-    gif: assets/img/AdaptiveWalker.png
-    conference: ICRA 2025
-    conference-web: 
-    status: 
-    authors: Yunho Choi, Seokhyun Hwang, JaeYoung Moon, Hosu Lee, Dohyeon Yeo, <u>Minwoo Seong</u>, Yiyue Luo, SeungJun Kim, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
-    pdf: https://ieeexplore.ieee.org/abstract/document/11127691/
-    code: 
-    demo: 
-    slides: 
-    talk: 
-    tag: AutonomousVehicle
-    category: AutonomousVehicle
+
 
   - title: Effect of user perspective designs on XR-based motion guidance systems for real-world motor skills
     system-name: 
     gif: assets/img/TaiChi MotionGuidance.png
-    conference: HCI Korea 2025 (Accepted)
+    conference: HCI Korea 2025
     conference-web: 
     status: 
     authors: Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
