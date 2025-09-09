@@ -14,10 +14,40 @@ categories:
 
 projects:
 
+  - title: ReD Shoes Actuated Footwear for Multisensory Redirected Walking in Virtual Reality
+    system-name: 
+    gif: assets/img/LEGOLAS.gif
+    conference: Virtual Reality (Accepted)
+    conference-web: 
+    status: 
+    authors: Ataya Aya, Elsharkawy Ahmed, Jieun Lee, Seokghyun Hwang, <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: 
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: SportsHCI
+    category: SportsHCI
+
+  - title: You’re the One Whom I’m Talking To The Role of Contextual External Human-Machine Interfaces in Multi-Road User Conflict Scenarios 
+    system-name: 
+    gif: assets/img/LEGOLAS.gif
+    conference: IMWUT 2025
+    conference-web: 
+    status: 
+    authors: Yumin Kang, Jeongju Park, Seokhyun Hwang, <u>Minwoo Seong</u>, Gwangbin Kim, SeungJun Kim
+    pdf: https://dl.acm.org/doi/10.1145/3749473
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: AutonomousVehicle
+    category: AutonomousVehicle
+
   - title: LEGOLAS Learning & Enhancing Golf Skills through LLM-Augmented System
     system-name: 
     gif: assets/img/LEGOLAS.gif
-    conference: CHI LBW 2025 (Accepted)
+    conference: CHI LBW 2025
     conference-web: 
     status: 
     authors: Kangbeen Ko, Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
@@ -32,11 +62,11 @@ projects:
   - title: Adaptive Walker User Intention and Environmentally Aware Intelligent Walker with High-resolution Tactile and IMU Sensor
     system-name: 
     gif: assets/img/AdaptiveWalker.png
-    conference: ICRA 2025 (Accepted)
+    conference: ICRA 2025
     conference-web: 
     status: 
     authors: Yunho Choi, Seokhyun Hwang, JaeYoung Moon, Hosu Lee, Dohyeon Yeo, <u>Minwoo Seong</u>, Yiyue Luo, SeungJun Kim, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
-    pdf: 
+    pdf: https://ieeexplore.ieee.org/abstract/document/11127691/
     code: 
     demo: 
     slides: 
