@@ -17,11 +17,11 @@ projects:
   - title: ReD Shoes Actuated Footwear for Multisensory Redirected Walking in Virtual Reality
     system-name: 
     gif: assets/img/Redshoes.png
-    conference: Virtual Reality (Accepted)
+    conference: Virtual Reality
     conference-web: 
     status: 
-    authors: Ataya Aya, Elsharkawy Ahmed, Jieun Lee, Seokhyun Hwang, <u>Minwoo Seong</u>, SeungJun Kim
-    pdf: 
+    authors: Ataya Aya*, Elsharkawy Ahmed*, Jieun Lee, Seokhyun Hwang, <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: https://link.springer.com/article/10.1007/s10055-025-01234-w
     code: 
     demo: 
     slides: 
