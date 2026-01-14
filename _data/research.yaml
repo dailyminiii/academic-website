@@ -14,6 +14,21 @@ categories:
 
 projects:
 
+  - title: Design and Iterative Development of Serious Exergames for Children with Autism Spectrum Disorder A Formative Multi-Case Pilot Study
+    system-name: 
+    gif: assets/img/JMIR.png
+    conference: JMIR Serious Games
+    conference-web: 
+    status: 
+    authors: Won Kim, <u>Minwoo Seong</u>, SeungJun Kim
+    pdf: https://preprints.jmir.org/preprint/77727/accepted
+    code: 
+    demo: 
+    slides: 
+    talk: 
+    tag: A11y
+    category: A11y
+
   - title: ReD Shoes Actuated Footwear for Multisensory Redirected Walking in Virtual Reality
     system-name: 
     gif: assets/img/Redshoes.png
