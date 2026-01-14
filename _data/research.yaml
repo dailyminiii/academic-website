@@ -18,7 +18,7 @@ projects:
     system-name: 
     gif: assets/img/JMIR.png
     conference: JMIR Serious Games
-    conference-web: 
+    conference-web:  
     status: 
     authors: Won Kim, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://preprints.jmir.org/preprint/77727/accepted
