@@ -1,0 +1,32 @@
+# basic information
+name: Minwoo Seong
+profile-pic: assets/img/profile3.png
+
+# emoji indicator
+emoji: ✝
+desc-emoji: Christian
+
+
+# social links
+scholar: https://scholar.google.co.kr/citations?user=MYVwH3MAAAAJ&hl=ko
+github: https://github.com/dailyminiii
+orcid: https://orcid.org/0009-0007-5847-9666
+youtube: https://www.youtube.com/channel/UCUCpgBdsKzO29vFWZjNM-7Q
+instagram: https://www.instagram.com/daily_miniii/
+
+# about me
+first-paragraph: I am a Ph.D. candidate at the <a href="https://sites.google.com/view/gist-hcis-lab" target="_blank" rel="noopener">Human-Centered Intelligent Systems (HCIS) Lab</a> affiliated with the <a href="https://www.gist.ac.kr/kr/main.html" target="_blank" rel="noopener">Gwangju Institute of Science and Technology (GIST) at Gwangju, South Korea</a>, advised by <a href="https://scholar.google.co.kr/citations?user=AjfRd6wAAAAJ&hl=ko" target="_blank" rel="noopener">Dr. SeungJun Kim</a>.
+
+research-introduction: I design interactive AI systems that respond to the human body and behavior in real time. My work combines multimodal sensing—including muscle activity, movement, gaze, and physiological states—with adaptive feedback to support learning, engagement, and decision-making. I apply this approach across domains such as sports training, accessibility for children with Autism Spectrum Disorder, and human-vehicle interaction in autonomous driving. In these contexts, where expert instruction or hands-on experience may be limited, I aim to build systems that lower barriers to learning and promote embodied, inclusive, and personalized interaction. While it is just a dream for now, I hope to one day launch the SensoriMotor Wearable (SMW) Lab to continue studying how sensing and feedback technologies can serve diverse learners through embodied, adaptive interaction.
+
+research-interests:
+  - field: SportsHCI
+    subfields: AI-guided motion and muscle feedback, Racket sports coaching systems, Sensor-based motor learning
+
+  - field: A11y
+    subfields: Engagement modeling for Autism Spectrum Disorder, Deep learning for behavioral intervention
+  
+  - field: Autonomous Vehicle
+    subfields: Driver behavior sensing and modeling, Risk-aware autonomous driving simulation, XR-based in-vehicle interaction design
+
+  - field: <u>You can download my CV <hightlight><a href="https://drive.google.com/file/d/1uZwP71LCJTdu6NXbo4TaMaeR3IAWUoEp/view?usp=sharing" target="_blank" rel="noopener">here</a></hightlight></u>

@@ -1,0 +1,22 @@
+<div class="project" data-filter="{{ project.category }}">
+    <div class="row mb-4">
+        <div class="col-sm-4">
+            <img width="100%" height="auto" class="w-full rounded-lg" src="{{ project.gif }}">
+        </div>
+        <div class="col-sm-8">
+            {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
+            <b>{{ project.title }}</b>
+            <br>
+            <i>{{ project.conference }}</i> 
+            {% if project.status %} <b style = "color: #e74d3c">[{{ project.status }}]</b> {% endif %}
+            <br>
+            {{ project.authors }}
+            <br>
+            {% if project.pdf %} <a href="{{ project.pdf }}" target="_blank" rel="noopener">[PDF]</a> {% else %} <a href="">[PDF]</a> {% endif %}
+            {% if project.code %} | <a href="{{ project.code }}" target="_blank" rel="noopener">[CODE]</a> {% endif %}
+            {% if project.demo %} | <a href="{{ project.demo }}" target="_blank" rel="noopener">[DEMO]</a> {% endif %}
+            {% if project.slides %} | <a href="{{ project.slides }}" target="_blank" rel="noopener">[SLIDES]</a> {% endif %}
+            {% if project.talk %} | <a href="{{ project.talk }}" target="_blank" rel="noopener">[TALK]</a> {% endif %}
+        </div>                       
+    </div>
+</div>
