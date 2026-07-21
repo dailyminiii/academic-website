@@ -1,19 +1,30 @@
-contribution_filters:
+authorship_filters:
   - label: All
     value: all
-  - label: First / Co-first author
+    query: all
+  - label: Lead author
     value: first
+    query: lead
   - label: Co-author
     value: collaborative
+    query: co-author
 
 theme_filters:
   - label: All
     value: all
-  - label: Human Skill Learning
-    value: human-skill-learning
-  - label: Multimodal Sensing
-    value: multimodal-sensing
-  - label: Accessibility & Mobility
-    value: accessibility-mobility
-  - label: XR & In-Vehicle Interaction
-    value: xr-in-vehicle
+    query: all
+  - label: Physical Skill Learning
+    value: physical-skill-learning
+    query: physical-skill-learning
+  - label: Multimodal Sensing & Human Modeling
+    value: multimodal-human-modeling
+    query: multimodal-sensing-human-modeling
+  - label: Adaptive & Embodied AI
+    value: adaptive-embodied-ai
+    query: adaptive-embodied-ai
+  - label: Accessibility & Assistive Systems
+    value: accessibility-assistive-systems
+    query: accessibility-assistive-systems
+  - label: XR & Mobility Interaction
+    value: xr-mobility-interaction
+    query: xr-mobility-interaction
