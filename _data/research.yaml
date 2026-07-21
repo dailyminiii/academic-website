@@ -17,7 +17,7 @@ projects:
   - title: "IMPACT: Exploring Integrated Muscle-Posture AR Coaching in Static-Stance Badminton Training"
     system-name: IMPACT
     gif: assets/img/IMPACT.png
-    conference: International Journal of Human-Computer Studies
+    conference: SSRN Preprint
     conference-web:
     status: under-review
     year: 2026
@@ -30,6 +30,7 @@ projects:
     abstract_short: An AR coaching system that integrates expert-aligned motion replay with synchronized EMG feedback for static-stance badminton practice.
     authors: <u>Minwoo Seong</u>, Minwoo Oh, Seongjun Kang, Yumin Kang, Gwangbin Kim, Hyunjin Choi, Joseph DelPreto, Daniela Rus, SeungJun Kim
     pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6076155
+    pdf_label: Preprint
     code:
     demo:
     slides:
@@ -38,7 +39,7 @@ projects:
   - title: "Tell Me When It Feels Right: LLM-Mediated Challenge Regulation for Physical Self-Training in Badminton"
     system-name: Tell Me When It Feels Right
     gif: assets/img/TellMe.png
-    conference: International Journal of Human-Computer Studies
+    conference: SSRN Preprint
     conference-web:
     status: under-review
     year: 2026
@@ -51,6 +52,7 @@ projects:
     abstract_short: An LLM-mediated coaching system that interprets physiological, subjective, and textual signals to regulate challenge in badminton self-training.
     authors: <u>Minwoo Seong</u>, Hyunjin Choi, Kangbeen Ko, Seongjun Kang, Semoo Shin, Joseph DelPreto, Daniela Rus, SeungJun Kim
     pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6806926
+    pdf_label: Preprint
     code:
     demo:
     slides:
