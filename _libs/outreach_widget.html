@@ -1,11 +1,12 @@
-<article class="project-card">
+<article class="project-item">
   <div class="project-image">
-    <img src="{{ mini_project.thumbnail | relative_url }}" alt="{{ mini_project.alt }}" width="960" height="600" loading="lazy">
+    <img src="{{ mini_project.thumbnail | relative_url }}" alt="{{ mini_project.alt }}" width="720" height="450" loading="lazy">
   </div>
   <div class="project-copy">
     <div class="project-meta">
+      <span>0{{ forloop.index }}</span>
       <span>{{ mini_project.type }}</span>
-      <span>{{ mini_project.time }}</span>
+      <time>{{ mini_project.time }}</time>
     </div>
     <h3>{{ mini_project.title }}</h3>
     <p>{{ mini_project.description }}</p>

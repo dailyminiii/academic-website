@@ -1,37 +1,27 @@
-<section class="section" id="extras" aria-labelledby="extras-heading">
-  <div class="shell">
-    <div class="section-heading">
-      <div>
-        <p class="section-kicker">Beyond the lab</p>
-        <h2 id="extras-heading">Music, images, and the places between.</h2>
-      </div>
-      <p>Creative work and moments outside research are part of how I think about interaction.</p>
+<section class="section about-section" id="about" aria-labelledby="about-heading">
+  <div class="shell about-grid">
+    <div class="section-intro">
+      <p class="eyebrow">About</p>
+      <h2 id="about-heading">Research, making, and music.</h2>
+      <p>I am a Ph.D. candidate at GIST interested in the moments when intelligent systems become tangible, embodied, and genuinely helpful to people.</p>
     </div>
 
-    <div class="extras-grid">
-      <a class="media-card media-card-image" href="{{ site.data.about.youtube }}" target="_blank" rel="noopener">
-        <img src="{{ '/assets/img/Piano8.png' | relative_url }}" alt="Piano performance still" width="800" height="520" loading="lazy">
-        <span class="media-overlay">
-          <span class="card-meta">Music & performance</span>
-          <strong>Watch on YouTube</strong>
-        </span>
-      </a>
-      <a class="media-card media-card-color media-card-sage" href="{{ site.data.about.instagram }}" target="_blank" rel="noopener">
-        <span class="media-number" aria-hidden="true">01</span>
-        <span>
-          <span class="card-meta">Photography & travel</span>
-          <strong>Field notes in images</strong>
-          <span>Instagram <span aria-hidden="true">↗</span></span>
-        </span>
-      </a>
-      <a class="media-card media-card-color media-card-ink" href="{{ site.data.about.github }}" target="_blank" rel="noopener">
-        <span class="media-number" aria-hidden="true">02</span>
-        <span>
-          <span class="card-meta">Open work</span>
-          <strong>Datasets and prototypes</strong>
-          <span>GitHub <span aria-hidden="true">↗</span></span>
-        </span>
-      </a>
+    <div class="about-notes">
+      <div class="about-note">
+        <span>Open research</span>
+        <p>I share publications, datasets, and prototypes whenever possible.</p>
+        <a href="{{ site.data.about.github }}" target="_blank" rel="noopener">Explore GitHub ↗</a>
+      </div>
+      <div class="about-note">
+        <span>Creative practice</span>
+        <p>Piano performance and creative technology shape how I think about timing, feedback, and interaction.</p>
+        <a href="{{ site.data.about.youtube }}" target="_blank" rel="noopener">Watch performances ↗</a>
+      </div>
+      <div class="about-note">
+        <span>Let’s connect</span>
+        <p>For research questions, collaboration, or a thoughtful conversation, feel free to reach out.</p>
+        <a href="mailto:{{ site.data.about.email }}">{{ site.data.about.email }} ↗</a>
+      </div>
     </div>
   </div>
 </section>

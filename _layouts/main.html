@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f5f7f3">
+    <meta name="theme-color" content="#fbfbfa">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.title }}">
     <meta property="og:title" content="{{ site.title }} | {{ site.info }}">
@@ -13,6 +13,15 @@
     <title>{{ site.title }} | {{ site.info }}</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     <link rel="icon" type="image/png" href="{{ site.icon-pic | relative_url }}">
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = savedTheme || preferredTheme;
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    </script>
     <link rel="stylesheet" href="{{ '/styles/styles.css' | relative_url }}">
   </head>
   <body>
@@ -20,34 +29,38 @@
 
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href="#about" aria-label="Minwoo Seong, home">
-          <span class="brand-mark" aria-hidden="true">MS</span>
-          <span class="brand-copy">
-            <strong>{{ site.title }}</strong>
-            <small>{{ site.info }}</small>
-          </span>
+        <a class="brand" href="#home" aria-label="Minwoo Seong, home">
+          <span class="brand-symbol" aria-hidden="true">✦</span>
+          <span>{{ site.title }}</span>
         </a>
 
-        <nav class="desktop-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#projects">Projects</a>
-          <a class="nav-cta" href="#contact">Contact</a>
-        </nav>
+        <div class="header-actions">
+          <nav class="desktop-nav" aria-label="Primary navigation">
+            <a href="#home">Home</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+          </nav>
 
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation">
-          <span class="sr-only">Open navigation</span>
-          <span></span><span></span><span></span>
-        </button>
+          <button class="theme-toggle" type="button" aria-label="Switch color theme">
+            <span class="theme-icon theme-icon-light" aria-hidden="true">☼</span>
+            <span class="theme-icon theme-icon-dark" aria-hidden="true">◐</span>
+          </button>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation">
+            <span class="sr-only">Open navigation</span>
+            <span></span><span></span>
+          </button>
+        </div>
       </div>
 
       <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden>
-        <a href="#about">About</a>
+        <a href="#home">Home</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
       </nav>
     </header>
 

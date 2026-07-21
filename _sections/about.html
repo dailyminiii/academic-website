@@ -1,58 +1,59 @@
-<section class="hero section" id="about" aria-labelledby="hero-title">
-  <div class="shell">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">{{ site.data.about.role }}</p>
-        <h1 id="hero-title">{{ site.data.about.headline }}</h1>
-        <p class="hero-summary">{{ site.data.about.summary }}</p>
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="shell hero-grid">
+    <div class="hero-copy">
+      <p class="hero-role">{{ site.data.about.role }}</p>
+      <h1 id="hero-title">{{ site.data.about.name }}</h1>
+      <p class="hero-intro">{{ site.data.about.intro }}</p>
+      <p class="hero-summary">{{ site.data.about.summary }}</p>
 
-        <p class="affiliation-line">
-          <a href="{{ site.data.about.lab_url }}" target="_blank" rel="noopener">{{ site.data.about.lab_name }}</a>
-          <span aria-hidden="true">·</span>
-          <a href="{{ site.data.about.institution_url }}" target="_blank" rel="noopener">GIST</a>
-          <span aria-hidden="true">·</span>
-          {{ site.data.about.location }}
-        </p>
+      <p class="affiliation-line">
+        <a href="{{ site.data.about.lab_url }}" target="_blank" rel="noopener">{{ site.data.about.lab_name }}</a>,
+        <a href="{{ site.data.about.institution_url }}" target="_blank" rel="noopener">GIST</a><br>
+        Advised by <a href="{{ site.data.about.advisor_url }}" target="_blank" rel="noopener">Prof. {{ site.data.about.advisor_name }}</a>
+      </p>
 
-        <ul class="keyword-list" aria-label="Research keywords">
-          {% for keyword in site.data.about.keywords %}
-            <li>{{ keyword }}</li>
-          {% endfor %}
-        </ul>
-
-        <div class="button-group">
-          <a class="button button-primary" href="{{ site.data.about.cv }}" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="mailto:{{ site.data.about.email }}">Email me</a>
-          <a class="text-link" href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
-        </div>
+      <div class="profile-links" aria-label="Profile links">
+        <a href="{{ site.data.about.cv }}" target="_blank" rel="noopener">CV ↗</a>
+        <a href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="{{ site.data.about.github }}" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="{{ site.data.about.orcid }}" target="_blank" rel="noopener">ORCID ↗</a>
+        <a href="mailto:{{ site.data.about.email }}">Email ↗</a>
       </div>
-
-      <figure class="profile-card">
-        <div class="profile-frame">
-          <img src="{{ site.data.about.profile_pic | relative_url }}" alt="Portrait of {{ site.data.about.name }}" width="720" height="900" fetchpriority="high">
-        </div>
-        <figcaption>
-          <span class="status-dot" aria-hidden="true"></span>
-          Advised by <a href="{{ site.data.about.advisor_url }}" target="_blank" rel="noopener">Prof. {{ site.data.about.advisor_name }}</a>
-        </figcaption>
-      </figure>
     </div>
 
-    <div class="featured-block" aria-labelledby="featured-heading">
-      <div class="featured-label" id="featured-heading">Featured work</div>
-      <div class="featured-grid">
-        {% for work in site.data.about.featured_work %}
-          <a class="featured-card" href="{{ work.url }}" target="_blank" rel="noopener">
-            <img src="{{ work.image | relative_url }}" alt="{{ work.image_alt }}" width="560" height="320">
-            <span class="featured-copy">
-              <span class="card-meta">{{ work.venue }}</span>
-              <strong>{{ work.title }}</strong>
-              <span>{{ work.description }}</span>
-            </span>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </a>
+    <figure class="portrait">
+      <img src="{{ site.data.about.profile_pic | relative_url }}" alt="Portrait of {{ site.data.about.name }}" width="640" height="800" fetchpriority="high">
+    </figure>
+  </div>
+
+  <div class="shell academic-snapshot" aria-label="Academic overview">
+    <div class="snapshot-heading">
+      <p class="eyebrow">Academic profile</p>
+      <p>Researching intelligent interfaces that close the loop between human signals and useful feedback.</p>
+    </div>
+
+    <div class="snapshot-block">
+      <h2>Education</h2>
+      <div class="timeline-list">
+        {% for item in site.data.about.education %}
+          <div class="timeline-item">
+            <div>
+              <strong>{{ item.degree }}</strong>
+              <span>{{ item.school }}</span>
+            </div>
+            <time>{{ item.period }}</time>
+          </div>
         {% endfor %}
       </div>
+    </div>
+
+    <div class="snapshot-block">
+      <h2>Research interests</h2>
+      <ul class="interest-list">
+        {% for keyword in site.data.about.keywords %}
+          <li>{{ keyword }}</li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>

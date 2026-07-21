@@ -1,50 +1,91 @@
-<section class="section" id="research" aria-labelledby="research-heading">
+<section class="section research-section" id="research" aria-labelledby="research-heading">
   <div class="shell">
-    <div class="section-heading">
-      <div>
-        <p class="section-kicker">Research</p>
-        <h2 id="research-heading">Sensing the body, shaping better feedback.</h2>
-      </div>
-      <p>I study how multimodal signals—from muscle activity and movement to gaze and physiology—can make interactive systems more adaptive, inclusive, and useful.</p>
+    <div class="section-intro">
+      <p class="eyebrow">Research agenda</p>
+      <h2 id="research-heading">From human signals to adaptive interaction.</h2>
+      <p>I investigate how interactive systems can sense people, interpret context, and respond with feedback that is timely, understandable, and useful.</p>
     </div>
 
-    <div class="research-grid">
-      {% for area in site.data.about.research_areas %}
-        <article class="research-card">
-          <div class="card-index">0{{ forloop.index }}</div>
-          <p class="card-meta">{{ area.label }}</p>
-          <h3>{{ area.title }}</h3>
-          <p>{{ area.description }}</p>
-        </article>
-      {% endfor %}
+    <div class="research-layout">
+      <ol class="research-list">
+        {% for area in site.data.about.research_areas %}
+          <li>
+            <span class="research-number">0{{ forloop.index }}</span>
+            <div>
+              <p class="research-label">{{ area.label }}</p>
+              <h3>{{ area.title }}</h3>
+              <p>{{ area.description }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+
+      <aside class="research-loop" aria-label="Adaptive interaction research loop">
+        <p class="loop-title">Adaptive interaction loop</p>
+        <div class="loop-step">
+          <span>01</span>
+          <strong>Sense</strong>
+          <p>Movement, physiology, gaze, and context</p>
+        </div>
+        <div class="loop-arrow" aria-hidden="true">↓</div>
+        <div class="loop-step">
+          <span>02</span>
+          <strong>Understand</strong>
+          <p>Human-centered models and interpretable AI</p>
+        </div>
+        <div class="loop-arrow" aria-hidden="true">↓</div>
+        <div class="loop-step">
+          <span>03</span>
+          <strong>Adapt</strong>
+          <p>Personalized feedback and immersive guidance</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="featured-research" aria-labelledby="featured-research-heading">
+      <div class="subsection-heading">
+        <h3 id="featured-research-heading">Featured research</h3>
+        <span>Selected datasets and systems</span>
+      </div>
+      <div class="featured-research-grid">
+        {% for work in site.data.about.featured_work %}
+          <a class="featured-paper" href="{{ work.url }}" target="_blank" rel="noopener">
+            <div class="featured-paper-image">
+              <img src="{{ work.image | relative_url }}" alt="{{ work.image_alt }}" width="640" height="360" loading="lazy">
+            </div>
+            <div>
+              <span>{{ work.venue }}</span>
+              <h4>{{ work.title }}</h4>
+              <p>{{ work.description }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="publications-block" id="publications" aria-labelledby="publications-heading">
-      <div class="section-heading section-heading-compact">
-        <div>
-          <p class="section-kicker">Selected publications</p>
-          <h2 id="publications-heading">Recent work</h2>
-        </div>
-        <a class="text-link" href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Full profile on Google Scholar <span aria-hidden="true">↗</span></a>
+      <div class="section-intro section-intro-publications">
+        <p class="eyebrow">Publications</p>
+        <h2 id="publications-heading">Research outputs</h2>
+        <p>Peer-reviewed work across human-computer interaction, ubiquitous computing, robotics, and intelligent systems.</p>
       </div>
 
-      <div class="publication-list">
-        {% for project in site.data.research.projects limit:5 %}
+      <div class="publication-toolbar">
+        <div class="publication-filters" role="group" aria-label="Filter publications">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          {% for category in site.data.research.categories %}
+            <button class="filter-button" type="button" data-filter="{{ category.data-filter }}" aria-pressed="false">{{ category.category-name }}</button>
+          {% endfor %}
+        </div>
+        <a class="scholar-link" href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>
+      </div>
+
+      <div class="publication-list" aria-live="polite">
+        {% for project in site.data.research.projects %}
           {% include_relative _libs/research_widget.html %}
         {% endfor %}
       </div>
-
-      <details class="publication-archive">
-        <summary>
-          <span>View all publications</span>
-          <span class="summary-icon" aria-hidden="true">+</span>
-        </summary>
-        <div class="publication-list publication-list-archive">
-          {% for project in site.data.research.projects offset:5 %}
-            {% include_relative _libs/research_widget.html %}
-          {% endfor %}
-        </div>
-      </details>
+      <p class="no-publications" hidden>No publications in this category.</p>
     </div>
   </div>
 </section>
