@@ -1,30 +1,79 @@
 ---
 title: "Publications"
 permalink: /publications/
+description: "Selected and complete publications by Minwoo Seong, organized by contribution, research theme, and status."
 author_profile: true
 ---
 
-Peer-reviewed work across human-computer interaction, ubiquitous computing, robotics, accessibility, and intelligent systems. For citation counts and the latest updates, visit [Google Scholar]({{ site.data.about.scholar }}).
+My work spans human–AI skill learning, multimodal sensing, adaptive interaction, accessibility, robotics, and immersive systems. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
 
-<div class="publication-list">
-{% for project in site.data.research.projects %}
-  {% assign pub_number = site.data.research.projects.size | minus: forloop.index0 %}
-  <article class="publication-entry publication-entry--with-image">
-    <div class="publication-thumb">
-      <img src="{{ project.gif | relative_url }}" alt="Visual overview for {{ project.title }}" loading="lazy">
+{% assign sorted_projects = site.data.research.projects | sort: "year" | reverse %}
+<div class="publication-tabs" data-publication-tabs>
+  <div class="publication-tablist" role="tablist" aria-label="Publication views">
+    <button id="publication-tab-selected" class="publication-tab" type="button" role="tab" aria-selected="true" aria-controls="publication-panel-selected">Selected Publications</button>
+    <button id="publication-tab-all" class="publication-tab" type="button" role="tab" aria-selected="false" aria-controls="publication-panel-all" tabindex="-1">All Publications</button>
+  </div>
+
+  <section id="publication-panel-selected" class="publication-section publication-tabpanel" role="tabpanel" aria-labelledby="publication-tab-selected">
+    <div class="section-heading">
+      <p class="section-eyebrow">Manually curated</p>
+      <h2>Selected Publications</h2>
+      <p>First- and co-first-author research, work central to the current research program, and selected collaborative outcomes.</p>
     </div>
-    <div class="publication-body">
-      <p class="publication-venue">[{{ pub_number }}] {{ project.conference }} · {{ project.category }}</p>
-      <h2>{{ project.title }}</h2>
-      <p class="publication-authors">{{ project.authors }}</p>
-      <div class="publication-actions">
-        {% if project.pdf %}<a class="paper-link" href="{{ project.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-        {% if project.code %}<a class="paper-link" href="{{ project.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-        {% if project.demo %}<a class="paper-link" href="{{ project.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
-        {% if project.slides %}<a class="paper-link" href="{{ project.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
-        {% if project.talk %}<a class="paper-link" href="{{ project.talk }}" target="_blank" rel="noopener">Talk</a>{% endif %}
+    <div class="publication-list publication-list--selected">
+      {% for project in sorted_projects %}
+        {% if project.featured == true %}
+          {% if project.status == "published" or project.status == "accepted" %}
+            {% include publication-card.html project=project show_abstract=true %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="publication-panel-all" class="publication-section publication-tabpanel" role="tabpanel" aria-labelledby="publication-tab-all" hidden>
+    <div class="section-heading">
+      <p class="section-eyebrow">Complete record</p>
+      <h2>All Publications</h2>
+      <p>Search and contribution or research-theme filters work together.</p>
+    </div>
+
+    <form class="publication-controls" data-publication-controls role="search" aria-label="Filter publications" onsubmit="return false;">
+      <label class="publication-search" for="publication-search">
+        <span>Search publications</span>
+        <input id="publication-search" type="search" placeholder="Title, author, venue, year, or research tag" autocomplete="off">
+      </label>
+
+      <fieldset class="filter-group" data-filter-group="contribution">
+        <legend>Contribution</legend>
+        <div class="filter-buttons">
+          {% for filter in site.data.publication_metadata.contribution_filters %}
+            <button type="button" class="filter-button" data-filter-value="{{ filter.value }}" aria-pressed="{% if filter.value == 'all' %}true{% else %}false{% endif %}">{{ filter.label }}</button>
+          {% endfor %}
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-group" data-filter-group="theme">
+        <legend>Research theme</legend>
+        <div class="filter-buttons">
+          {% for filter in site.data.publication_metadata.theme_filters %}
+            <button type="button" class="filter-button" data-filter-value="{{ filter.value }}" aria-pressed="{% if filter.value == 'all' %}true{% else %}false{% endif %}">{{ filter.label }}</button>
+          {% endfor %}
+        </div>
+      </fieldset>
+      <p id="publication-results" class="publication-results" aria-live="polite"></p>
+    </form>
+
+    <section class="publication-status-group" aria-labelledby="published-title">
+      <h3 id="published-title">Published / Accepted</h3>
+      <div class="publication-list" data-publication-list>
+        {% for project in sorted_projects %}
+          {% if project.status == "published" or project.status == "accepted" %}
+            {% include publication-card.html project=project nested=true %}
+          {% endif %}
+        {% endfor %}
       </div>
-    </div>
-  </article>
-{% endfor %}
+      <p class="empty-state publication-no-results" hidden>No publications match the current search and filters.</p>
+    </section>
+  </section>
 </div>

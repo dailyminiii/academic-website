@@ -1,10 +1,11 @@
 ---
-title: "Projects"
+title: "Beyond Research — Projects"
 permalink: /projects/
+description: "Creative prototypes by Minwoo Seong in immersive interaction and robotics."
 author_profile: true
 ---
 
-Selected prototypes exploring immersive interaction, creative robotics, and embodied experiences.
+This URL is retained for existing links. These prototypes now sit within [Beyond Research]({{ '/extras/' | relative_url }}) so the primary navigation can stay focused on the research program.
 
 <div class="project-grid">
 {% for mini_project in site.data.outreach.mini_projects %}

@@ -95,6 +95,7 @@
 .research-area h3,
 .publication-entry h2,
 .publication-entry h3,
+.publication-entry h4,
 .feature-card h3,
 .project-card h2 {
   margin: 0 0 0.35rem;
@@ -108,6 +109,10 @@
 }
 
 .publication-list--compact .publication-entry h3 {
+  font-size: 1em;
+}
+
+.publication-entry h4 {
   font-size: 1em;
 }
 
@@ -249,7 +254,8 @@
   }
 
   .publication-entry--with-image h2,
-  .publication-entry--with-image h3 {
+  .publication-entry--with-image h3,
+  .publication-entry--with-image h4 {
     font-size: 0.95em;
   }
 
@@ -265,5 +271,382 @@
 
   .publication-thumb {
     width: min(220px, 100%);
+  }
+}
+
+/* Research-program information architecture. These rules only use theme variables. */
+html {
+  scroll-padding-top: 5rem;
+}
+
+.research-section,
+.publication-section {
+  padding: 2.6rem 0;
+  scroll-margin-top: 5rem;
+}
+
+.research-section + .research-section,
+.publication-section + .publication-section {
+  border-top: 1px solid var(--global-border-color);
+}
+
+.research-section--secondary {
+  padding-top: 2.2rem;
+}
+
+.research-hero {
+  padding-top: 0.25rem;
+}
+
+.research-hero h1 {
+  max-width: 19ch;
+  margin: 0 0 1.1rem;
+  font-size: clamp(1.75rem, 4vw, 2.65rem);
+  line-height: 1.12;
+}
+
+.hero-copy {
+  max-width: 70ch;
+}
+
+.section-heading {
+  max-width: 72ch;
+  margin-bottom: 1.2rem;
+}
+
+.section-heading--compact {
+  margin-bottom: 0.8rem;
+}
+
+.section-heading h2,
+.section-heading p,
+.section-eyebrow {
+  margin-top: 0;
+}
+
+.section-eyebrow {
+  margin-bottom: 0.4rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stage-badge {
+  color: var(--global-text-color-light);
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.research-program-card__meta,
+.publication-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.research-contribution {
+  color: var(--global-text-color-light);
+  font-weight: 600;
+}
+
+.status-badge,
+.stage-badge,
+.contribution-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.45rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  font-size: 0.68em;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.status-badge {
+  border-color: var(--global-text-color);
+  color: var(--global-text-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.status-badge--accepted {
+  border-color: var(--global-text-color);
+  color: var(--global-text-color);
+}
+
+.contribution-badge {
+  border-color: var(--global-text-color);
+  color: var(--global-text-color);
+}
+
+.research-program-list {
+  border-top: 1px solid var(--global-border-color);
+}
+
+.research-program-card {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.research-program-card--with-image {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.research-program-card__image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.2rem;
+}
+
+.research-program-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--global-bg-color);
+}
+
+.research-program-card h3 {
+  margin: 0.45rem 0 0.25rem;
+}
+
+.research-role {
+  margin-bottom: 0.4rem;
+  font-size: 0.78em;
+}
+
+.section-action {
+  margin-top: 1.1rem;
+}
+
+.empty-state {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--global-border-color);
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+}
+
+.manual-update {
+  margin-top: 1rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72em;
+}
+
+/* Publications search and combined filters. */
+.publication-tablist {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.publication-tab {
+  margin-bottom: -1px;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid transparent;
+  border-bottom-color: var(--global-border-color);
+  background: transparent;
+  color: var(--global-text-color);
+  font: inherit;
+  font-size: 0.82em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.publication-tab[aria-selected="true"] {
+  border-color: var(--global-border-color);
+  border-bottom-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--global-link-color);
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.25em;
+}
+
+.publication-tabpanel {
+  border-top: 0;
+}
+
+.publication-controls {
+  margin: 1.1rem 0 1.8rem;
+  padding: 1rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.3rem;
+}
+
+.publication-search {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  font-size: 0.78em;
+  font-weight: 700;
+}
+
+.publication-search input {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.2rem;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font: inherit;
+}
+
+.filter-group {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-group legend {
+  margin-bottom: 0.4rem;
+  font-size: 0.78em;
+  font-weight: 700;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.filter-button {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font: inherit;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+.filter-button[aria-pressed="true"] {
+  border-color: var(--global-link-color);
+  background: var(--global-bg-color);
+  box-shadow: inset 0 0 0 1px var(--global-link-color);
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.publication-results {
+  margin: 0.8rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.75em;
+}
+
+.publication-status-group {
+  margin-top: 2rem;
+}
+
+.publication-status-group > h3 {
+  margin-bottom: 0.4rem;
+}
+
+.publication-kicker {
+  margin-bottom: 0.35rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.publication-kicker > span:not(:last-child)::after {
+  margin-left: 0.45rem;
+  color: var(--global-border-color);
+  content: "·";
+}
+
+.publication-kicker .status-badge::after {
+  content: none;
+}
+
+.publication-venue {
+  color: var(--global-text-color-light);
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.publication-award {
+  color: var(--global-text-color);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.publication-summary {
+  font-size: 0.84em;
+}
+
+/* Navigation state and keyboard focus remain within the existing theme language. */
+.masthead__menu-item a.is-active,
+.masthead__menu-item a[aria-current] {
+  color: var(--global-link-color);
+}
+
+.masthead__menu-item a.is-active::before,
+.masthead__menu-item a[aria-current]::before {
+  transform: scaleX(1);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--global-text-color);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .research-section,
+  .publication-section {
+    padding: 2rem 0;
+  }
+
+  .research-program-card--with-image {
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  .publication-tab {
+    flex: 1 1 0;
+    padding-inline: 0.45rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .research-program-card--with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .research-program-card__image {
+    width: min(220px, 100%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

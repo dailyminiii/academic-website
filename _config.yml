@@ -4,7 +4,7 @@ site_theme: "default"
 title: "Minwoo Seong"
 title_separator: "|"
 name: &name "Minwoo Seong"
-description: &description "Human-computer interaction research in wearable sensing, adaptive feedback, accessibility, and embodied learning."
+description: &description "Minwoo Seong is an HCI researcher studying Human–AI skill learning through multimodal sensing, adaptive coaching, mixed reality, and embodied robot intelligence."
 url: "https://minwooseong.com"
 baseurl: ""
 repository: "dailyminiii/academic-website"
@@ -32,6 +32,7 @@ social:
 
 og_image: "/assets/img/profile-optimized.jpg"
 og_description: *description
+last_updated: "2026-07-21"
 
 breadcrumbs: false
 words_per_minute: 160

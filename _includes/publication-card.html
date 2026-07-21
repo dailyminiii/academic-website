@@ -1,0 +1,45 @@
+{% assign project = include.project %}
+{% assign status_value = project.status | default: "unspecified" %}
+{% if status_value == "published" %}
+  {% assign status_label = "Published" %}
+{% elsif status_value == "accepted" %}
+  {% assign status_label = "Accepted" %}
+{% elsif status_value == "under-review" %}
+  {% assign status_label = "Under review" %}
+{% elsif status_value == "under-revision" %}
+  {% assign status_label = "Under revision" %}
+{% else %}
+  {% assign status_label = status_value | replace: "-", " " | capitalize %}
+{% endif %}
+<article class="publication-entry publication-entry--with-image{% if include.compact %} publication-entry--compact{% endif %}"
+  data-publication
+  data-role="{{ project.my_role | default: 'unspecified' }}"
+  data-featured="{{ project.featured | default: false }}"
+  data-themes="{{ project.research_themes | join: ' ' }}"
+  data-status="{{ status_value }}">
+  {% if project.gif %}
+    <div class="publication-thumb">
+      <img src="{{ project.gif | relative_url }}" alt="Visual summary for {{ project.title | escape }}" loading="lazy">
+    </div>
+  {% endif %}
+  <div class="publication-body">
+    <div class="publication-kicker">
+      {% if project.year %}<span>{{ project.year }}</span>{% endif %}
+      {% if project.category %}<span>{{ project.category }}</span>{% endif %}
+      <span class="status-badge status-badge--{{ status_value }}">{{ status_label }}</span>
+      {% if project.my_role == "first" %}<span class="contribution-badge">First / co-first author</span>{% endif %}
+    </div>
+    {% if include.nested %}<h4>{{ project.title }}</h4>{% else %}<h3>{{ project.title }}</h3>{% endif %}
+    <p class="publication-authors">{{ project.authors }}</p>
+    <p class="publication-venue">{{ project.conference }}</p>
+    {% if project.award %}<p class="publication-award"><span aria-hidden="true">🏆</span> {{ project.award }}</p>{% endif %}
+    {% if include.show_abstract and project.abstract_short %}<p class="publication-summary">{{ project.abstract_short }}</p>{% endif %}
+    <div class="publication-actions" aria-label="Resources for {{ project.title | escape }}">
+      {% if project.pdf %}<a class="paper-link" href="{{ project.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+      {% if project.code %}<a class="paper-link" href="{{ project.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      {% if project.demo %}<a class="paper-link" href="{{ project.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
+      {% if project.slides %}<a class="paper-link" href="{{ project.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+      {% if project.talk %}<a class="paper-link" href="{{ project.talk }}" target="_blank" rel="noopener">Talk</a>{% endif %}
+    </div>
+  </div>
+</article>

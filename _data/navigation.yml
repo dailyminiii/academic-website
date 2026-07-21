@@ -1,15 +1,9 @@
 main:
-  - title: "About"
+  - title: "Home"
     url: /
 
   - title: "Publications"
     url: /publications/
 
-  - title: "Projects"
-    url: /projects/
-
-  - title: "Extras"
+  - title: "Beyond Research"
     url: /extras/
-
-  - title: "CV"
-    url: "https://drive.google.com/file/d/1uZwP71LCJTdu6NXbo4TaMaeR3IAWUoEp/view?usp=sharing"
