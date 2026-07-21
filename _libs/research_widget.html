@@ -1,22 +1,15 @@
-<div class="project" data-filter="{{ project.category }}">
-    <div class="row mb-4">
-        <div class="col-sm-4">
-            <img width="100%" height="auto" class="w-full rounded-lg" src="{{ project.gif }}">
-        </div>
-        <div class="col-sm-8">
-            {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
-            <b>{{ project.title }}</b>
-            <br>
-            <i>{{ project.conference }}</i> 
-            {% if project.status %} <b style = "color: #e74d3c">[{{ project.status }}]</b> {% endif %}
-            <br>
-            {{ project.authors }}
-            <br>
-            {% if project.pdf %} <a href="{{ project.pdf }}" target="_blank" rel="noopener">[PDF]</a> {% else %} <a href="">[PDF]</a> {% endif %}
-            {% if project.code %} | <a href="{{ project.code }}" target="_blank" rel="noopener">[CODE]</a> {% endif %}
-            {% if project.demo %} | <a href="{{ project.demo }}" target="_blank" rel="noopener">[DEMO]</a> {% endif %}
-            {% if project.slides %} | <a href="{{ project.slides }}" target="_blank" rel="noopener">[SLIDES]</a> {% endif %}
-            {% if project.talk %} | <a href="{{ project.talk }}" target="_blank" rel="noopener">[TALK]</a> {% endif %}
-        </div>                       
-    </div>
-</div>
+<article class="publication-item">
+  <div class="publication-topline">
+    <span class="category-tag">{{ project.category }}</span>
+    <span>{{ project.conference }}</span>
+  </div>
+  <h3>{{ project.title }}</h3>
+  <p class="publication-authors">{{ project.authors }}</p>
+  <div class="publication-links" aria-label="Links for {{ project.title }}">
+    {% if project.pdf %}<a href="{{ project.pdf }}" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if project.code %}<a href="{{ project.code }}" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if project.demo %}<a href="{{ project.demo }}" target="_blank" rel="noopener">Demo <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if project.slides %}<a href="{{ project.slides }}" target="_blank" rel="noopener">Slides <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if project.talk %}<a href="{{ project.talk }}" target="_blank" rel="noopener">Talk <span aria-hidden="true">↗</span></a>{% endif %}
+  </div>
+</article>

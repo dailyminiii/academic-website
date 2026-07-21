@@ -1,15 +1,37 @@
-<!-- Gallery section -->
-
-<hr>
-<div class="row" id="gallery">
-    <div class="col">
-        <h2 clss="mb-5">🖼️ Hobby & Extra-Activities </h2>
-        <p></p>
-        {{ site.data.gallery.introduction }}
-        <p></p>
-        {% for picture in site.data.gallery.pictures %}
-            {% include_relative _libs/gallery_widget.html %}
-        {% endfor %}
-        <p></p>
+<section class="section" id="extras" aria-labelledby="extras-heading">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">Beyond the lab</p>
+        <h2 id="extras-heading">Music, images, and the places between.</h2>
+      </div>
+      <p>Creative work and moments outside research are part of how I think about interaction.</p>
     </div>
-</div>
+
+    <div class="extras-grid">
+      <a class="media-card media-card-image" href="{{ site.data.about.youtube }}" target="_blank" rel="noopener">
+        <img src="{{ '/assets/img/Piano8.png' | relative_url }}" alt="Piano performance still" width="800" height="520" loading="lazy">
+        <span class="media-overlay">
+          <span class="card-meta">Music & performance</span>
+          <strong>Watch on YouTube</strong>
+        </span>
+      </a>
+      <a class="media-card media-card-color media-card-sage" href="{{ site.data.about.instagram }}" target="_blank" rel="noopener">
+        <span class="media-number" aria-hidden="true">01</span>
+        <span>
+          <span class="card-meta">Photography & travel</span>
+          <strong>Field notes in images</strong>
+          <span>Instagram <span aria-hidden="true">↗</span></span>
+        </span>
+      </a>
+      <a class="media-card media-card-color media-card-ink" href="{{ site.data.about.github }}" target="_blank" rel="noopener">
+        <span class="media-number" aria-hidden="true">02</span>
+        <span>
+          <span class="card-meta">Open work</span>
+          <strong>Datasets and prototypes</strong>
+          <span>GitHub <span aria-hidden="true">↗</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
