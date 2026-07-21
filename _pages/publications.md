@@ -8,6 +8,7 @@ author_profile: true
 Only published or accepted work is listed here. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
 
 {% assign sorted_projects = site.data.research.projects | sort: "year" | reverse %}
+{% assign selected_projects = site.data.research.projects | where: "status", "published" | where: "selected", true | sort: "selected_order" %}
 <div class="publication-tabs" data-publication-tabs>
   <div class="publication-tablist" role="tablist" aria-label="Publication views">
     <button id="publication-tab-selected" class="publication-tab" type="button" role="tab" aria-selected="true" aria-controls="publication-panel-selected">Selected Publications</button>
@@ -16,17 +17,13 @@ Only published or accepted work is listed here. For citation counts and the late
 
   <section id="publication-panel-selected" class="publication-section publication-tabpanel" role="tabpanel" aria-labelledby="publication-tab-selected">
     <div class="section-heading">
-      <p class="section-eyebrow">Manually curated</p>
-      <h2>Selected Publications</h2>
-      <p>First- and co-first-author research, work central to the current research program, and selected collaborative outcomes.</p>
+      <p class="section-eyebrow">Research highlights</p>
+      <h2 id="selected-publications">Selected Publications</h2>
+      <p>A curated selection of lead-author work and notable collaborations spanning physical skill learning, multimodal human modeling, and embodied interaction.</p>
     </div>
     <div class="publication-list publication-list--selected">
-      {% for project in sorted_projects %}
-        {% if project.featured == true %}
-          {% if project.status == "published" or project.status == "accepted" %}
-            {% include publication-card.html project=project show_abstract=true %}
-          {% endif %}
-        {% endif %}
+      {% for project in selected_projects %}
+        {% include publication-card.html project=project show_abstract=true %}
       {% endfor %}
     </div>
   </section>
