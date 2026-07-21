@@ -15,7 +15,7 @@ Then open `http://127.0.0.1:4000/`.
 
 - `_data/research.yaml` — publication records, links, status, contribution, themes, awards, and selected-work metadata
 - `_data/publication_metadata.yml` — publication filter labels and values
-- `_data/research_program.yml` — hero and selected published research
+- `_data/research_program.yml` — homepage research-vision copy
 - `_data/about.yaml` — profile, affiliations, education, and contact links
 - `index.md` — research-focused homepage
 - `_pages/publications.md` — selected and filterable complete publication record

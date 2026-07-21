@@ -59,6 +59,16 @@
   font-size: 0.94em;
 }
 
+.page,
+.page__inner-wrap,
+.page__content,
+.publication-tabs,
+.publication-tabpanel,
+.publication-controls {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .profile-actions {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +131,11 @@
   grid-template-columns: 180px minmax(0, 1fr);
   align-items: start;
   gap: 1.25rem;
+}
+
+/* Author styles must not override the native hidden state used by filters and tabs. */
+.publication-tabs [hidden] {
+  display: none !important;
 }
 
 .publication-thumb {
@@ -341,7 +356,6 @@ html {
   text-transform: uppercase;
 }
 
-.research-program-card__meta,
 .publication-kicker {
   display: flex;
   flex-wrap: wrap;
@@ -382,44 +396,6 @@ html {
 .contribution-badge {
   border-color: var(--global-text-color);
   color: var(--global-text-color);
-}
-
-.research-program-list {
-  border-top: 1px solid var(--global-border-color);
-}
-
-.research-program-card {
-  padding: 1.2rem 0;
-  border-bottom: 1px solid var(--global-border-color);
-}
-
-.research-program-card--with-image {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 1.25rem;
-}
-
-.research-program-card__image {
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  border: 1px solid var(--global-border-color);
-  border-radius: 0.2rem;
-}
-
-.research-program-card__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: var(--global-bg-color);
-}
-
-.research-program-card h3 {
-  margin: 0.45rem 0 0.25rem;
-}
-
-.research-role {
-  margin-bottom: 0.4rem;
-  font-size: 0.78em;
 }
 
 .section-action {
@@ -490,7 +466,9 @@ html {
 }
 
 .publication-search input {
+  box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
   padding: 0.55rem 0.65rem;
   border: 1px solid var(--global-border-color);
   border-radius: 0.2rem;
@@ -613,24 +591,17 @@ input:focus-visible,
     padding: 2rem 0;
   }
 
-  .research-program-card--with-image {
-    grid-template-columns: 112px minmax(0, 1fr);
-    gap: 0.8rem;
-  }
-
   .publication-tab {
     flex: 1 1 0;
     padding-inline: 0.45rem;
   }
-}
 
-@media (max-width: 420px) {
-  .research-program-card--with-image {
-    grid-template-columns: 1fr;
+  .publication-controls {
+    padding: 0.75rem;
   }
 
-  .research-program-card__image {
-    width: min(220px, 100%);
+  .filter-button {
+    max-width: 100%;
   }
 }
 

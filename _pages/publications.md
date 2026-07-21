@@ -5,7 +5,7 @@ description: "Selected and complete publications by Minwoo Seong, organized by c
 author_profile: true
 ---
 
-My work spans human–AI skill learning, multimodal sensing, adaptive interaction, accessibility, robotics, and immersive systems. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
+My work spans human–AI skill learning, multimodal sensing, adaptive interaction, accessibility, robotics, and immersive systems. Only published or accepted work is listed here. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
 
 {% assign sorted_projects = site.data.research.projects | sort: "year" | reverse %}
 <div class="publication-tabs" data-publication-tabs>
