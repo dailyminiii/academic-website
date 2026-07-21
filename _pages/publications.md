@@ -5,10 +5,10 @@ description: "Selected publications and research outputs by Minwoo Seong, organi
 author_profile: true
 ---
 
-Only published or accepted work is listed here. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
+Published and accepted work is listed alongside selected under-review manuscripts with public preprints. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
 
 {% assign sorted_projects = site.data.research.projects | sort: "year" | reverse %}
-{% assign selected_projects = site.data.research.projects | where: "status", "published" | where: "selected", true | sort: "selected_order" %}
+{% assign selected_projects = site.data.research.projects | where: "selected", true | sort: "selected_order" %}
 <div class="publication-tabs" data-publication-tabs>
   <div class="publication-tablist" role="tablist" aria-label="Publication views">
     <button id="publication-tab-selected" class="publication-tab" type="button" role="tab" aria-selected="true" aria-controls="publication-panel-selected">Selected Publications</button>
@@ -66,17 +66,30 @@ Only published or accepted work is listed here. For citation counts and the late
       </div>
     </form>
 
-    <section class="publication-status-group" aria-labelledby="published-title">
-      <h3 id="published-title">Published / Accepted Research Outputs</h3>
-      <div class="publication-list" data-publication-list>
-        {% for project in sorted_projects %}
-          {% if project.status == "published" or project.status == "accepted" %}
-            {% include publication-card.html project=project nested=true %}
-          {% endif %}
-        {% endfor %}
-      </div>
-      <p class="empty-state publication-no-results" hidden>No research outputs match the current search and filters.</p>
-      <p class="publication-note">* Equal contribution.</p>
-    </section>
+    <div data-publication-list>
+      <section class="publication-status-group" aria-labelledby="under-review-title">
+        <h3 id="under-review-title">Under Review</h3>
+        <div class="publication-list">
+          {% for project in sorted_projects %}
+            {% if project.status == "under-review" %}
+              {% include publication-card.html project=project nested=true %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="publication-status-group" aria-labelledby="published-title">
+        <h3 id="published-title">Published / Accepted Research Outputs</h3>
+        <div class="publication-list">
+          {% for project in sorted_projects %}
+            {% if project.status == "published" or project.status == "accepted" %}
+              {% include publication-card.html project=project nested=true %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    </div>
+    <p class="empty-state publication-no-results" hidden>No research outputs match the current search and filters.</p>
+    <p class="publication-note">* Equal contribution.</p>
   </section>
 </div>

@@ -14,6 +14,48 @@ categories:
 
 projects:
 
+  - title: "IMPACT: Exploring Integrated Muscle-Posture AR Coaching in Static-Stance Badminton Training"
+    system-name: IMPACT
+    gif: assets/img/IMPACT.png
+    conference: International Journal of Human-Computer Studies
+    conference-web:
+    status: under-review
+    year: 2026
+    my_role: first
+    selected: true
+    homepage_featured: true
+    selected_order: 1
+    homepage_order: 1
+    research_themes: [physical-skill-learning, multimodal-human-modeling, adaptive-embodied-ai]
+    abstract_short: An AR coaching system that integrates expert-aligned motion replay with synchronized EMG feedback for static-stance badminton practice.
+    authors: <u>Minwoo Seong</u>, Minwoo Oh, Seongjun Kang, Yumin Kang, Gwangbin Kim, Hyunjin Choi, Joseph DelPreto, Daniela Rus, SeungJun Kim
+    pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6076155
+    code:
+    demo:
+    slides:
+    talk:
+
+  - title: "Tell Me When It Feels Right: LLM-Mediated Challenge Regulation for Physical Self-Training in Badminton"
+    system-name: Tell Me When It Feels Right
+    gif: assets/img/TellMe.png
+    conference: International Journal of Human-Computer Studies
+    conference-web:
+    status: under-review
+    year: 2026
+    my_role: first
+    selected: true
+    homepage_featured: true
+    selected_order: 2
+    homepage_order: 2
+    research_themes: [physical-skill-learning, multimodal-human-modeling, adaptive-embodied-ai]
+    abstract_short: An LLM-mediated coaching system that interprets physiological, subjective, and textual signals to regulate challenge in badminton self-training.
+    authors: <u>Minwoo Seong</u>, Hyunjin Choi, Kangbeen Ko, Seongjun Kang, Semoo Shin, Joseph DelPreto, Daniela Rus, SeungJun Kim
+    pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6806926
+    code:
+    demo:
+    slides:
+    talk:
+
   - title: "Demonstrating InteractiSense: An Interactive Tool for Supporting Social Engagement for Children with ASD"
     system-name:
     gif: assets/img/InteractiSense.png
@@ -119,8 +161,8 @@ projects:
     my_role: collaborative
     selected: true
     homepage_featured: true
-    selected_order: 6
-    homepage_order: 5
+    selected_order: 8
+    homepage_order: 7
     research_themes: [adaptive-embodied-ai, accessibility-assistive-systems, multimodal-human-modeling]
     abstract_short: Multimodal intention and environment sensing for an intelligent mobility-assistance platform.
     authors: Yunho Choi, Seokhyun Hwang, JaeYoung Moon, Hosu Lee, Dohyeon Yeo, <u>Minwoo Seong</u>, Yiyue Luo, SeungJun Kim, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
@@ -141,7 +183,7 @@ projects:
     year: 2025
     my_role: collaborative
     selected: true
-    selected_order: 7
+    selected_order: 9
     research_themes: [physical-skill-learning, adaptive-embodied-ai]
     abstract_short: An LLM-augmented system for understanding and supporting golf skill learning.
     authors: Kangbeen Ko, Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
@@ -303,8 +345,8 @@ projects:
     my_role: first
     selected: true
     homepage_featured: true
-    selected_order: 2
-    homepage_order: 2
+    selected_order: 4
+    homepage_order: 4
     research_themes: [physical-skill-learning, adaptive-embodied-ai, multimodal-human-modeling]
     abstract_short: Wearable-sensor-based counterfactual explanations translate performance differences into actionable badminton motion guidance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
@@ -345,8 +387,8 @@ projects:
     my_role: collaborative
     selected: true
     homepage_featured: true
-    selected_order: 5
-    homepage_order: 4
+    selected_order: 7
+    homepage_order: 6
     research_themes: [adaptive-embodied-ai, xr-mobility-interaction]
     award: Honorable Mention Award
     abstract_short: A biomechanical-simulation-driven electrical muscle stimulation haptic system for virtual reality.
@@ -368,7 +410,7 @@ projects:
     year: 2024
     my_role: first
     selected: true
-    selected_order: 4
+    selected_order: 6
     research_themes: [multimodal-human-modeling, accessibility-assistive-systems]
     abstract_short: A multidimensional dataset for recognizing the engagement of children with autism spectrum disorder.
     authors: Won Kim*, <u>Minwoo Seong*</u>, Kyung-Joong Kim, SeungJun Kim
@@ -391,8 +433,8 @@ projects:
     my_role: first
     selected: true
     homepage_featured: true
-    selected_order: 1
-    homepage_order: 1
+    selected_order: 3
+    homepage_order: 3
     research_themes: [physical-skill-learning, multimodal-human-modeling]
     abstract_short: A multimodal wearable biomechanical dataset for capturing and evaluating badminton performance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
@@ -414,8 +456,8 @@ projects:
     my_role: first
     selected: true
     homepage_featured: true
-    selected_order: 3
-    homepage_order: 3
+    selected_order: 5
+    homepage_order: 5
     research_themes: [physical-skill-learning, adaptive-embodied-ai]
     award: Runner-Up (Rank 2)
     abstract_short: A multi-layer, multi-input transformer for data-driven badminton challenge modeling.

@@ -83,6 +83,7 @@
 
   if (controls && publicationList) {
     const cards = Array.from(publicationList.querySelectorAll("[data-publication]"));
+    const statusGroups = Array.from(publicationList.querySelectorAll(".publication-status-group"));
     const search = controls.querySelector("input[type='search']");
     const results = document.getElementById("publication-results");
     const noResults = document.querySelector(".publication-no-results");
@@ -174,6 +175,11 @@
         const visible = authorshipMatch && themeMatch && searchMatch;
         card.hidden = !visible;
         if (visible) visibleCount += 1;
+      });
+
+      statusGroups.forEach(function (group) {
+        const groupCards = Array.from(group.querySelectorAll("[data-publication]"));
+        group.hidden = !groupCards.some(function (card) { return !card.hidden; });
       });
 
       if (results) {
