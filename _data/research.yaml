@@ -19,7 +19,11 @@ projects:
     gif: assets/img/JMIR.png
     conference: JMIR Serious Games (2026)
     conference-web:  
-    status: 
+    status: accepted
+    year: 2026
+    my_role: collaborative
+    featured: false
+    research_themes: [adaptive-interaction, accessibility-mobility]
     authors: Won Kim, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://preprints.jmir.org/preprint/77727/accepted
     code: 
@@ -34,7 +38,11 @@ projects:
     gif: assets/img/Redshoes.png
     conference: Virtual Reality (2025)
     conference-web: 
-    status: 
+    status: published
+    year: 2025
+    my_role: collaborative
+    featured: false
+    research_themes: [adaptive-interaction, xr-in-vehicle]
     authors: Ataya Aya*, Elsharkawy Ahmed*, Jieun Lee, Seokhyun Hwang, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://link.springer.com/article/10.1007/s10055-025-01234-w
     code: 
@@ -49,7 +57,11 @@ projects:
     gif: assets/img/MultiUser.gif
     conference: IMWUT 2025
     conference-web: 
-    status: 
+    status: published
+    year: 2025
+    my_role: collaborative
+    featured: false
+    research_themes: [adaptive-interaction, xr-in-vehicle]
     authors: Yumin Kang, Jeongju Park, Seokhyun Hwang, <u>Minwoo Seong</u>, Gwangbin Kim, SeungJun Kim
     pdf: https://dl.acm.org/doi/10.1145/3749473
     code: 
@@ -64,7 +76,12 @@ projects:
     gif: assets/img/AdaptiveWalker.png
     conference: ICRA 2025
     conference-web: 
-    status: 
+    status: published
+    year: 2025
+    my_role: collaborative
+    featured: true
+    research_themes: [multimodal-sensing, accessibility-mobility]
+    abstract_short: Multimodal intention and environment sensing for an intelligent mobility-assistance platform.
     authors: Yunho Choi, Seokhyun Hwang, JaeYoung Moon, Hosu Lee, Dohyeon Yeo, <u>Minwoo Seong</u>, Yiyue Luo, SeungJun Kim, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
     pdf: https://ieeexplore.ieee.org/abstract/document/11127691/
     code: 
@@ -79,7 +96,12 @@ projects:
     gif: assets/img/LEGOLAS.gif
     conference: CHI LBW 2025
     conference-web: 
-    status: 
+    status: published
+    year: 2025
+    my_role: collaborative
+    featured: true
+    research_themes: [human-skill-learning, adaptive-interaction]
+    abstract_short: An LLM-augmented system for understanding and supporting golf skill learning.
     authors: Kangbeen Ko, Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://dl.acm.org/doi/10.1145/3706599.3720141
     code: 
@@ -96,7 +118,11 @@ projects:
     gif: assets/img/TaiChi MotionGuidance.png
     conference: HCI Korea 2025
     conference-web: 
-    status: 
+    status: published
+    year: 2025
+    my_role: collaborative
+    featured: false
+    research_themes: [human-skill-learning, adaptive-interaction, xr-in-vehicle]
     authors: Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12131516
     code: 
@@ -111,7 +137,11 @@ projects:
     gif: assets/img/In-Vehicle.png
     conference: UbiComp Companion 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: collaborative
+    featured: false
+    research_themes: [adaptive-interaction, xr-in-vehicle]
     authors: Ahmed Elsharkawy, Aya Ataya, Dohyeon Yeo, <u>Minwoo Seong</u>, Seokhyun Hwang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
     pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3678381
     code: 
@@ -126,7 +156,11 @@ projects:
     gif: assets/img/Seat.png
     conference: UbiComp Companion 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: first
+    featured: false
+    research_themes: [multimodal-sensing, adaptive-interaction]
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Jaehee Lee, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
     pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3678374
     code: 
@@ -142,7 +176,11 @@ projects:
     gif: assets/img/asdd.jpg
     conference: UbiComp Companion 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: collaborative
+    featured: false
+    research_themes: [adaptive-interaction, accessibility-mobility]
     authors: Won Kim, <u>Minwoo Seong</u>, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
     pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3678376
     code: 
@@ -157,7 +195,11 @@ projects:
     gif: assets/img/I4U.png
     conference: UbiComp Companion 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: collaborative
+    featured: false
+    research_themes: [adaptive-interaction, accessibility-mobility, xr-in-vehicle]
     authors: Gwangbin Kim, <u>Minwoo Seong</u>, Dohyeon Yeo, Yumin Kang, SeungJun Kim
     pdf: https://dl.acm.org/doi/abs/10.1145/3675094.3677569
     code: 
@@ -172,7 +214,11 @@ projects:
     gif: assets/img/TimelyTale.png
     conference: Proceedings of the ACM on IMWUT 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: collaborative
+    featured: false
+    research_themes: [multimodal-sensing, adaptive-interaction, xr-in-vehicle]
     authors: Gwangbin Kim, Seokhyun Hwang, <u>Minwoo Seong</u>, Dohyeon Yeo, Daniela Rus, SeungJun Kim
     pdf: https://dl.acm.org/doi/abs/10.1145/3678544
     code: 
@@ -185,9 +231,14 @@ projects:
   - title: Badminton Swing Posture Analysis and Visualization using Deep Learning-based Encoder-Decoder Architecture
     system-name: 
     gif: assets/img/KCC2024.png
-    conference: KCC 2024 (Best Paper Award 🏆 in Undergraduate Students)
+    conference: KCC 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: collaborative
+    featured: false
+    research_themes: [human-skill-learning, multimodal-sensing]
+    award: Best Paper Award (Undergraduate Students)
     authors: Junhyuk Jang, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.researchgate.net/profile/Minwoo-Seong/publication/383872848_Badminton_swing_posture_analysis_and_visualization_using_deep_learning-based_encoder-decoder_architecture/links/66defe14b1606e24c21cd2f6/Badminton-swing-posture-analysis-and-visualization-using-deep-learning-based-encoder-decoder-architecture.pdf
     code: 
@@ -198,11 +249,17 @@ projects:
     category: SportsHCI
 
   - title: Counterfactual Explanation-Based Badminton Motion Guidance Generation Using Wearable Sensors
+    id: counterfactual-motion-guidance
     system-name: 
     gif: assets/img/CF.png
     conference: ICRA Workshop on Wearable 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: first
+    featured: true
+    research_themes: [human-skill-learning, multimodal-sensing, adaptive-interaction]
+    abstract_short: Wearable-sensor-based counterfactual explanations translate performance differences into actionable badminton motion guidance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
     pdf: https://arxiv.org/abs/2405.11802
     code: 
@@ -217,7 +274,11 @@ projects:
     gif: assets/img/Haptic Walker.png
     conference: ICRA Workshop on Wearable 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: collaborative
+    featured: false
+    research_themes: [multimodal-sensing, accessibility-mobility]
     authors: Yunho Choi, Dohyeon Yeo, Seokhyun Hwang, <u>Minwoo Seong</u>, Jaeyoung Moon, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
     pdf: https://drive.google.com/file/d/11CkcV7DG_XmIaWkefTII823E0TIXt1P8/view
     code: 
@@ -230,9 +291,15 @@ projects:
   - title: ErgoPulse Electrifying Your Lower Body With Biomechanical Simulation-based Electrical Muscle Stimulation Haptic System in Virtual Reality
     system-name: 
     gif: assets/img/ErgoPulse.gif
-    conference: CHI 2024 (Honorable Mention Award 🏆)
+    conference: CHI 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: collaborative
+    featured: true
+    research_themes: [multimodal-sensing, adaptive-interaction, xr-in-vehicle]
+    award: CHI 2024 Honorable Mention Award
+    abstract_short: A biomechanical-simulation-driven electrical muscle stimulation haptic system for virtual reality.
     authors: Seokhyun Hwang, Jeongseok Oh, Seongjun Kang, <u>Minwoo Seong</u>, Ahmed Elsharkawy, SeungJun Kim
     pdf: https://dl.acm.org/doi/full/10.1145/3613904.3642008
     code: 
@@ -247,7 +314,12 @@ projects:
     gif: assets/img/Engagnition.png
     conference: Scientific Data, 11, 299 (2024)
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: first
+    featured: true
+    research_themes: [multimodal-sensing, adaptive-interaction, accessibility-mobility]
+    abstract_short: A multidimensional dataset for recognizing the engagement of children with autism spectrum disorder.
     authors: Won Kim*, <u>Minwoo Seong*</u>, Kyung-Joong Kim, SeungJun Kim
     pdf: https://www.nature.com/articles/s41597-024-03132-3
     code: https://github.com/dailyminiii/Engagnition
@@ -258,11 +330,17 @@ projects:
     category: A11y
 
   - title: MultiSenseBadminton Wearable Sensor–Based Biomechanical Dataset for Evaluation of Badminton Performance
+    id: multisensebadminton
     system-name: 
     gif: assets/img/MultiSenseBadminton.png
     conference: Scientific Data, 11(1), 343, 2024
     conference-web: 
-    status: 
+    status: published
+    year: 2024
+    my_role: first
+    featured: true
+    research_themes: [human-skill-learning, multimodal-sensing]
+    abstract_short: A multimodal wearable biomechanical dataset for capturing and evaluating badminton performance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
     pdf: https://www.nature.com/articles/s41597-024-03144-z
     code: https://github.com/dailyminiii/MultiSenseBadminton
@@ -275,9 +353,15 @@ projects:
   - title: MuLMINet Multi-Layer Multi-Input Transformer Network with Weighted Loss
     system-name: 
     gif: assets/img/IJCAI Challenge.jpg
-    conference: IJCAI 2023 CoachAI Badminton Challenge (Runner-Up Award 🏆)
+    conference: IJCAI 2023 CoachAI Badminton Challenge
     conference-web: 
-    status: 
+    status: published
+    year: 2023
+    my_role: first
+    featured: true
+    research_themes: [human-skill-learning, adaptive-interaction]
+    award: IJCAI 2023 CoachAI Badminton Challenge Runner-up
+    abstract_short: A multi-layer, multi-input transformer for data-driven badminton challenge modeling.
     authors: <u>Minwoo Seong*</u>, Jeongseok Oh*, SeungJun Kim
     pdf: https://arxiv.org/abs/2307.08262
     code: https://github.com/stan5dard/IJCAI-CoachAI-Challenge-2023
@@ -292,7 +376,11 @@ projects:
     gif: assets/img/AS.png
     conference: Applied Sciences, 13(8), 4952, 2023
     conference-web: 
-    status: 
+    status: published
+    year: 2023
+    my_role: first
+    featured: false
+    research_themes: [adaptive-interaction, xr-in-vehicle]
     authors: SeungJu Kim*, Jeongseok Oh*, <u>Minwoo Seong*</u>, Eunki Jeon, Yeonguk Moon, SeungJun Kim
     pdf: https://www.mdpi.com/2076-3417/13/8/4952
     code: 
@@ -305,9 +393,14 @@ projects:
   - title: Virtual Reality Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments
     system-name: 
     gif: assets/img/VR Interface.png
-    conference: KCC 2022 (Best Paper Award 🏆)
+    conference: KCC 2022
     conference-web: 
-    status: 
+    status: published
+    year: 2022
+    my_role: first
+    featured: false
+    research_themes: [human-skill-learning, adaptive-interaction, xr-in-vehicle]
+    award: Best Paper Award
     authors: <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113699
     code: 
@@ -322,7 +415,11 @@ projects:
     gif: assets/img/ASD.png
     conference: HCI Korea 2022
     conference-web:
-    status: 
+    status: published
+    year: 2022
+    my_role: collaborative
+    featured: false
+    research_themes: [multimodal-sensing, adaptive-interaction, accessibility-mobility]
     authors: Subin Ok, <u>Minwoo Seong</u>, Won Kim, Hwaseung Jeon, Jiwon Lee, Kyung-Joong Kim, SeungJun Kim
     pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043877
     code: 
@@ -337,7 +434,11 @@ projects:
     gif: assets/img/Foot Gesture.png
     conference: HCI Korea 2022
     conference-web: 
-    status: 
+    status: published
+    year: 2022
+    my_role: collaborative
+    featured: false
+    research_themes: [human-skill-learning, adaptive-interaction]
     authors: Hwaseung Jeon, Jeongseok Oh, Eunjin Seong <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11043851
     code: 
@@ -352,7 +453,11 @@ projects:
     gif: assets/img/Interactive Design.png
     conference: HCI Korea 2021
     conference-web: 
-    status:
+    status: published
+    year: 2021
+    my_role: collaborative
+    featured: false
+    research_themes: [multimodal-sensing, adaptive-interaction, accessibility-mobility]
     authors: Eunjin Seong, Won Kim, Jiwon Lee, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10530281
     code: 
