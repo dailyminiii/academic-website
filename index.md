@@ -24,9 +24,9 @@ redirect_from:
   <div class="section-heading">
     <p class="section-eyebrow">Research trajectory</p>
     <h2 id="selected-research-title">Selected Publications</h2>
-    <p>Five published works tracing my research from multimodal human sensing to adaptive and embodied systems.</p>
+    <p>Seven selected works tracing my research from multimodal human sensing to adaptive and embodied systems.</p>
   </div>
-  {% assign selected_projects = site.data.research.projects | where: "status", "published" | where: "selected", true | where: "homepage_featured", true | sort: "homepage_order" %}
+  {% assign selected_projects = site.data.research.projects | where: "selected", true | where: "homepage_featured", true | sort: "homepage_order" %}
   <div class="publication-list publication-list--home">
     {% for project in selected_projects %}
       {% include publication-card.html project=project show_abstract=true %}
