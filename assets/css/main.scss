@@ -1,0 +1,269 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/default",
+    "theme/dark",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands",
+    "vendor/magnific-popup/magnific-popup"
+;
+
+/* Site-specific refinements layered on the Academic Pages theme. */
+.author__avatar img {
+  width: min(175px, 100%);
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.35rem;
+}
+
+.page__title {
+  margin-bottom: 0.7em;
+}
+
+.page__content {
+  font-size: 0.94em;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.4rem 0 2.2rem;
+}
+
+.research-area-list,
+.publication-list,
+.education-list {
+  border-top: 1px solid var(--global-border-color);
+}
+
+.research-area,
+.publication-entry,
+.education-entry {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.research-area > span,
+.publication-venue,
+.feature-meta,
+.project-meta {
+  display: block;
+  margin: 0 0 0.3rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.research-area h3,
+.publication-entry h2,
+.publication-entry h3,
+.feature-card h3,
+.project-card h2 {
+  margin: 0 0 0.35rem;
+}
+
+.research-area p,
+.publication-entry p,
+.feature-card p,
+.project-card p {
+  margin-bottom: 0.55rem;
+}
+
+.publication-list--compact .publication-entry h3 {
+  font-size: 1em;
+}
+
+.publication-entry--with-image {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.publication-thumb {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--global-border-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.2rem;
+}
+
+.publication-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--global-bg-color);
+}
+
+.publication-body {
+  min-width: 0;
+}
+
+.publication-authors {
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+}
+
+.publication-authors u {
+  color: var(--global-text-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.paper-link {
+  display: inline-block;
+  margin: 0.15rem 0.35rem 0 0;
+  padding: 0.22rem 0.48rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.2rem;
+  font-size: 0.72em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.paper-link:hover {
+  border-color: var(--global-link-color);
+}
+
+.feature-grid,
+.project-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.feature-card,
+.project-card,
+.gallery-item {
+  margin: 0;
+}
+
+.feature-card img,
+.project-card img,
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.feature-card img,
+.project-card img {
+  aspect-ratio: 16 / 10;
+}
+
+.gallery-item img {
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  color: var(--global-text-color-light);
+  font-size: 0.75em;
+}
+
+.education-entry {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.education-entry div {
+  display: grid;
+}
+
+.education-entry span,
+.education-entry time {
+  color: var(--global-text-color-light);
+  font-size: 0.83em;
+}
+
+.education-entry time {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .feature-grid,
+  .project-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-entry {
+    display: grid;
+  }
+
+  .publication-entry--with-image {
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  .publication-entry--with-image h2,
+  .publication-entry--with-image h3 {
+    font-size: 0.95em;
+  }
+
+  .publication-entry--with-image .publication-authors {
+    font-size: 0.72em;
+  }
+}
+
+@media (max-width: 420px) {
+  .publication-entry--with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-thumb {
+    width: min(220px, 100%);
+  }
+}
