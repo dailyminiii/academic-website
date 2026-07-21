@@ -5,8 +5,6 @@
 {% elsif status_value == "accepted" %}
   {% assign status_label = "Accepted" %}
 {% endif %}
-{% assign category_label = project.category %}
-{% if category_label == "A11y" %}{% assign category_label = "Accessibility" %}{% endif %}
 {% assign equal_contribution = false %}
 {% if project.authors contains "*" %}{% assign equal_contribution = true %}{% endif %}
 {% if status_value == "published" or status_value == "accepted" %}
@@ -24,7 +22,6 @@
   <div class="publication-body">
     <div class="publication-kicker">
       {% if project.year %}<span>{{ project.year }}</span>{% endif %}
-      {% if category_label %}<span>{{ category_label }}</span>{% endif %}
       <span class="status-badge status-badge--{{ status_value }}">{{ status_label }}</span>
       {% if project.my_role == "first" %}<span class="contribution-badge">Lead author</span>{% endif %}
       {% if equal_contribution %}<span class="contribution-badge">Equal contribution</span>{% endif %}
@@ -36,6 +33,7 @@
     {% if include.show_abstract and project.abstract_short %}<p class="publication-summary">{{ project.abstract_short }}</p>{% endif %}
     <div class="publication-actions" aria-label="Resources for {{ project.title | escape }}">
       {% if project.pdf %}<a class="paper-link" href="{{ project.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+      {% if project.conference-web %}<a class="paper-link" href="{{ project.conference-web }}" target="_blank" rel="noopener">Website</a>{% endif %}
       {% if project.code %}<a class="paper-link" href="{{ project.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       {% if project.demo %}<a class="paper-link" href="{{ project.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
       {% if project.slides %}<a class="paper-link" href="{{ project.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}

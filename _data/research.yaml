@@ -43,7 +43,7 @@ projects:
     my_role: collaborative
     featured: false
     research_themes: [physical-skill-learning, multimodal-human-modeling]
-    authors: C. Park, <u>Minwoo Seong</u>, J. Um, S. Kang, J. Park, SeungJun Kim
+    authors: Chanyoung Park, <u>Minwoo Seong</u>, Juwon Um, Seongjun Kang, Jeongju Park, SeungJun Kim
     pdf:
     code:
     demo:
@@ -52,18 +52,18 @@ projects:
     tag: SportsHCI
     category: SportsHCI
 
-  - title: "Design and Iterative Development of Serious Exergames for Children with Autism Spectrum Disorder: A Formative Multi-Case Pilot Study"
+  - title: "Design and Iterative Development of Serious Exergames for Children With Autism Spectrum Disorder: Formative Multiple-Case Pilot Study"
     system-name: 
     gif: assets/img/JMIR.png
     conference: JMIR Serious Games
-    conference-web:  
-    status: accepted
+    conference-web: https://games.jmir.org/2026/1/e77727/
+    status: published
     year: 2026
     my_role: collaborative
     featured: false
     research_themes: [accessibility-assistive-systems]
     authors: Won Kim, <u>Minwoo Seong</u>, SeungJun Kim
-    pdf: https://preprints.jmir.org/preprint/77727/accepted
+    pdf: https://doi.org/10.2196/77727
     code: 
     demo: 
     slides: 
