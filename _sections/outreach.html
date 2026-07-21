@@ -1,14 +1,14 @@
-<section class="section section-tint" id="projects" aria-labelledby="projects-heading">
+<section class="section projects-section" id="projects" aria-labelledby="projects-heading">
   <div class="shell">
-    <div class="section-heading">
+    <div class="section-intro section-intro-split">
       <div>
-        <p class="section-kicker">Projects</p>
-        <h2 id="projects-heading">Prototypes beyond the paper.</h2>
+        <p class="eyebrow">Selected projects</p>
+        <h2 id="projects-heading">Experiments beyond publications.</h2>
       </div>
-      <p>Small experiments in immersive interaction, creative robotics, and embodied experiences.</p>
+      <p>Prototypes exploring immersive interaction, creative robotics, and embodied experiences.</p>
     </div>
 
-    <div class="project-grid">
+    <div class="project-list">
       {% for mini_project in site.data.outreach.mini_projects %}
         {% include_relative _libs/outreach_widget.html %}
       {% endfor %}

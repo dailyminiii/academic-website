@@ -18,25 +18,36 @@ orcid: https://orcid.org/0009-0007-5847-9666
 youtube: https://www.youtube.com/channel/UCUCpgBdsKzO29vFWZjNM-7Q
 instagram: https://www.instagram.com/daily_miniii/
 
-headline: Interactive AI for how people move, learn, and engage.
-summary: I design systems that sense human behavior in real time and turn it into adaptive feedback. My work connects wearable sensing, AI, and immersive interaction across sports training, accessibility, and human-vehicle interaction.
+intro: I build human-centered intelligent systems that understand physical behavior and provide timely, personalized feedback.
+summary: My research sits at the intersection of human-computer interaction, wearable sensing, and artificial intelligence. I study adaptive interaction for motor learning, accessibility, and human-vehicle experiences.
 
 keywords:
+  - Human-Computer Interaction
   - Wearable Sensing
   - Human-Centered AI
   - VR / AR
-  - Motor Learning
+
+education:
+  - degree: Ph.D. Candidate, Intelligent Robotics
+    school: Gwangju Institute of Science and Technology
+    period: 2023 — Present
+  - degree: M.S., Intelligent Robotics
+    school: Gwangju Institute of Science and Technology
+    period: 2021 — 2023
+  - degree: B.S., Mechanical Engineering
+    school: Gwangju Institute of Science and Technology
+    period: 2017 — 2021
 
 research_areas:
   - label: SportsHCI
     title: AI-guided motor learning
-    description: Motion and muscle sensing for personalized feedback in racket sports and embodied skill training.
+    description: I use motion and muscle sensing to understand physical skills and generate feedback that helps people learn more effectively.
   - label: Accessibility
     title: Inclusive adaptive interaction
-    description: Engagement modeling and interactive interventions that support children with Autism Spectrum Disorder.
+    description: I design interpretable sensing and intervention systems that support engagement and participation for children with autism.
   - label: Mobility
     title: Human-vehicle interaction
-    description: Driver and passenger sensing, risk-aware simulation, and XR experiences for automated vehicles.
+    description: I explore context-aware interfaces, passenger sensing, and XR experiences for safer and more comfortable automated mobility.
 
 featured_work:
   - title: MultiSenseBadminton

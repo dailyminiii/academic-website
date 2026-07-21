@@ -4,16 +4,16 @@ mini_projects:
     thumbnail: assets/img/projects/vr-piano.jpg
     alt: Virtual piano interaction prototype
     description: A VR piano experience exploring embodied music learning and performance.
-    time: May–Jun 2024
+    time: May — Jun 2024
   - title: In-car XR Halloween Contents
     type: In-vehicle XR
     thumbnail: assets/img/projects/in-car-xr.jpg
     alt: In-car XR Halloween experience
     description: An immersive passenger experience built during a research internship.
-    time: Jul–Aug 2021
+    time: Jul — Aug 2021
   - title: Robot Control for Piano Ensemble
     type: Creative robotics
     thumbnail: assets/img/projects/robot-piano.jpg
     alt: Robotic hands playing a keyboard with a human performer
     description: A robotic piano ensemble created as a lecture term project.
-    time: May–Jun 2021
+    time: May — Jun 2021

@@ -1,15 +1,18 @@
-<article class="publication-item">
-  <div class="publication-topline">
-    <span class="category-tag">{{ project.category }}</span>
-    <span>{{ project.conference }}</span>
+<article class="publication-item" data-publication data-category="{{ project.category }}">
+  <div class="publication-index" aria-hidden="true">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
+  <div class="publication-copy">
+    <div class="publication-meta">
+      <span class="category-tag">{{ project.category }}</span>
+      <span>{{ project.conference }}</span>
+    </div>
+    <h3>{{ project.title }}</h3>
+    <p class="publication-authors">{{ project.authors }}</p>
   </div>
-  <h3>{{ project.title }}</h3>
-  <p class="publication-authors">{{ project.authors }}</p>
   <div class="publication-links" aria-label="Links for {{ project.title }}">
-    {% if project.pdf %}<a href="{{ project.pdf }}" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>{% endif %}
-    {% if project.code %}<a href="{{ project.code }}" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>{% endif %}
-    {% if project.demo %}<a href="{{ project.demo }}" target="_blank" rel="noopener">Demo <span aria-hidden="true">↗</span></a>{% endif %}
-    {% if project.slides %}<a href="{{ project.slides }}" target="_blank" rel="noopener">Slides <span aria-hidden="true">↗</span></a>{% endif %}
-    {% if project.talk %}<a href="{{ project.talk }}" target="_blank" rel="noopener">Talk <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if project.pdf %}<a href="{{ project.pdf }}" target="_blank" rel="noopener">Paper ↗</a>{% endif %}
+    {% if project.code %}<a href="{{ project.code }}" target="_blank" rel="noopener">Code ↗</a>{% endif %}
+    {% if project.demo %}<a href="{{ project.demo }}" target="_blank" rel="noopener">Demo ↗</a>{% endif %}
+    {% if project.slides %}<a href="{{ project.slides }}" target="_blank" rel="noopener">Slides ↗</a>{% endif %}
+    {% if project.talk %}<a href="{{ project.talk }}" target="_blank" rel="noopener">Talk ↗</a>{% endif %}
   </div>
 </article>
