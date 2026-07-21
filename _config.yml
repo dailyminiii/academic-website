@@ -1,11 +1,101 @@
-title: Minwoo Seong
-info: Ph.D. Candidate · HCI @ GIST
-description: Human-computer interaction research in wearable sensing, adaptive feedback, accessibility, and embodied learning.
-url: https://minwooseong.com
+# Academic Pages theme configuration
+locale: "en-US"
+site_theme: "default"
+title: "Minwoo Seong"
+title_separator: "|"
+name: &name "Minwoo Seong"
+description: &description "Human-computer interaction research in wearable sensing, adaptive feedback, accessibility, and embodied learning."
+url: "https://minwooseong.com"
 baseurl: ""
-icon-pic: assets/img/mandu_icon.png
+repository: "dailyminiii/academic-website"
+
+author:
+  avatar: "/assets/img/profile-optimized.jpg"
+  name: "Minwoo Seong"
+  bio: "Ph.D. Candidate in Human-Computer Interaction"
+  location: "Gwangju, South Korea"
+  employer: "Gwangju Institute of Science and Technology"
+  uri: "https://sites.google.com/view/gist-hcis-lab"
+  email: "seongminwoo@gm.gist.ac.kr"
+  googlescholar: "https://scholar.google.co.kr/citations?user=MYVwH3MAAAAJ&hl=en"
+  orcid: "https://orcid.org/0009-0007-5847-9666"
+  github: "dailyminiii"
+  instagram: "daily_miniii"
+
+social:
+  type: Person
+  name: "Minwoo Seong"
+  links:
+    - "https://scholar.google.co.kr/citations?user=MYVwH3MAAAAJ&hl=en"
+    - "https://github.com/dailyminiii"
+    - "https://orcid.org/0009-0007-5847-9666"
+
+og_image: "/assets/img/profile-optimized.jpg"
+og_description: *description
+
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+comments:
+  provider: false
+atom_feed:
+  hide: true
+
+include:
+  - _pages
 
 exclude:
+  - .bundle
+  - .jekyll-cache
+  - .sass-cache
   - Gemfile
   - Gemfile.lock
+  - LICENSE-theme
   - README.md
+  - node_modules
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  entity_output: as_char
+
+permalink: /:categories/:title/
+timezone: Asia/Seoul
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
