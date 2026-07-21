@@ -18,14 +18,6 @@ redirect_from:
       <p>{{ paragraph }}</p>
     {% endfor %}
   </div>
-  <nav class="profile-actions" aria-label="Research profile links">
-    <a class="btn btn--primary" href="#selected-research">Selected Research</a>
-    <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
-    <a class="btn" href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Google Scholar</a>
-    <a class="btn" href="{{ site.data.about.github }}" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn" href="{{ site.data.about.cv }}" target="_blank" rel="noopener">CV</a>
-    <a class="btn" href="mailto:{{ site.data.about.email }}">Email</a>
-  </nav>
 </section>
 
 <section id="selected-research" class="research-section" aria-labelledby="selected-research-title">
