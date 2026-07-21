@@ -117,7 +117,10 @@ projects:
     status: published
     year: 2025
     my_role: collaborative
-    featured: true
+    selected: true
+    homepage_featured: true
+    selected_order: 6
+    homepage_order: 5
     research_themes: [adaptive-embodied-ai, accessibility-assistive-systems, multimodal-human-modeling]
     abstract_short: Multimodal intention and environment sensing for an intelligent mobility-assistance platform.
     authors: Yunho Choi, Seokhyun Hwang, JaeYoung Moon, Hosu Lee, Dohyeon Yeo, <u>Minwoo Seong</u>, Yiyue Luo, SeungJun Kim, Wojciech Matusik, Daniela Rus, Kyung-Joong Kim
@@ -137,8 +140,8 @@ projects:
     status: published
     year: 2025
     my_role: collaborative
-    featured: true
-    homepage_selected: true
+    selected: true
+    selected_order: 7
     research_themes: [physical-skill-learning, adaptive-embodied-ai]
     abstract_short: An LLM-augmented system for understanding and supporting golf skill learning.
     authors: Kangbeen Ko, Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
@@ -161,7 +164,6 @@ projects:
     year: 2025
     my_role: collaborative
     featured: false
-    homepage_selected: true
     research_themes: [physical-skill-learning, xr-mobility-interaction]
     abstract_short: An XR motion-guidance study examining how viewing perspective affects real-world motor-skill practice.
     authors: Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
@@ -278,7 +280,6 @@ projects:
     year: 2024
     my_role: collaborative
     featured: false
-    homepage_selected: true
     research_themes: [physical-skill-learning, multimodal-human-modeling]
     award: Honorable Mention Award in the Undergraduate Division
     abstract_short: A deep-learning approach for analyzing and visualizing badminton swing posture from human movement data.
@@ -300,8 +301,10 @@ projects:
     status: published
     year: 2024
     my_role: first
-    featured: true
-    homepage_selected: true
+    selected: true
+    homepage_featured: true
+    selected_order: 2
+    homepage_order: 2
     research_themes: [physical-skill-learning, adaptive-embodied-ai, multimodal-human-modeling]
     abstract_short: Wearable-sensor-based counterfactual explanations translate performance differences into actionable badminton motion guidance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
@@ -340,7 +343,10 @@ projects:
     status: published
     year: 2024
     my_role: collaborative
-    featured: true
+    selected: true
+    homepage_featured: true
+    selected_order: 5
+    homepage_order: 4
     research_themes: [adaptive-embodied-ai, xr-mobility-interaction]
     award: Honorable Mention Award
     abstract_short: A biomechanical-simulation-driven electrical muscle stimulation haptic system for virtual reality.
@@ -361,7 +367,8 @@ projects:
     status: published
     year: 2024
     my_role: first
-    featured: true
+    selected: true
+    selected_order: 4
     research_themes: [multimodal-human-modeling, accessibility-assistive-systems]
     abstract_short: A multidimensional dataset for recognizing the engagement of children with autism spectrum disorder.
     authors: Won Kim*, <u>Minwoo Seong*</u>, Kyung-Joong Kim, SeungJun Kim
@@ -382,8 +389,10 @@ projects:
     status: published
     year: 2024
     my_role: first
-    featured: true
-    homepage_selected: true
+    selected: true
+    homepage_featured: true
+    selected_order: 1
+    homepage_order: 1
     research_themes: [physical-skill-learning, multimodal-human-modeling]
     abstract_short: A multimodal wearable biomechanical dataset for capturing and evaluating badminton performance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
@@ -403,7 +412,10 @@ projects:
     status: published
     year: 2023
     my_role: first
-    featured: true
+    selected: true
+    homepage_featured: true
+    selected_order: 3
+    homepage_order: 3
     research_themes: [physical-skill-learning, adaptive-embodied-ai]
     award: Runner-Up (Rank 2)
     abstract_short: A multi-layer, multi-input transformer for data-driven badminton challenge modeling.

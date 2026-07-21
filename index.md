@@ -23,16 +23,16 @@ redirect_from:
 <section id="selected-research" class="research-section" aria-labelledby="selected-research-title">
   <div class="section-heading">
     <p class="section-eyebrow">Research trajectory</p>
-    <h2 id="selected-research-title">Selected Research</h2>
-    <p>Five recent and representative publications on sensing, understanding, and supporting physical skill learning.</p>
+    <h2 id="selected-research-title">Selected Publications</h2>
+    <p>Five published works tracing my research from multimodal human sensing to adaptive and embodied systems.</p>
   </div>
-  {% assign selected_projects = site.data.research.projects | where: "homepage_selected", true | sort: "year" | reverse %}
+  {% assign selected_projects = site.data.research.projects | where: "status", "published" | where: "selected", true | where: "homepage_featured", true | sort: "homepage_order" %}
   <div class="publication-list publication-list--home">
-    {% for project in selected_projects limit: 5 %}
+    {% for project in selected_projects %}
       {% include publication-card.html project=project show_abstract=true %}
     {% endfor %}
   </div>
-  <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}">View all publications</a>
+  <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}#selected-publications">View all selected publications →</a>
 </section>
 
 <section id="education" class="research-section research-section--secondary" aria-labelledby="education-title">
