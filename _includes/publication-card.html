@@ -4,13 +4,8 @@
   {% assign status_label = "Published" %}
 {% elsif status_value == "accepted" %}
   {% assign status_label = "Accepted" %}
-{% elsif status_value == "under-review" %}
-  {% assign status_label = "Under review" %}
-{% elsif status_value == "under-revision" %}
-  {% assign status_label = "Under revision" %}
-{% else %}
-  {% assign status_label = status_value | replace: "-", " " | capitalize %}
 {% endif %}
+{% if status_value == "published" or status_value == "accepted" %}
 <article class="publication-entry publication-entry--with-image{% if include.compact %} publication-entry--compact{% endif %}"
   data-publication
   data-role="{{ project.my_role | default: 'unspecified' }}"
@@ -43,3 +38,4 @@
     </div>
   </div>
 </article>
+{% endif %}

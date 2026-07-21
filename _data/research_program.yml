@@ -1,18 +1,7 @@
 hero:
   headline: Human–AI Skill Learning through Multimodal Sensing and Embodied Intelligence
   paragraphs:
-    - I study how physical skills can be captured from human demonstrations, represented computationally, and transformed into adaptive policies that support human learning or embodied robot learning. My work combines multimodal sensing, XR/MR, and human–AI interaction to understand movement, intention, performance, and learning state.
-    - Racket sports serve as my primary testbed, spanning multimodal datasets, personalized AI coaching, practice-partner authoring, and human-to-robot skill transfer.
-    - My long-term goal is to build an integrated research program that connects physical-skill data collection, computational representation, policy learning, and deployment for both human and robot education.
+    - I study how physical skills can be captured from human demonstrations, represented computationally, and transformed into adaptive feedback for human learning. My work combines multimodal sensing, XR/MR, and human–AI interaction to understand movement, performance, and learning state.
+    - Racket sports serve as my primary testbed, spanning multimodal datasets, performance modeling, and adaptive motion guidance.
+    - My long-term goal is to connect physical-skill data collection, computational representation, and interactive feedback in systems that help people learn complex motor skills.
     - My broader collaborative work applies the same sensing-and-adaptation perspective to accessibility, mobility, and immersive interaction.
-
-selected_research:
-  - title: MultiSenseBadminton
-    contribution: Capturing physical skills through multimodal wearable sensing
-    publication_id: multisensebadminton
-    research_stage: Capture
-
-  - title: Counterfactual Motion Guidance
-    contribution: Translating sensed performance differences into actionable movement guidance
-    publication_id: counterfactual-motion-guidance
-    research_stage: Represent

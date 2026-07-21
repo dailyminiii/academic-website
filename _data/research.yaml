@@ -100,6 +100,7 @@ projects:
     year: 2025
     my_role: collaborative
     featured: true
+    homepage_selected: true
     research_themes: [human-skill-learning, adaptive-interaction]
     abstract_short: An LLM-augmented system for understanding and supporting golf skill learning.
     authors: Kangbeen Ko, Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
@@ -122,7 +123,9 @@ projects:
     year: 2025
     my_role: collaborative
     featured: false
+    homepage_selected: true
     research_themes: [human-skill-learning, adaptive-interaction, xr-in-vehicle]
+    abstract_short: An XR motion-guidance study examining how viewing perspective affects real-world motor-skill practice.
     authors: Minwoo Oh, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12131516
     code: 
@@ -237,8 +240,10 @@ projects:
     year: 2024
     my_role: collaborative
     featured: false
+    homepage_selected: true
     research_themes: [human-skill-learning, multimodal-sensing]
     award: Best Paper Award (Undergraduate Students)
+    abstract_short: A deep-learning approach for analyzing and visualizing badminton swing posture from human movement data.
     authors: Junhyuk Jang, <u>Minwoo Seong</u>, SeungJun Kim
     pdf: https://www.researchgate.net/profile/Minwoo-Seong/publication/383872848_Badminton_swing_posture_analysis_and_visualization_using_deep_learning-based_encoder-decoder_architecture/links/66defe14b1606e24c21cd2f6/Badminton-swing-posture-analysis-and-visualization-using-deep-learning-based-encoder-decoder-architecture.pdf
     code: 
@@ -258,6 +263,7 @@ projects:
     year: 2024
     my_role: first
     featured: true
+    homepage_selected: true
     research_themes: [human-skill-learning, multimodal-sensing, adaptive-interaction]
     abstract_short: Wearable-sensor-based counterfactual explanations translate performance differences into actionable badminton motion guidance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
@@ -339,6 +345,7 @@ projects:
     year: 2024
     my_role: first
     featured: true
+    homepage_selected: true
     research_themes: [human-skill-learning, multimodal-sensing]
     abstract_short: A multimodal wearable biomechanical dataset for capturing and evaluating badminton performance.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim

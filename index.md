@@ -32,39 +32,12 @@ redirect_from:
   <div class="section-heading">
     <p class="section-eyebrow">Research trajectory</p>
     <h2 id="selected-research-title">Selected Research</h2>
-    <p>Published work on capturing human performance and translating sensed differences into actionable guidance.</p>
+    <p>Five recent and representative publications on sensing, understanding, and supporting physical skill learning.</p>
   </div>
-  <div class="research-program-list">
-    {% for item in site.data.research_program.selected_research %}
-      {% assign linked_publication = nil %}
-      {% if item.publication_id %}
-        {% assign linked_publication = site.data.research.projects | where: "id", item.publication_id | first %}
-      {% endif %}
-      <article class="research-program-card{% if linked_publication.gif %} research-program-card--with-image{% endif %}">
-        {% if linked_publication.gif %}
-          <div class="research-program-card__image">
-            <img src="{{ linked_publication.gif | relative_url }}" alt="Visual summary for {{ linked_publication.title | escape }}" loading="lazy">
-          </div>
-        {% endif %}
-        <div class="research-program-card__body">
-          <div class="research-program-card__meta">
-            <span class="stage-badge">{{ item.research_stage }}</span>
-            {% if linked_publication.year %}<span>{{ linked_publication.year }}</span>{% endif %}
-            {% if linked_publication.status %}<span class="status-badge status-badge--{{ linked_publication.status }}">{{ linked_publication.status | replace: "-", " " | capitalize }}</span>{% endif %}
-          </div>
-          <h3>{{ item.title }}</h3>
-          <p class="research-contribution">{{ item.contribution }}</p>
-          {% if linked_publication.my_role %}<p class="research-role"><strong>Role:</strong> {% if linked_publication.my_role == "first" %}First / co-first author{% else %}Collaborative author{% endif %}</p>{% endif %}
-          {% if linked_publication.authors %}<p class="publication-authors">{{ linked_publication.authors }}</p>{% endif %}
-          {% if linked_publication.pdf or linked_publication.code or linked_publication.demo %}
-            <div class="publication-actions" aria-label="Resources for {{ item.title | escape }}">
-              {% if linked_publication.pdf %}<a class="paper-link" href="{{ linked_publication.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-              {% if linked_publication.code %}<a class="paper-link" href="{{ linked_publication.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-              {% if linked_publication.demo %}<a class="paper-link" href="{{ linked_publication.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
-            </div>
-          {% endif %}
-        </div>
-      </article>
+  {% assign selected_projects = site.data.research.projects | where: "homepage_selected", true | sort: "year" | reverse %}
+  <div class="publication-list publication-list--home">
+    {% for project in selected_projects limit: 5 %}
+      {% include publication-card.html project=project show_abstract=true %}
     {% endfor %}
   </div>
   <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}">View all publications</a>
