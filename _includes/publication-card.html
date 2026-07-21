@@ -33,7 +33,7 @@
     {% if project.award %}<p class="publication-award">Award: {{ project.award }}</p>{% endif %}
     {% if include.show_abstract and project.abstract_short %}<p class="publication-summary">{{ project.abstract_short }}</p>{% endif %}
     <div class="publication-actions" aria-label="Resources for {{ project.title | escape }}">
-      {% if project.pdf %}<a class="paper-link" href="{{ project.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+      {% if project.pdf %}<a class="paper-link" href="{{ project.pdf }}" target="_blank" rel="noopener">{{ project.pdf_label | default: "Paper" }}</a>{% endif %}
       {% if project.conference-web %}<a class="paper-link" href="{{ project.conference-web }}" target="_blank" rel="noopener">Website</a>{% endif %}
       {% if project.code %}<a class="paper-link" href="{{ project.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       {% if project.demo %}<a class="paper-link" href="{{ project.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
