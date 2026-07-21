@@ -1,22 +1,50 @@
-<!-- Research section -->
-
-<hr>
-<div class="row" id="research">
-    <div class="col">
-        <h2 clss="mb-5">📚 publications</h2>
-        <p></p>
-        <div id="filters-project">
-            <button class="filter-button active" data-filter="*">all</button>
-            {% for category in site.data.research.categories %}
-                <button class="filter-button" data-filter="{{ category.data-filter }}">{{ category.category-name }}</button>
-            {% endfor %}
-        </div>
-        <p></p>
-        <div id="projects" class="isotope">
-            {% for project in site.data.research.projects %}
-                {% include_relative _libs/research_widget.html %}
-            {% endfor %}
-        </div>
-        <p></p>
+<section class="section" id="research" aria-labelledby="research-heading">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">Research</p>
+        <h2 id="research-heading">Sensing the body, shaping better feedback.</h2>
+      </div>
+      <p>I study how multimodal signals—from muscle activity and movement to gaze and physiology—can make interactive systems more adaptive, inclusive, and useful.</p>
     </div>
-</div>
+
+    <div class="research-grid">
+      {% for area in site.data.about.research_areas %}
+        <article class="research-card">
+          <div class="card-index">0{{ forloop.index }}</div>
+          <p class="card-meta">{{ area.label }}</p>
+          <h3>{{ area.title }}</h3>
+          <p>{{ area.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="publications-block" id="publications" aria-labelledby="publications-heading">
+      <div class="section-heading section-heading-compact">
+        <div>
+          <p class="section-kicker">Selected publications</p>
+          <h2 id="publications-heading">Recent work</h2>
+        </div>
+        <a class="text-link" href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Full profile on Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="publication-list">
+        {% for project in site.data.research.projects limit:5 %}
+          {% include_relative _libs/research_widget.html %}
+        {% endfor %}
+      </div>
+
+      <details class="publication-archive">
+        <summary>
+          <span>View all publications</span>
+          <span class="summary-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="publication-list publication-list-archive">
+          {% for project in site.data.research.projects offset:5 %}
+            {% include_relative _libs/research_widget.html %}
+          {% endfor %}
+        </div>
+      </details>
+    </div>
+  </div>
+</section>

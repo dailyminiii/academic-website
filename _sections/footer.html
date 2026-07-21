@@ -1,18 +1,26 @@
-<!-- Footer section -->
-
-<div>‎</div>
-<hr>
-<footer class="pt-2 my-md-2 pt-md-">
-    <div class="row justify-content-center">
-        <div class="col-7 col-md text-left align-self-center">
-            <p class="h6">© {{ site.title }}, <span id="currentYear"></span></p>
-            <a href="https://github.com/mkhangg/academic-website" target="_blank" rel="noopener"><b>> web source @github</b></a>
-        </div>
-        <div class="col col-md text-right">
-            {% for logo in site.data.footer.logos %}
-                {% include_relative _libs/footer_widget.html %}
-            {% endfor %}
-        </div>
+<section class="contact-section" id="contact" aria-labelledby="contact-heading">
+  <div class="shell contact-grid">
+    <div>
+      <p class="section-kicker">Contact</p>
+      <h2 id="contact-heading">Interested in embodied, adaptive interaction?</h2>
+      <p>I am happy to talk about research, collaboration, and new ideas.</p>
     </div>
-    <p></p>
+    <div class="contact-actions">
+      <a class="button button-light" href="mailto:{{ site.data.about.email }}">{{ site.data.about.email }}</a>
+      <div class="contact-links" aria-label="External profiles">
+        <a href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Scholar</a>
+        <a href="{{ site.data.about.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ site.data.about.orcid }}" target="_blank" rel="noopener">ORCID</a>
+        <a href="{{ site.data.about.youtube }}" target="_blank" rel="noopener">YouTube</a>
+        <a href="{{ site.data.about.instagram }}" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>© <span id="current-year"></span> {{ site.title }}</p>
+    <p>Designed for clarity, built with Jekyll.</p>
+  </div>
 </footer>
