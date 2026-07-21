@@ -1,11 +1,13 @@
-<div class="row mb-4">
-    <div class="col-sm-4">
-        <img width="100%" height="auto" class="w-full rounded-lg" src="{{ mini-project.gif }}">
+<article class="project-card">
+  <div class="project-image">
+    <img src="{{ mini_project.thumbnail | relative_url }}" alt="{{ mini_project.alt }}" width="960" height="600" loading="lazy">
+  </div>
+  <div class="project-copy">
+    <div class="project-meta">
+      <span>{{ mini_project.type }}</span>
+      <span>{{ mini_project.time }}</span>
     </div>
-    <div class="col-sm-8">
-        {% if mini-project.system-name %} <b><i>{{ mini-project.system-name }}</i>:</b> {% endif %}
-        <b>{{ mini-project.title }}</b>
-        <br>
-        <u><b><i>Description</i></b>:</u> {{ mini-project.description }}
-    </div>
-</div>
+    <h3>{{ mini_project.title }}</h3>
+    <p>{{ mini_project.description }}</p>
+  </div>
+</article>

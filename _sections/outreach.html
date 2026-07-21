@@ -1,18 +1,17 @@
-<!-- Outreach section -->
-
-<hr>
-<div class="row" id="termproject">
-    <div class="col">
-        <h2 clss="mb-5">🧩 Fun Projects </h2>
-        <p></p>
-        {% for mini-project in site.data.outreach.mini-projects %}
-            {% include_relative _libs/outreach_widget.html %}
-        {% endfor %}
-        <p></p>
+<section class="section section-tint" id="projects" aria-labelledby="projects-heading">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">Projects</p>
+        <h2 id="projects-heading">Prototypes beyond the paper.</h2>
+      </div>
+      <p>Small experiments in immersive interaction, creative robotics, and embodied experiences.</p>
     </div>
-</div>
 
-
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=yFsJn6ACM8XC95d5WqN18GstlB1ZXpv32x2sXz68g9I&cl=ffffff&w=a"></script>
-
-<a href="https://clustrmaps.com/site/1c6q2"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=yFsJn6ACM8XC95d5WqN18GstlB1ZXpv32x2sXz68g9I&cl=ffffff" /></a>
+    <div class="project-grid">
+      {% for mini_project in site.data.outreach.mini_projects %}
+        {% include_relative _libs/outreach_widget.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

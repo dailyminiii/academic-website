@@ -1,49 +1,19 @@
-mini-projects:
-
+mini_projects:
   - title: Immersive Contents Design using VR Piano
-    system-name: 
-    gif: assets/img/VR Piano (1).gif
-    event: 
-    event-web: 
-    team: 
-    post: 
-    code: 
-    demo: 
-    description: VR Piano Contents Project (May. 2024 ~ Jun. 2024)
-    prize: 
-
+    type: Immersive interaction
+    thumbnail: assets/img/projects/vr-piano.jpg
+    alt: Virtual piano interaction prototype
+    description: A VR piano experience exploring embodied music learning and performance.
+    time: May–Jun 2024
   - title: In-car XR Halloween Contents
-    system-name: 
-    gif: assets/img/XRcontents.gif
-    event: 
-    event-web: 
-    team: 
-    post: 
-    code: 
-    demo: 
-    description: Research Intern Project (Jul. 2021 ~ Aug. 2021)
-    prize: 
-
+    type: In-vehicle XR
+    thumbnail: assets/img/projects/in-car-xr.jpg
+    alt: In-car XR Halloween experience
+    description: An immersive passenger experience built during a research internship.
+    time: Jul–Aug 2021
   - title: Robot Control for Piano Ensemble
-    system-name: 
-    gif: assets/img/robotpiano.gif
-    event: 
-    event-web: 
-    team: 
-    post: 
-    code: 
-    demo: 
-    description: Lecture Term Project (May. 2021 ~ Jun. 2021)
-    prize: 
-
-  - title: Production of VR GIST campus map
-    system-name: 
-    gif: assets/img/WMWW.gif
-    event: 
-    event-web: 
-    team: 
-    post: 
-    code: 
-    demo: 
-    description: GIST Infinite Challenge Project (Mar. 2021 ~ Dec. 2021)
-    prize: 
+    type: Creative robotics
+    thumbnail: assets/img/projects/robot-piano.jpg
+    alt: Robotic hands playing a keyboard with a human performer
+    description: A robotic piano ensemble created as a lecture term project.
+    time: May–Jun 2021

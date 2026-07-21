@@ -1,32 +1,53 @@
-# basic information
 name: Minwoo Seong
-profile-pic: assets/img/profile3.png
+role: Ph.D. Candidate in Human-Computer Interaction
+affiliation: Gwangju Institute of Science and Technology (GIST)
+location: Gwangju, South Korea
+profile_pic: assets/img/profile-optimized.jpg
+email: seongminwoo@gm.gist.ac.kr
 
-# emoji indicator
-emoji: ✝
-desc-emoji: Christian
+lab_name: Human-Centered Intelligent Systems Lab
+lab_url: https://sites.google.com/view/gist-hcis-lab
+institution_url: https://www.gist.ac.kr/en/main.html
+advisor_name: SeungJun Kim
+advisor_url: https://scholar.google.co.kr/citations?user=AjfRd6wAAAAJ&hl=ko
 
-
-# social links
-scholar: https://scholar.google.co.kr/citations?user=MYVwH3MAAAAJ&hl=ko
+cv: https://drive.google.com/file/d/1uZwP71LCJTdu6NXbo4TaMaeR3IAWUoEp/view?usp=sharing
+scholar: https://scholar.google.co.kr/citations?user=MYVwH3MAAAAJ&hl=en
 github: https://github.com/dailyminiii
 orcid: https://orcid.org/0009-0007-5847-9666
 youtube: https://www.youtube.com/channel/UCUCpgBdsKzO29vFWZjNM-7Q
 instagram: https://www.instagram.com/daily_miniii/
 
-# about me
-first-paragraph: I am a Ph.D. candidate at the <a href="https://sites.google.com/view/gist-hcis-lab" target="_blank" rel="noopener">Human-Centered Intelligent Systems (HCIS) Lab</a> affiliated with the <a href="https://www.gist.ac.kr/kr/main.html" target="_blank" rel="noopener">Gwangju Institute of Science and Technology (GIST) at Gwangju, South Korea</a>, advised by <a href="https://scholar.google.co.kr/citations?user=AjfRd6wAAAAJ&hl=ko" target="_blank" rel="noopener">Dr. SeungJun Kim</a>.
+headline: Interactive AI for how people move, learn, and engage.
+summary: I design systems that sense human behavior in real time and turn it into adaptive feedback. My work connects wearable sensing, AI, and immersive interaction across sports training, accessibility, and human-vehicle interaction.
 
-research-introduction: I design interactive AI systems that respond to the human body and behavior in real time. My work combines multimodal sensing—including muscle activity, movement, gaze, and physiological states—with adaptive feedback to support learning, engagement, and decision-making. I apply this approach across domains such as sports training, accessibility for children with Autism Spectrum Disorder, and human-vehicle interaction in autonomous driving. In these contexts, where expert instruction or hands-on experience may be limited, I aim to build systems that lower barriers to learning and promote embodied, inclusive, and personalized interaction. While it is just a dream for now, I hope to one day launch the SensoriMotor Wearable (SMW) Lab to continue studying how sensing and feedback technologies can serve diverse learners through embodied, adaptive interaction.
+keywords:
+  - Wearable Sensing
+  - Human-Centered AI
+  - VR / AR
+  - Motor Learning
 
-research-interests:
-  - field: SportsHCI
-    subfields: AI-guided motion and muscle feedback, Racket sports coaching systems, Sensor-based motor learning
+research_areas:
+  - label: SportsHCI
+    title: AI-guided motor learning
+    description: Motion and muscle sensing for personalized feedback in racket sports and embodied skill training.
+  - label: Accessibility
+    title: Inclusive adaptive interaction
+    description: Engagement modeling and interactive interventions that support children with Autism Spectrum Disorder.
+  - label: Mobility
+    title: Human-vehicle interaction
+    description: Driver and passenger sensing, risk-aware simulation, and XR experiences for automated vehicles.
 
-  - field: A11y
-    subfields: Engagement modeling for Autism Spectrum Disorder, Deep learning for behavioral intervention
-  
-  - field: Autonomous Vehicle
-    subfields: Driver behavior sensing and modeling, Risk-aware autonomous driving simulation, XR-based in-vehicle interaction design
-
-  - field: <u>You can download my CV <hightlight><a href="https://drive.google.com/file/d/1uZwP71LCJTdu6NXbo4TaMaeR3IAWUoEp/view?usp=sharing" target="_blank" rel="noopener">here</a></hightlight></u>
+featured_work:
+  - title: MultiSenseBadminton
+    description: A wearable biomechanical dataset for evaluating badminton performance.
+    venue: Scientific Data · 2024
+    image: assets/img/MultiSenseBadminton.png
+    image_alt: Badminton motion and wearable sensing overview
+    url: https://www.nature.com/articles/s41597-024-03144-z
+  - title: Engagnition
+    description: A multidimensional dataset for engagement recognition of children with Autism Spectrum Disorder.
+    venue: Scientific Data · 2024
+    image: assets/img/Engagnition.png
+    image_alt: Engagement recognition dataset overview
+    url: https://www.nature.com/articles/s41597-024-03132-3
