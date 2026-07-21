@@ -1,26 +1,20 @@
-<section class="contact-section" id="contact" aria-labelledby="contact-heading">
-  <div class="shell contact-grid">
+<footer class="site-footer">
+  <div class="shell footer-main">
     <div>
-      <p class="section-kicker">Contact</p>
-      <h2 id="contact-heading">Interested in embodied, adaptive interaction?</h2>
-      <p>I am happy to talk about research, collaboration, and new ideas.</p>
+      <span class="footer-mark" aria-hidden="true">✦</span>
+      <strong>{{ site.data.about.name }}</strong>
+      <p>{{ site.data.about.role }} at GIST</p>
     </div>
-    <div class="contact-actions">
-      <a class="button button-light" href="mailto:{{ site.data.about.email }}">{{ site.data.about.email }}</a>
-      <div class="contact-links" aria-label="External profiles">
-        <a href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Scholar</a>
-        <a href="{{ site.data.about.github }}" target="_blank" rel="noopener">GitHub</a>
-        <a href="{{ site.data.about.orcid }}" target="_blank" rel="noopener">ORCID</a>
-        <a href="{{ site.data.about.youtube }}" target="_blank" rel="noopener">YouTube</a>
-        <a href="{{ site.data.about.instagram }}" target="_blank" rel="noopener">Instagram</a>
-      </div>
+    <div class="footer-links" aria-label="External profiles">
+      <a href="{{ site.data.about.cv }}" target="_blank" rel="noopener">CV</a>
+      <a href="{{ site.data.about.scholar }}" target="_blank" rel="noopener">Scholar</a>
+      <a href="{{ site.data.about.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{ site.data.about.orcid }}" target="_blank" rel="noopener">ORCID</a>
+      <a href="mailto:{{ site.data.about.email }}">Email</a>
     </div>
   </div>
-</section>
-
-<footer class="site-footer">
-  <div class="shell footer-inner">
+  <div class="shell footer-bottom">
     <p>© <span id="current-year"></span> {{ site.title }}</p>
-    <p>Designed for clarity, built with Jekyll.</p>
+    <p>Built with Jekyll · Gwangju, South Korea</p>
   </div>
 </footer>
