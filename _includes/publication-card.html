@@ -5,6 +5,10 @@
 {% elsif status_value == "accepted" %}
   {% assign status_label = "Accepted" %}
 {% endif %}
+{% assign category_label = project.category %}
+{% if category_label == "A11y" %}{% assign category_label = "Accessibility" %}{% endif %}
+{% assign equal_contribution = false %}
+{% if project.authors contains "*" %}{% assign equal_contribution = true %}{% endif %}
 {% if status_value == "published" or status_value == "accepted" %}
 <article class="publication-entry publication-entry--with-image{% if include.compact %} publication-entry--compact{% endif %}"
   data-publication
@@ -20,14 +24,15 @@
   <div class="publication-body">
     <div class="publication-kicker">
       {% if project.year %}<span>{{ project.year }}</span>{% endif %}
-      {% if project.category %}<span>{{ project.category }}</span>{% endif %}
+      {% if category_label %}<span>{{ category_label }}</span>{% endif %}
       <span class="status-badge status-badge--{{ status_value }}">{{ status_label }}</span>
-      {% if project.my_role == "first" %}<span class="contribution-badge">First / co-first author</span>{% endif %}
+      {% if project.my_role == "first" %}<span class="contribution-badge">Lead author</span>{% endif %}
+      {% if equal_contribution %}<span class="contribution-badge">Equal contribution</span>{% endif %}
     </div>
     {% if include.nested %}<h4>{{ project.title }}</h4>{% else %}<h3>{{ project.title }}</h3>{% endif %}
     <p class="publication-authors">{{ project.authors }}</p>
     <p class="publication-venue">{{ project.conference }}</p>
-    {% if project.award %}<p class="publication-award"><span aria-hidden="true">🏆</span> {{ project.award }}</p>{% endif %}
+    {% if project.award %}<p class="publication-award">Award: {{ project.award }}</p>{% endif %}
     {% if include.show_abstract and project.abstract_short %}<p class="publication-summary">{{ project.abstract_short }}</p>{% endif %}
     <div class="publication-actions" aria-label="Resources for {{ project.title | escape }}">
       {% if project.pdf %}<a class="paper-link" href="{{ project.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}

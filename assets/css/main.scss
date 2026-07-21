@@ -488,6 +488,13 @@ html {
   gap: 0.35rem;
 }
 
+.filter-help {
+  margin: 0.45rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.68em;
+  line-height: 1.5;
+}
+
 .filter-button {
   padding: 0.35rem 0.55rem;
   border: 1px solid var(--global-border-color);
@@ -575,6 +582,12 @@ html {
   color: var(--global-text-color);
   font-size: 0.8em;
   font-weight: 700;
+}
+
+.publication-note {
+  margin-top: 1rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72em;
 }
 
 .publication-summary {
