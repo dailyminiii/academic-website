@@ -80,6 +80,7 @@
     const search = controls.querySelector("input[type='search']");
     const results = document.getElementById("publication-results");
     const noResults = document.querySelector(".publication-no-results");
+    const reset = controls.querySelector("[data-reset-filters]");
     const state = { contribution: "all", theme: "all", query: "" };
 
     const queryTheme = new URLSearchParams(window.location.search).get("theme");
@@ -99,7 +100,6 @@
       let visibleCount = 0;
       cards.forEach(function (card) {
         const contributionMatch = state.contribution === "all" ||
-          (state.contribution === "selected" && card.dataset.featured === "true") ||
           (state.contribution === "first" && card.dataset.role === "first") ||
           (state.contribution === "collaborative" && card.dataset.role === "collaborative");
         const themes = (card.dataset.themes || "").split(/\s+/);
@@ -111,8 +111,9 @@
         if (visible) visibleCount += 1;
       });
 
-      if (results) results.textContent = visibleCount + (visibleCount === 1 ? " publication" : " publications") + " shown";
+      if (results) results.textContent = visibleCount + (visibleCount === 1 ? " publication" : " publications");
       if (noResults) noResults.hidden = visibleCount !== 0;
+      if (reset) reset.hidden = state.contribution === "all" && state.theme === "all" && !state.query;
     }
 
     controls.querySelectorAll("[data-filter-group]").forEach(function (group) {
@@ -120,16 +121,36 @@
         const button = event.target.closest("[data-filter-value]");
         if (!button) return;
         const groupName = group.dataset.filterGroup;
-        state[groupName] = button.dataset.filterValue;
+        const value = button.dataset.filterValue;
+        state[groupName] = state[groupName] === value && value !== "all" ? "all" : value;
         syncButtons(groupName);
         applyFilters();
       });
     });
 
-    search.addEventListener("input", function () {
-      state.query = search.value.trim().toLowerCase();
-      applyFilters();
-    });
+    if (search) {
+      search.addEventListener("input", function () {
+        state.query = search.value.trim().toLowerCase();
+        applyFilters();
+      });
+    }
+
+    if (reset) {
+      reset.addEventListener("click", function () {
+        state.contribution = "all";
+        state.theme = "all";
+        state.query = "";
+        if (search) search.value = "";
+        syncButtons("contribution");
+        syncButtons("theme");
+        applyFilters();
+
+        const url = new URL(window.location.href);
+        url.searchParams.delete("theme");
+        window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+        if (search) search.focus();
+      });
+    }
 
     syncButtons("contribution");
     syncButtons("theme");

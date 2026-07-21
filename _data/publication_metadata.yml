@@ -1,23 +1,19 @@
 contribution_filters:
-  - label: Selected
-    value: selected
-  - label: First / Co-first
-    value: first
-  - label: Collaborative
-    value: collaborative
   - label: All
     value: all
+  - label: First / Co-first author
+    value: first
+  - label: Co-author
+    value: collaborative
 
 theme_filters:
+  - label: All
+    value: all
   - label: Human Skill Learning
     value: human-skill-learning
   - label: Multimodal Sensing
     value: multimodal-sensing
-  - label: Adaptive Interaction
-    value: adaptive-interaction
   - label: Accessibility & Mobility
     value: accessibility-mobility
   - label: XR & In-Vehicle Interaction
     value: xr-in-vehicle
-  - label: All
-    value: all

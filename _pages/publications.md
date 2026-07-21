@@ -35,17 +35,17 @@ My work spans human–AI skill learning, multimodal sensing, adaptive interactio
     <div class="section-heading">
       <p class="section-eyebrow">Complete record</p>
       <h2>All Publications</h2>
-      <p>Search and contribution or research-theme filters work together.</p>
+      <p>Search publications or filter by author role and research area. Filters can be combined.</p>
     </div>
 
     <form class="publication-controls" data-publication-controls role="search" aria-label="Filter publications" onsubmit="return false;">
       <label class="publication-search" for="publication-search">
         <span>Search publications</span>
-        <input id="publication-search" type="search" placeholder="Title, author, venue, year, or research tag" autocomplete="off">
+        <input id="publication-search" type="search" placeholder="Title, author, venue, year, or keyword" autocomplete="off">
       </label>
 
       <fieldset class="filter-group" data-filter-group="contribution">
-        <legend>Contribution</legend>
+        <legend>Author role</legend>
         <div class="filter-buttons">
           {% for filter in site.data.publication_metadata.contribution_filters %}
             <button type="button" class="filter-button" data-filter-value="{{ filter.value }}" aria-pressed="{% if filter.value == 'all' %}true{% else %}false{% endif %}">{{ filter.label }}</button>
@@ -54,14 +54,17 @@ My work spans human–AI skill learning, multimodal sensing, adaptive interactio
       </fieldset>
 
       <fieldset class="filter-group" data-filter-group="theme">
-        <legend>Research theme</legend>
+        <legend>Research area</legend>
         <div class="filter-buttons">
           {% for filter in site.data.publication_metadata.theme_filters %}
             <button type="button" class="filter-button" data-filter-value="{{ filter.value }}" aria-pressed="{% if filter.value == 'all' %}true{% else %}false{% endif %}">{{ filter.label }}</button>
           {% endfor %}
         </div>
       </fieldset>
-      <p id="publication-results" class="publication-results" aria-live="polite"></p>
+      <div class="publication-results-row">
+        <p id="publication-results" class="publication-results" aria-live="polite"></p>
+        <button class="filter-reset" type="button" data-reset-filters hidden>Clear filters</button>
+      </div>
     </form>
 
     <section class="publication-status-group" aria-labelledby="published-title">
