@@ -38,6 +38,8 @@ future: true
 read_more: "disabled"
 comments:
   provider: false
+analytics:
+  provider: "custom"
 atom_feed:
   hide: true
 
