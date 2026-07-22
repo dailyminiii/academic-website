@@ -39,7 +39,9 @@ read_more: "disabled"
 comments:
   provider: false
 analytics:
-  provider: "custom"
+  provider: "google-analytics-4"
+  google:
+    tracking_id: "G-T01XF6Q5CJ"
 atom_feed:
   hide: true
 
