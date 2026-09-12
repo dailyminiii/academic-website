@@ -5,7 +5,7 @@ description: "Selected publications and research outputs by Minwoo Seong, organi
 author_profile: true
 ---
 
-Published and accepted work is listed alongside selected under-review manuscripts with public preprints. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
+Published and accepted work is listed below. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
 
 {% assign sorted_projects = site.data.research.projects | sort: "year" | reverse %}
 {% assign selected_projects = site.data.research.projects | where: "selected", true | sort: "selected_order" %}
@@ -67,17 +67,6 @@ Published and accepted work is listed alongside selected under-review manuscript
     </form>
 
     <div data-publication-list>
-      <section class="publication-status-group" aria-labelledby="under-review-title">
-        <h3 id="under-review-title">Under Review</h3>
-        <div class="publication-list">
-          {% for project in sorted_projects %}
-            {% if project.status == "under-review" %}
-              {% include publication-card.html project=project nested=true %}
-            {% endif %}
-          {% endfor %}
-        </div>
-      </section>
-
       <section class="publication-status-group" aria-labelledby="published-title">
         <h3 id="published-title">Published / Accepted Research Outputs</h3>
         <div class="publication-list">
