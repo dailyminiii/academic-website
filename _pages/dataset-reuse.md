@@ -1,20 +1,20 @@
 ---
 title: "Studies Using My Datasets"
 permalink: /dataset-reuse/
-description: "Research publications that report using the MultiSenseBadminton and Engagnition datasets."
+description: "Research publications that report using the MultiSenseBadminton, Engagnition, and TimelyTale datasets."
 author_profile: true
 ---
 
-This curated list links to research that reports using data from MultiSenseBadminton or Engagnition. It is not a citation count or an exhaustive list of citing papers. My co-authored follow-up work is listed separately from work by other authors.
+This curated list links to research that reports using data from MultiSenseBadminton, Engagnition, or TimelyTale. It is not a citation count or an exhaustive list of citing papers. Work I co-authored is listed separately from other publications.
 
 {% for dataset in site.data.dataset_reuse.datasets %}
   {% assign source = site.data.research.projects | where: "id", dataset.publication_id | first %}
   <section id="{{ dataset.publication_id }}" class="dataset-reuse-group" aria-labelledby="{{ dataset.publication_id }}-title">
     <h2 id="{{ dataset.publication_id }}-title">{{ source.title | split: ':' | first }}</h2>
     {% if dataset.summary %}<p class="dataset-reuse-summary">{{ dataset.summary }}</p>{% endif %}
-    <p class="dataset-reuse-source"><a href="{{ source.pdf }}">Source paper</a> · <a href="{{ dataset.dataset_url }}">Open dataset</a> · <a href="{{ dataset.citations_url }}">Google Scholar citations</a></p>
+    <p class="dataset-reuse-source"><a href="{{ source.pdf }}">Source paper</a> · <a href="{{ dataset.dataset_url }}">Open dataset</a>{% if dataset.citations_url %} · <a href="{{ dataset.citations_url }}">Google Scholar citations</a>{% endif %}</p>
     {% if dataset.independent.size > 0 %}
-      <h3>Research by other authors</h3>
+      <h3>Other publications using the dataset</h3>
       <ul class="dataset-reuse-list">
         {% for study in dataset.independent %}
           <li><a href="{{ study.paper_url }}">{{ study.title }}</a> <span class="dataset-reuse-meta">{{ study.venue }} · {{ study.year }}</span><br>{{ study.use }}{% if study.evidence_url %} <a href="{{ study.evidence_url }}">Usage evidence</a>{% endif %}</li>

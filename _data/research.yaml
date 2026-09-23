@@ -254,6 +254,7 @@ projects:
     category: ETC
 
   - title: "TimelyTale: A Multimodal Dataset Assessing Passengers’ Demands for Explanations in Highly Automated Vehicles"
+    id: timelytale
     system-name: 
     gif: assets/img/TimelyTale.png
     conference: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)

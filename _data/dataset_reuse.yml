@@ -46,3 +46,13 @@ datasets:
         paper_url: https://doi.org/10.5281/zenodo.18250085
         evidence_url: https://github.com/omicscodeathon/autdb
         use: Uses Engagnition wristband signals and annotations in a cross-dataset movement-analysis benchmark.
+
+  - publication_id: timelytale
+    summary: Multimodal driving and passenger-state data documenting when passengers request explanations in highly automated vehicles.
+    dataset_url: https://doi.org/10.7910/DVN/CQ8UB0
+    independent:
+      - title: "What Amplifies Explanation Needs in Autonomous Vehicles?: Feature Interaction Between Maneuver Dynamics and Passenger Physiological Responses"
+        year: 2026
+        venue: HCI Korea 2026
+        paper_url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745788
+        use: Reanalyzes TimelyTale vehicle-dynamics and passenger-physiology features with SHAP interaction analysis to examine when explanation needs increase.
