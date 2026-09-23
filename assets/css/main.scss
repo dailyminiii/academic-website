@@ -395,6 +395,60 @@ html {
   margin-top: 1.1rem;
 }
 
+.dataset-reuse-group + .dataset-reuse-group {
+  margin-top: 1.7rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.dataset-reuse-group h3 {
+  margin-bottom: 0.2rem;
+}
+
+.dataset-reuse-summary {
+  margin: 0.35rem 0;
+}
+
+.dataset-reuse-count {
+  margin: 0.35rem 0;
+}
+
+.dataset-reuse-group h4 {
+  margin: 1.1rem 0 0.4rem;
+  font-size: 0.82em;
+}
+
+.dataset-reuse-source,
+.dataset-reuse-meta,
+.dataset-reuse-note {
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+}
+
+.dataset-reuse-details summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--global-link-color);
+  font-weight: 600;
+}
+
+.dataset-reuse-details summary:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 3px;
+}
+
+.dataset-reuse-list {
+  margin-bottom: 0;
+}
+
+.dataset-reuse-list li + li {
+  margin-top: 0.75rem;
+}
+
+.dataset-reuse-note {
+  margin: 0.85rem 0 0;
+}
+
 .empty-state {
   padding: 0.85rem 1rem;
   border-left: 3px solid var(--global-border-color);

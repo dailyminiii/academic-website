@@ -1,0 +1,48 @@
+datasets:
+  - publication_id: multisensebadminton
+    summary: Multimodal wearable and motion data for analyzing badminton strokes and skill levels.
+    dataset_url: https://doi.org/10.6084/m9.figshare.c.6725706.v1
+    citations_url: https://scholar.google.co.kr/scholar?oi=bibs&hl=en&cites=18224346977664880275,1472936828270918743
+    independent:
+      - title: "Physical Fitness and Tactical Optimization of Badminton Based on Multimodal Fusion and Swarm Intelligence Algorithm"
+        year: 2026
+        venue: KSII Transactions on Internet and Information Systems
+        paper_url: https://doi.org/10.3837/tiis.2026.08.012
+        evidence_url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003376920
+        use: Uses the dataset's inertial streams for cross-subject badminton stroke recognition and offline tactical analysis.
+      - title: "A Deep Learning Framework with Kinetic Chain Graphs for Sports Striking Motion Evaluation"
+        year: 2026
+        venue: IJCNN 2026
+        paper_url: https://linklings.s3.amazonaws.com/organizations/WCCI/wcci2026/submissions/stype114/qNA8x-ijcnn_pap3178s2.pdf
+        use: Evaluates a kinetic-chain graph model on the dataset's forehand-clear and backhand-drive strokes.
+      - title: "ChainBMD: A Deep Learning Framework for Stroke Evaluation and Guidance Using Kinetic Chain Graphs and Temporal Analysis"
+        year: 2026
+        venue: Expert Systems with Applications
+        paper_url: https://doi.org/10.1016/j.eswa.2026.131993
+        evidence_url: https://github.com/fangluoning/ChainBMD
+        use: Combines foot pressure, EMG, and joint-angle streams to evaluate badminton strokes and generate guidance.
+      - title: "Gaze Behaviors During Forehand Clear and Backhand Driving in Badminton: A Comparison Between Beginner, Intermediate and Expert Players"
+        year: 2026
+        venue: BMC Psychology
+        paper_url: https://doi.org/10.1186/s40359-026-04547-w
+        use: Reanalyzes the released eye-tracking and annotation data across stroke types and skill levels.
+    coauthored:
+      - publication_id: ts2vec-badminton
+        use: Uses 3D skeleton sequences and expert skill labels for swing-level assessment.
+      - publication_id: counterfactual-motion-guidance
+        use: Uses joint positions and stroke-quality labels to generate motion guidance.
+      - publication_id: badminton-posture-analysis
+        use: Uses joint trajectories and swing annotations to visualize posture differences.
+    note: The IJCNN and ChainBMD papers are related outputs from the same research group.
+
+  - publication_id: engagnition
+    summary: Physiological, movement, performance, and expert-annotated engagement data from 57 children with autism spectrum disorder.
+    dataset_url: https://doi.org/10.6084/m9.figshare.c.6879628
+    citations_url: https://scholar.google.co.kr/scholar?oi=bibs&hl=en&cites=18375383574279449111
+    independent:
+      - title: "Transfer Learning from Datasets with Unshared Features for Detecting Autism Spectrum Disorder Using AutDB"
+        year: 2026
+        venue: Preprint
+        paper_url: https://doi.org/10.5281/zenodo.18250085
+        evidence_url: https://github.com/omicscodeathon/autdb
+        use: Uses Engagnition wristband signals and annotations in a cross-dataset movement-analysis benchmark.

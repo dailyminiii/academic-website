@@ -34,6 +34,7 @@ projects:
     category: A11y
 
   - title: TS2Vec-based Time-Series Representation Learning for Badminton Swing Skill Level Assessment
+    id: ts2vec-badminton
     system-name:
     gif: assets/img/TS2Vec.png
     conference: HCI Korea
@@ -44,7 +45,7 @@ projects:
     featured: false
     research_themes: [physical-skill-learning, multimodal-human-modeling]
     authors: Chanyoung Park, <u>Minwoo Seong</u>, Juwon Um, Seongjun Kang, Jeongju Park, SeungJun Kim
-    pdf:
+    pdf: https://www.researchgate.net/publication/404143526_TS2Vec-based_Time-Series_Representation_Learning_for_Badminton_Swing_Skill_Level_Assessment
     code:
     demo:
     slides:
@@ -272,6 +273,7 @@ projects:
     category: AutonomousVehicle
 
   - title: Badminton Swing Posture Analysis and Visualization Using Deep Learning-Based Encoder-Decoder Architecture
+    id: badminton-posture-analysis
     system-name: 
     gif: assets/img/KCC2024.png
     conference: KCC
@@ -360,6 +362,7 @@ projects:
     category: ETC
 
   - title: "Engagnition: A Multi-Dimensional Dataset for Engagement Recognition of Children with Autism Spectrum Disorder"
+    id: engagnition
     system-name: 
     gif: assets/img/Engagnition.png
     conference: Scientific Data 11, 299
