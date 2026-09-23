@@ -29,7 +29,7 @@ redirect_from:
   {% assign selected_projects = site.data.research.projects | where: "selected", true | where: "homepage_featured", true | sort: "homepage_order" %}
   <div class="publication-list publication-list--home">
     {% for project in selected_projects %}
-      {% include publication-card.html project=project show_abstract=true %}
+      {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true %}
     {% endfor %}
   </div>
   <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}#selected-publications">View all selected publications →</a>

@@ -4,9 +4,15 @@
 
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default is "system".
+const colorSchemePreference = window.matchMedia('(prefers-color-scheme: dark)');
+
 let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
-  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
+  try {
+    const themeSetting = localStorage.getItem("theme");
+    return (themeSetting === "dark" || themeSetting === "light") ? themeSetting : "system";
+  } catch (_error) {
+    return "system";
+  }
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
@@ -16,31 +22,34 @@ let determineComputedTheme = () => {
   if (themeSetting != "system") {
     return themeSetting;
   }
-  return (userPref && userPref("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+  return colorSchemePreference.matches ? "dark" : "light";
 };
 
 // Set the theme on page load or when explicitly called
 let setTheme = (theme) => {
-  const use_theme =
-    theme ||
-    localStorage.getItem("theme") ||
-    $("html").attr("data-theme") ||
-    browserPref;
+  const useTheme = theme || determineComputedTheme();
 
-  if (use_theme === "dark") {
+  if (useTheme === "dark") {
     $("html").attr("data-theme", "dark");
     $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
-  } else if (use_theme === "light") {
+  } else {
     $("html").removeAttr("data-theme");
     $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
   }
+  $("#theme-toggle [role='button']").attr("aria-label", useTheme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) themeColor.content = useTheme === "dark" ? "#474747" : "#ffffff";
 };
 
 // Toggle the theme manually
 var toggleTheme = () => {
   const current_theme = $("html").attr("data-theme");
   const new_theme = current_theme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", new_theme);
+  try {
+    localStorage.setItem("theme", new_theme);
+  } catch (_error) {
+    // The selected theme still applies when storage is unavailable.
+  }
   setTheme(new_theme);
 };
 
@@ -48,9 +57,9 @@ var toggleTheme = () => {
    Plotly integration script so that Markdown codeblocks will be rendered
    ========================================================================== */
 
-// Read the Plotly data from the code block, hide it, and render the chart as new node. This allows for the 
+// Read the Plotly data from the code block, hide it, and render the chart as new node. This allows for the
 // JSON data to be retrieve when the theme is switched.
-import { plotlyDarkLayout, plotlyLightLayout } from './theme.js';       
+import { plotlyDarkLayout, plotlyLightLayout } from './theme.js';
 document.addEventListener("readystatechange", () => {
   if (document.readyState === "complete") {
     document.querySelectorAll("pre>code.language-plotly").forEach((elem) => {
@@ -60,7 +69,7 @@ document.addEventListener("readystatechange", () => {
 
       // Add the Plotly node
       let chartElement = document.createElement("div");
-      elem.parentElement.after(chartElement);      
+      elem.parentElement.after(chartElement);
 
       // Set the theme for the plot and render it
       const theme = (determineComputedTheme() === "dark") ? plotlyDarkLayout : plotlyLightLayout;
@@ -79,21 +88,14 @@ document.addEventListener("readystatechange", () => {
    ========================================================================== */
 
 $(document).ready(function () {
-  // detect OS/browser preference
-  const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light';
-
   setTheme();
 
   // if user hasn't chosen a theme, follow OS changes
-  window
-    .matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener("change", (e) => {
-      if (!localStorage.getItem("theme")) {
-        setTheme(e.matches ? "dark" : "light");
-      }
-    });
+  const onColorSchemeChange = (e) => {
+    if (determineThemeSetting() === "system") setTheme(e.matches ? "dark" : "light");
+  };
+  if (colorSchemePreference.addEventListener) colorSchemePreference.addEventListener("change", onColorSchemeChange);
+  else if (colorSchemePreference.addListener) colorSchemePreference.addListener(onColorSchemeChange);
 
   $('#theme-toggle').on('click', toggleTheme);
 
@@ -135,10 +137,10 @@ $(document).ready(function () {
   });
 
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({ 
+  $("a").smoothScroll({
     offset: -75, // needs to match $masthead-height
     preventDefault: false,
-  }); 
+  });
 
   // add lightbox class to all image links
   // Add "image-popup" to links ending in image extensions,
