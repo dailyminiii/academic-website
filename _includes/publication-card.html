@@ -9,6 +9,12 @@
 {% endif %}
 {% assign equal_contribution = false %}
 {% if project.authors contains "*" %}{% assign equal_contribution = true %}{% endif %}
+{% assign has_dataset_reuse = false %}
+{% if include.show_dataset_reuse %}
+  {% for dataset in site.data.dataset_reuse.datasets %}
+    {% if dataset.publication_id == project.id %}{% assign has_dataset_reuse = true %}{% endif %}
+  {% endfor %}
+{% endif %}
 {% if status_value == "published" or status_value == "accepted" or status_value == "under-review" %}
 <article class="publication-entry publication-entry--with-image{% if include.compact %} publication-entry--compact{% endif %}"
   data-publication
@@ -39,6 +45,7 @@
       {% if project.demo %}<a class="paper-link" href="{{ project.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
       {% if project.slides %}<a class="paper-link" href="{{ project.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
       {% if project.talk %}<a class="paper-link" href="{{ project.talk }}" target="_blank" rel="noopener">Talk</a>{% endif %}
+      {% if has_dataset_reuse %}<a class="paper-link" href="{{ '/dataset-reuse/' | relative_url }}#{{ project.id }}" aria-label="Studies using the {{ project.title | split: ':' | first | escape }} dataset">Studies using this dataset →</a>{% endif %}
     </div>
   </div>
 </article>

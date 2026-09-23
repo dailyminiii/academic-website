@@ -23,7 +23,7 @@ Published and accepted work is listed below. For citation counts and the latest 
     </div>
     <div class="publication-list publication-list--selected">
       {% for project in selected_projects %}
-        {% include publication-card.html project=project show_abstract=true %}
+        {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true %}
       {% endfor %}
     </div>
   </section>
@@ -72,7 +72,7 @@ Published and accepted work is listed below. For citation counts and the latest 
         <div class="publication-list">
           {% for project in sorted_projects %}
             {% if project.status == "published" or project.status == "accepted" %}
-              {% include publication-card.html project=project nested=true %}
+              {% include publication-card.html project=project nested=true show_dataset_reuse=true %}
             {% endif %}
           {% endfor %}
         </div>
