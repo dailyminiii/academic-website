@@ -93,7 +93,7 @@
       "name" : "{{ site.social.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},
       "image" : {{ site.og_image | absolute_url | jsonify }},
-      "jobTitle" : {{ site.author.bio | jsonify }},
+      "jobTitle" : {{ site.data.about.role | jsonify }},
       "affiliation" : { "@type": "Organization", "name": {{ site.author.employer | jsonify }} },
       "sameAs" : {{ site.social.links | jsonify }}
     }

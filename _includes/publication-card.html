@@ -30,11 +30,11 @@
     <div class="publication-kicker">
       {% if project.year %}<span>{{ project.year }}</span>{% endif %}
       <span class="status-badge status-badge--{{ status_value }}">{{ status_label }}</span>
-      {% if project.my_role == "first" %}<span class="contribution-badge">Lead author</span>{% endif %}
+      {% if project.my_role == "first" %}<span class="contribution-badge">Lead author</span>{% elsif include.home_compact and project.my_role == "collaborative" %}<span class="contribution-badge">Co-author</span>{% endif %}
       {% if equal_contribution %}<span class="contribution-badge">Equal contribution</span>{% endif %}
     </div>
     {% if include.nested %}<h4>{{ project.title }}</h4>{% else %}<h3>{{ project.title }}</h3>{% endif %}
-    <p class="publication-authors">{{ project.authors }}</p>
+    {% unless include.home_compact %}<p class="publication-authors">{{ project.authors }}</p>{% endunless %}
     <p class="publication-venue">{{ project.conference }}</p>
     {% if project.award %}<p class="publication-award">Award: {{ project.award }}</p>{% endif %}
     {% if include.show_abstract and project.abstract_short %}<p class="publication-summary">{{ project.abstract_short }}</p>{% endif %}

@@ -24,12 +24,12 @@ redirect_from:
   <div class="section-heading">
     <p class="section-eyebrow">Research trajectory</p>
     <h2 id="selected-research-title">Selected Publications</h2>
-    <p>Five selected works tracing my research from multimodal human sensing to adaptive and embodied systems.</p>
+    <p>Five works on sensing, modeling, and coaching physical skills, with a broader application of multimodal human sensing.</p>
   </div>
   {% assign selected_projects = site.data.research.projects | where: "selected", true | where: "homepage_featured", true | sort: "homepage_order" %}
   <div class="publication-list publication-list--home">
     {% for project in selected_projects %}
-      {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true %}
+      {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true home_compact=true %}
     {% endfor %}
   </div>
   <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}#selected-publications">View all selected publications →</a>
