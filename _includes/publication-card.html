@@ -16,7 +16,7 @@
   {% endfor %}
 {% endif %}
 {% if status_value == "published" or status_value == "accepted" or status_value == "under-review" %}
-<article class="publication-entry publication-entry--with-image{% if include.compact %} publication-entry--compact{% endif %}"
+<article class="publication-entry{% if project.gif %} publication-entry--with-image{% endif %}{% if include.compact %} publication-entry--compact{% endif %}"
   data-publication
   data-role="{{ project.my_role | default: 'unspecified' }}"
   data-themes="{{ project.research_themes | join: ' ' }}"
