@@ -24,6 +24,10 @@ projects:
     accepted_date: "2026-10-22"
     my_role: collaborative
     featured: false
+    selected: true
+    homepage_featured: true
+    selected_order: 1
+    homepage_order: 0
     research_themes: [physical-skill-learning, multimodal-human-modeling]
     authors: Minwoo Oh, <u>Minwoo Seong</u>, Kangbeen Ko, Chaeyeon Lim, Gwangbin Kim, Hyunjin Choi, Joseph DelPreto, Daniela Rus, SeungJun Kim
     tag: SportsHCI

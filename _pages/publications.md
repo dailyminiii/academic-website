@@ -7,7 +7,8 @@ author_profile: true
 
 Published and accepted work is listed below. For citation counts and the latest indexing updates, visit [Google Scholar]({{ site.data.about.scholar }}).
 
-{% assign sorted_projects = site.data.research.projects | sort: "year" | reverse %}
+{% comment %}Use known dates first; retain source order for equal dates or year-only entries.{% endcomment %}
+{% assign publication_groups = site.data.research.projects | group_by_exp: "project", "project.published_date | default: project.accepted_date | default: project.year | append: ''" | sort: "name" | reverse %}
 {% assign selected_projects = site.data.research.projects | where: "selected", true | sort: "selected_order" %}
 <div class="publication-tabs" data-publication-tabs>
   <div class="publication-tablist" role="tablist" aria-label="Publication views">
@@ -70,10 +71,12 @@ Published and accepted work is listed below. For citation counts and the latest 
       <section class="publication-status-group" aria-labelledby="published-title">
         <h3 id="published-title">Published / Accepted Research Outputs</h3>
         <div class="publication-list">
-          {% for project in sorted_projects %}
-            {% if project.status == "published" or project.status == "accepted" %}
-              {% include publication-card.html project=project nested=true show_dataset_reuse=true %}
-            {% endif %}
+          {% for publication_group in publication_groups %}
+            {% for project in publication_group.items %}
+              {% if project.status == "published" or project.status == "accepted" %}
+                {% include publication-card.html project=project nested=true show_dataset_reuse=true %}
+              {% endif %}
+            {% endfor %}
           {% endfor %}
         </div>
       </section>

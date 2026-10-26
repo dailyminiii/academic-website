@@ -24,7 +24,7 @@ redirect_from:
   <div class="section-heading">
     <p class="section-eyebrow">Research trajectory</p>
     <h2 id="selected-research-title">Selected Publications</h2>
-    <p>Five works on sensing, modeling, and coaching physical skills, with a broader application of multimodal human sensing.</p>
+    <p>Six works on sensing, modeling, and coaching physical skills, with a broader application of multimodal human sensing.</p>
   </div>
   {% assign selected_projects = site.data.research.projects | where: "selected", true | where: "homepage_featured", true | sort: "homepage_order" %}
   <div class="publication-list publication-list--home">
