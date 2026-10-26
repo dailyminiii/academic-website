@@ -9,7 +9,6 @@ Published and accepted work is listed below. For citation counts and the latest 
 
 {% comment %}Use known dates first; retain source order for equal dates or year-only entries.{% endcomment %}
 {% assign publication_groups = site.data.research.projects | group_by_exp: "project", "project.published_date | default: project.accepted_date | default: project.year | append: ''" | sort: "name" | reverse %}
-{% assign selected_projects = site.data.research.projects | where: "selected", true | sort: "selected_order" %}
 <div class="publication-tabs" data-publication-tabs>
   <div class="publication-tablist" role="tablist" aria-label="Publication views">
     <button id="publication-tab-selected" class="publication-tab" type="button" role="tab" aria-selected="true" aria-controls="publication-panel-selected">Selected Publications</button>
@@ -23,8 +22,12 @@ Published and accepted work is listed below. For citation counts and the latest 
       <p>A curated selection of lead-author work and notable collaborations spanning physical skill learning, multimodal human modeling, and embodied interaction.</p>
     </div>
     <div class="publication-list publication-list--selected">
-      {% for project in selected_projects %}
-        {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true %}
+      {% for publication_group in publication_groups %}
+        {% for project in publication_group.items %}
+          {% if project.selected %}
+            {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
   </section>

@@ -26,10 +26,14 @@ redirect_from:
     <h2 id="selected-research-title">Selected Publications</h2>
     <p>Six works on sensing, modeling, and coaching physical skills, with a broader application of multimodal human sensing.</p>
   </div>
-  {% assign selected_projects = site.data.research.projects | where: "selected", true | where: "homepage_featured", true | sort: "homepage_order" %}
+  {% assign publication_groups = site.data.research.projects | group_by_exp: "project", "project.published_date | default: project.accepted_date | default: project.year | append: ''" | sort: "name" | reverse %}
   <div class="publication-list publication-list--home">
-    {% for project in selected_projects %}
-      {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true home_compact=true %}
+    {% for publication_group in publication_groups %}
+      {% for project in publication_group.items %}
+        {% if project.selected and project.homepage_featured %}
+          {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true home_compact=true %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
   <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}#selected-publications">View all selected publications →</a>
