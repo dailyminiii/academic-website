@@ -32,6 +32,7 @@ projects:
   - title: "A Tangible Multimodal Sensing Interface for Collaborative Task Engagement in Children With Autism Spectrum Disorder: Cross-Sectional Mixed Methods Feasibility Study"
     id: interactisense-journal
     system-name: InteractiSense
+    gif: assets/img/InteractiSense_journal.png
     conference: JMIR Serious Games 14, e86264
     conference-web: https://games.jmir.org/2026/1/e86264/
     status: published
