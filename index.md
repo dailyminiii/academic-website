@@ -39,6 +39,35 @@ redirect_from:
   <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}#selected-publications">View all selected publications →</a>
 </section>
 
+<section id="academic-service" class="research-section research-section--secondary" aria-labelledby="academic-service-title">
+  <div class="section-heading section-heading--compact"><h2 id="academic-service-title">Academic Service</h2></div>
+  <h3>Reviewer</h3>
+  <h4 id="service-conferences-title">Conferences and Workshops</h4>
+  <ul id="service-conferences" aria-labelledby="service-conferences-title">
+    {% for item in site.data.service.reviewer.conferences_workshops %}
+      <li>{{ item.venue }} {{ item.year }}{% if item.track %} — {{ item.track }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+  <h4 id="service-journals-title">Journals</h4>
+  <ul id="service-journals" aria-labelledby="service-journals-title">
+    {% for item in site.data.service.reviewer.journals %}
+      <li>{{ item.venue }} ({{ item.years }})</li>
+    {% endfor %}
+  </ul>
+  <h3 id="service-organizing-title">Organizing Committee</h3>
+  <ul id="service-organizing" aria-labelledby="service-organizing-title">
+    {% for item in site.data.service.organizing_committee %}
+      <li>{{ item.venue }} — {{ item.role }}<br><em>{{ item.workshop }}</em></li>
+    {% endfor %}
+  </ul>
+  <h3 id="service-volunteering-title">Student Volunteer</h3>
+  <ul id="service-volunteering" aria-labelledby="service-volunteering-title">
+    {% for item in site.data.service.student_volunteer %}
+      <li>{{ item.venue }} {{ item.year }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section id="education" class="research-section research-section--secondary" aria-labelledby="education-title">
   <div class="section-heading section-heading--compact"><h2 id="education-title">Education</h2></div>
   <div class="education-list">

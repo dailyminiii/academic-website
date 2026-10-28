@@ -1,0 +1,42 @@
+reviewer:
+  conferences_workshops:
+    - venue: ACM CHI
+      year: 2027
+      track: Papers
+    - venue: ACM UIST
+      year: 2026
+      track: Papers
+    - venue: ACM CHI
+      year: 2026
+      track: Posters
+    - venue: ACM CHI
+      year: 2025
+      track: Late Breaking Work
+    - venue: UbiComp/ISWC I4U Workshop
+      year: 2024
+  journals:
+    - venue: Computer Methods in Biomechanics and Biomedical Engineering
+      years: "2026"
+    - venue: Discover Artificial Intelligence
+      years: "2025–2026"
+    - venue: International Journal of Dynamics and Control
+      years: "2026"
+    - venue: Scientific Data
+      years: "2026"
+    - venue: Virtual Reality
+      years: "2026"
+    - venue: Discover Applied Sciences
+      years: "2025"
+    - venue: Frontiers in Sports and Active Living
+      years: "2025"
+    - venue: Scientific Reports
+      years: "2025"
+
+organizing_committee:
+  - venue: UbiComp 2024 Workshop (I4U)
+    role: Organizing Committee Member
+    workshop: Interpretable, Inclusive, and Immersive Interactions with Ubiquitous AI-infused Physical Systems
+
+student_volunteer:
+  - venue: IEEE ISMAR
+    year: 2025
