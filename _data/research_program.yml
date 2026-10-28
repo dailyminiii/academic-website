@@ -1,16 +1,4 @@
 hero:
   headline: Interactive Technologies for Self-Directed Sports Practice
   paragraphs:
-    - I study how wearable sensing, AI, and XR interfaces can help people understand their movements and shape their own practice.
-
-areas:
-  - id: understanding-movement
-    title: Understanding movement
-    description: Measuring and modeling movement, physiological signals, and performance to understand what happens during practice.
-    work_title: MultiSenseBadminton
-    work_url: /projects/multisensebadminton/
-  - id: supporting-practice
-    title: Supporting self-directed practice
-    description: Interfaces for comparing movements, interpreting feedback, and shaping what to try next.
-    work_title: Counterfactual motion guidance
-    work_url: /projects/counterfactual-motion-guidance/
+    - I design and study interactive technologies for self-directed sports practice. My goal is to help people understand their movements and make informed decisions about how to practice. My experience spans collecting multimodal datasets, developing training systems with wearable sensing and extended reality (XR), and evaluating these systems through user studies.

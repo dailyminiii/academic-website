@@ -1,7 +1,8 @@
 ---
 permalink: /
 title: "Minwoo Seong"
-description: "I study how wearable sensing, AI, and XR interfaces can help people understand their movements and shape their own practice."
+description: "I design and study interactive technologies for self-directed sports practice. My goal is to help people understand their movements and make informed decisions about how to practice. My experience spans collecting multimodal datasets, developing training systems with wearable sensing and extended reality (XR), and evaluating these systems through user studies."
+excerpt: "I design and study interactive technologies for self-directed sports practice. My goal is to help people understand their movements and make informed decisions about how to practice. My experience spans collecting multimodal datasets, developing training systems with wearable sensing and extended reality (XR), and evaluating these systems through user studies."
 author_profile: true
 hide_title: true
 redirect_from:
@@ -22,19 +23,6 @@ redirect_from:
       <a class="btn" href="{{ site.data.about.cv }}" target="_blank" rel="noopener">CV</a>
       <a class="btn" href="mailto:{{ site.data.about.email }}">Email</a>
     </nav>
-  </div>
-</section>
-
-<section id="research-areas" class="research-section research-areas" aria-labelledby="research-areas-title">
-  <div class="section-heading section-heading--compact"><h2 id="research-areas-title">Research Areas</h2></div>
-  <div class="research-focus-grid">
-    {% for area in site.data.research_program.areas %}
-      <article aria-labelledby="{{ area.id }}">
-        <h3 id="{{ area.id }}">{{ area.title }}</h3>
-        <p>{{ area.description }}</p>
-        <a href="{{ area.work_url | relative_url }}">{{ area.work_title }} <span aria-hidden="true">→</span></a>
-      </article>
-    {% endfor %}
   </div>
 </section>
 
