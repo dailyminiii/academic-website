@@ -303,13 +303,13 @@ html {
 }
 
 .research-hero {
-  padding-top: 0.25rem;
+  padding: 0.25rem 0 1.5rem;
 }
 
 .research-hero h1 {
-  max-width: 19ch;
-  margin: 0 0 1.1rem;
-  font-size: clamp(1.75rem, 4vw, 2.65rem);
+  max-width: 36ch;
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.6rem, 2.8vw, 2.15rem);
   line-height: 1.12;
 }
 
@@ -687,4 +687,26 @@ input:focus-visible,
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* Compact research introduction and source-grounded project overviews. */
+.hero-summary { margin-bottom: 0.65rem; }
+.hero-affiliation { font-size: 0.85em; margin-bottom: 0.8rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.hero-actions .btn { margin: 0; }
+.research-areas { padding-block: 1.5rem; }
+.research-focus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.research-focus-grid h3 { margin: 0 0 0.5rem; font-size: 1.05em; }
+.research-focus-grid p { margin: 0 0 0.6rem; font-size: 0.9em; }
+.research-focus-grid a { font-size: 0.85em; }
+.publication-tab { display: inline-block; text-decoration: none; }
+.project-overview-figure { margin: 1.25rem 0; }
+.project-overview-figure img { display: block; width: 100%; max-height: 26rem; object-fit: contain; }
+.project-overview-figure figcaption { font-size: 0.75em; color: var(--global-text-color-light); }
+.project-resources { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; padding: 0; list-style: none; }
+.project-role { font-size: 0.85em; }
+@media (max-width: 600px) {
+  .research-hero { padding-bottom: 1.25rem; }
+  .research-areas { padding-block: 1.25rem; }
+  .research-focus-grid { grid-template-columns: 1fr; gap: 1.25rem; }
 }

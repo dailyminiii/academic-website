@@ -333,6 +333,7 @@ projects:
 
   - title: Counterfactual Explanation-Based Badminton Motion Guidance Generation Using Wearable Sensors
     id: counterfactual-motion-guidance
+    project_url: /projects/counterfactual-motion-guidance/
     system-name: 
     gif: assets/img/CF.png
     conference: IEEE ICRA Workshop on Wearable Robotics
@@ -422,6 +423,8 @@ projects:
 
   - title: "MultiSenseBadminton: Wearable Sensor-Based Biomechanical Dataset for Evaluation of Badminton Performance"
     id: multisensebadminton
+    project_url: /projects/multisensebadminton/
+    data_url: https://doi.org/10.6084/m9.figshare.c.6725706.v1
     system-name: 
     gif: assets/img/MultiSenseBadminton.png
     conference: Scientific Data 11, 343

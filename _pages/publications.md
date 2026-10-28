@@ -10,36 +10,19 @@ Published and accepted work is listed below. For citation counts and the latest 
 {% comment %}Use known dates first; retain source order for equal dates or year-only entries.{% endcomment %}
 {% assign publication_groups = site.data.research.projects | group_by_exp: "project", "project.published_date | default: project.accepted_date | default: project.year | append: ''" | sort: "name" | reverse %}
 <div class="publication-tabs" data-publication-tabs>
-  <div class="publication-tablist" role="tablist" aria-label="Publication views">
-    <button id="publication-tab-selected" class="publication-tab" type="button" role="tab" aria-selected="true" aria-controls="publication-panel-selected">Selected Publications</button>
-    <button id="publication-tab-all" class="publication-tab" type="button" role="tab" aria-selected="false" aria-controls="publication-panel-all" tabindex="-1">Publications & Research Outputs</button>
-  </div>
+  <nav class="publication-tablist" aria-label="Publication views">
+    <a id="publication-tab-all" class="publication-tab" data-publication-tab href="#all-publications" aria-controls="publication-panel-all">Publications &amp; Research Outputs</a>
+    <a id="publication-tab-selected" class="publication-tab" data-publication-tab href="#selected-publications" aria-controls="publication-panel-selected">Selected Publications</a>
+  </nav>
 
-  <section id="publication-panel-selected" class="publication-section publication-tabpanel" role="tabpanel" aria-labelledby="publication-tab-selected">
-    <div class="section-heading">
-      <p class="section-eyebrow">Research highlights</p>
-      <h2 id="selected-publications">Selected Publications</h2>
-      <p>A curated selection of lead-author work and notable collaborations spanning physical skill learning, multimodal human modeling, and embodied interaction.</p>
-    </div>
-    <div class="publication-list publication-list--selected">
-      {% for publication_group in publication_groups %}
-        {% for project in publication_group.items %}
-          {% if project.selected %}
-            {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true %}
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-    </div>
-  </section>
-
-  <section id="publication-panel-all" class="publication-section publication-tabpanel" role="tabpanel" aria-labelledby="publication-tab-all" hidden>
+  <section id="publication-panel-all" class="publication-section publication-tabpanel" aria-labelledby="publication-tab-all">
     <div class="section-heading">
       <p class="section-eyebrow">Publication record</p>
-      <h2>Publications & Research Outputs</h2>
+      <h2 id="all-publications">Publications &amp; Research Outputs</h2>
       <p>Search by title, author, venue, year, or keyword, and filter by authorship or research theme.</p>
     </div>
 
-    <form class="publication-controls" data-publication-controls role="search" aria-label="Search and filter publications and research outputs" onsubmit="return false;">
+    <form class="publication-controls" data-publication-controls hidden role="search" aria-label="Search and filter publications and research outputs" onsubmit="return false;">
       <label class="publication-search" for="publication-search">
         <span>Search</span>
         <input id="publication-search" type="search" placeholder="Search by title, author, venue, year, or keyword" autocomplete="off">
@@ -85,6 +68,23 @@ Published and accepted work is listed below. For citation counts and the latest 
       </section>
     </div>
     <p class="empty-state publication-no-results" hidden>No research outputs match the current search and filters.</p>
-    <p class="publication-note">* Equal contribution.</p>
   </section>
+
+  <section id="publication-panel-selected" class="publication-section publication-tabpanel" aria-labelledby="publication-tab-selected">
+    <div class="section-heading">
+      <p class="section-eyebrow">Research highlights</p>
+      <h2 id="selected-publications">Selected Publications</h2>
+      <p>A curated selection of lead-author work and notable collaborations spanning physical skill learning, multimodal human modeling, and embodied interaction.</p>
+    </div>
+    <div class="publication-list publication-list--selected">
+      {% for publication_group in publication_groups %}
+        {% for project in publication_group.items %}
+          {% if project.selected %}
+            {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </section>
+  <p class="publication-note">* Equal contribution among the marked authors.</p>
 </div>

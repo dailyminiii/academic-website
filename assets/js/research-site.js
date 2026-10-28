@@ -2,6 +2,7 @@
   "use strict";
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let restorePublicationView = null;
 
   function samePageAnchor(anchor) {
     if (!anchor.hash) return null;
@@ -18,14 +19,15 @@
   document.addEventListener("click", function (event) {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     const anchor = event.target.closest("a[href*='#']");
-    if (!anchor) return;
+    if (!anchor || anchor.matches("[data-publication-tab]")) return;
     const target = samePageAnchor(anchor);
     if (!target) return;
 
     event.preventDefault();
     event.stopImmediatePropagation();
-    target.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
     window.history.pushState(null, "", anchor.hash);
+    if (restorePublicationView) restorePublicationView();
+    target.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
     const focusTarget = target.querySelector("h1, h2, h3") || target;
     if (!focusTarget.hasAttribute("tabindex")) focusTarget.setAttribute("tabindex", "-1");
     focusTarget.focus({ preventScroll: true });
@@ -42,200 +44,197 @@
 
   const publicationTabs = document.querySelector("[data-publication-tabs]");
   if (publicationTabs) {
-    const tabs = Array.from(publicationTabs.querySelectorAll("[role='tab']"));
+    const tabList = publicationTabs.querySelector(".publication-tablist");
+    const tabs = Array.from(publicationTabs.querySelectorAll("[data-publication-tab]"));
+    const allTab = tabs.find(function (tab) { return tab.id === "publication-tab-all"; });
+    const selectedTab = tabs.find(function (tab) { return tab.id === "publication-tab-selected"; });
+    const controls = publicationTabs.querySelector("[data-publication-controls]");
+    const publicationList = publicationTabs.querySelector("[data-publication-list]");
 
-    function activatePublicationTab(tab, moveFocus) {
-      tabs.forEach(function (candidate) {
-        const active = candidate === tab;
-        const panel = document.getElementById(candidate.getAttribute("aria-controls"));
-        candidate.setAttribute("aria-selected", String(active));
-        candidate.setAttribute("tabindex", active ? "0" : "-1");
-        if (panel) panel.hidden = !active;
-      });
-      if (moveFocus) tab.focus();
-    }
+    if (tabList && allTab && selectedTab && controls && publicationList && tabs.every(function (tab) {
+      return document.getElementById(tab.getAttribute("aria-controls"));
+    })) {
+      const cards = Array.from(publicationList.querySelectorAll("[data-publication]"));
+      const statusGroups = Array.from(publicationList.querySelectorAll(".publication-status-group"));
+      const search = controls.querySelector("input[type='search']");
+      const results = document.getElementById("publication-results");
+      const noResults = publicationTabs.querySelector(".publication-no-results");
+      const reset = controls.querySelector("[data-reset-filters]");
 
-    tabs.forEach(function (tab, index) {
-      tab.addEventListener("click", function () {
-        activatePublicationTab(tab, false);
-      });
-      tab.addEventListener("keydown", function (event) {
-        let nextIndex = null;
-        if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
-        if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
-        if (event.key === "Home") nextIndex = 0;
-        if (event.key === "End") nextIndex = tabs.length - 1;
-        if (nextIndex === null) return;
-        event.preventDefault();
-        activatePublicationTab(tabs[nextIndex], true);
-      });
-    });
-
-    const filterQuery = new URLSearchParams(window.location.search);
-    if (filterQuery.has("theme") || filterQuery.has("role") || filterQuery.has("q")) {
-      const allOutputsTab = tabs.find(function (tab) { return tab.id === "publication-tab-all"; });
-      if (allOutputsTab) activatePublicationTab(allOutputsTab, false);
-    }
-  }
-
-  const controls = document.querySelector("[data-publication-controls]");
-  const publicationList = document.querySelector("[data-publication-list]");
-
-  if (controls && publicationList) {
-    const cards = Array.from(publicationList.querySelectorAll("[data-publication]"));
-    const statusGroups = Array.from(publicationList.querySelectorAll(".publication-status-group"));
-    const search = controls.querySelector("input[type='search']");
-    const results = document.getElementById("publication-results");
-    const noResults = document.querySelector(".publication-no-results");
-    const reset = controls.querySelector("[data-reset-filters]");
-    const state = { authorship: "all", themes: new Set(), query: "" };
-    const queryParams = new URLSearchParams(window.location.search);
-
-    function findFilterButton(groupName, queryValue) {
-      const group = controls.querySelector('[data-filter-group="' + groupName + '"]');
-      if (!group) return null;
-      return Array.from(group.querySelectorAll("[data-filter-value]")).find(function (button) {
-        return button.dataset.filterValue === queryValue || button.dataset.filterQuery === queryValue;
-      }) || null;
-    }
-
-    const roleParam = queryParams.get("role");
-    const roleButton = roleParam ? findFilterButton("authorship", roleParam) : null;
-    if (roleButton && roleButton.dataset.filterValue !== "all") {
-      state.authorship = roleButton.dataset.filterValue;
-    }
-
-    queryParams.getAll("theme").flatMap(function (value) {
-      return value.split(",");
-    }).forEach(function (queryTheme) {
-      const themeButton = findFilterButton("theme", queryTheme);
-      if (themeButton && themeButton.dataset.filterValue !== "all") {
-        state.themes.add(themeButton.dataset.filterValue);
-      }
-    });
-
-    const queryText = queryParams.get("q");
-    if (queryText) {
-      state.query = queryText.trim().toLowerCase();
-      if (search) search.value = queryText;
-    }
-
-    function syncButtons(groupName) {
-      const group = controls.querySelector('[data-filter-group="' + groupName + '"]');
-      if (!group) return;
-      group.querySelectorAll("[data-filter-value]").forEach(function (button) {
-        const value = button.dataset.filterValue;
-        const pressed = groupName === "theme"
-          ? (value === "all" ? state.themes.size === 0 : state.themes.has(value))
-          : value === state.authorship;
-        button.setAttribute("aria-pressed", String(pressed));
-      });
-    }
-
-    function hasActiveFilters() {
-      return state.authorship !== "all" || state.themes.size > 0 || Boolean(state.query);
-    }
-
-    function syncUrl() {
-      const url = new URL(window.location.href);
-      url.searchParams.delete("role");
-      url.searchParams.delete("theme");
-      url.searchParams.delete("q");
-
-      if (state.authorship !== "all") {
-        const role = findFilterButton("authorship", state.authorship);
-        if (role) url.searchParams.set("role", role.dataset.filterQuery || role.dataset.filterValue);
+      function findFilterButton(groupName, queryValue) {
+        const group = controls.querySelector('[data-filter-group="' + groupName + '"]');
+        if (!group) return null;
+        return Array.from(group.querySelectorAll("[data-filter-value]")).find(function (button) {
+          return button.dataset.filterValue === queryValue || button.dataset.filterQuery === queryValue;
+        }) || null;
       }
 
-      const themeGroup = controls.querySelector('[data-filter-group="theme"]');
-      if (themeGroup) {
-        themeGroup.querySelectorAll("[data-filter-value]").forEach(function (button) {
-          if (state.themes.has(button.dataset.filterValue)) {
-            url.searchParams.append("theme", button.dataset.filterQuery || button.dataset.filterValue);
-          }
+      function filtersFromLocation() {
+        const params = new URLSearchParams(window.location.search);
+        const state = { authorship: "all", themes: new Set(), query: params.get("q") || "" };
+        const role = findFilterButton("authorship", params.get("role"));
+        if (role && role.dataset.filterValue !== "all") state.authorship = role.dataset.filterValue;
+        params.getAll("theme").forEach(function (value) {
+          value.split(",").forEach(function (queryTheme) {
+            const theme = findFilterButton("theme", queryTheme);
+            if (theme && theme.dataset.filterValue !== "all") state.themes.add(theme.dataset.filterValue);
+          });
+        });
+        return state;
+      }
+
+      function syncButtons(state) {
+        controls.querySelectorAll("[data-filter-group]").forEach(function (group) {
+          group.querySelectorAll("[data-filter-value]").forEach(function (button) {
+            const value = button.dataset.filterValue;
+            const pressed = group.dataset.filterGroup === "theme"
+              ? (value === "all" ? state.themes.size === 0 : state.themes.has(value))
+              : value === state.authorship;
+            button.setAttribute("aria-pressed", String(pressed));
+          });
         });
       }
 
-      if (state.query) url.searchParams.set("q", state.query);
-      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
-    }
-
-    function applyFilters() {
-      let visibleCount = 0;
-      cards.forEach(function (card) {
-        const authorshipMatch = state.authorship === "all" ||
-          (state.authorship === "first" && card.dataset.role === "first") ||
-          (state.authorship === "collaborative" && card.dataset.role === "collaborative");
-        const themes = (card.dataset.themes || "").split(/\s+/);
-        const themeMatch = state.themes.size === 0 || Array.from(state.themes).some(function (theme) {
-          return themes.includes(theme);
+      function applyFilters(state) {
+        const query = state.query.trim().toLowerCase();
+        const activeFilters = state.authorship !== "all" || state.themes.size > 0 || Boolean(query);
+        let visibleCount = 0;
+        cards.forEach(function (card) {
+          const authorshipMatch = state.authorship === "all" || card.dataset.role === state.authorship;
+          const themes = (card.dataset.themes || "").split(/\s+/);
+          const themeMatch = state.themes.size === 0 || Array.from(state.themes).some(function (theme) {
+            return themes.includes(theme);
+          });
+          const searchable = (card.textContent + " " + card.dataset.themes).toLowerCase();
+          const searchMatch = !query || searchable.includes(query);
+          card.hidden = !(authorshipMatch && themeMatch && searchMatch);
+          if (!card.hidden) visibleCount += 1;
         });
-        const searchable = (card.textContent + " " + card.dataset.themes).toLowerCase();
-        const searchMatch = !state.query || searchable.includes(state.query);
-        const visible = authorshipMatch && themeMatch && searchMatch;
-        card.hidden = !visible;
-        if (visible) visibleCount += 1;
-      });
-
-      statusGroups.forEach(function (group) {
-        const groupCards = Array.from(group.querySelectorAll("[data-publication]"));
-        group.hidden = !groupCards.some(function (card) { return !card.hidden; });
-      });
-
-      if (results) {
-        const noun = hasActiveFilters()
-          ? (visibleCount === 1 ? " result" : " results")
-          : (visibleCount === 1 ? " research output" : " research outputs");
-        results.textContent = visibleCount + noun;
-      }
-      if (noResults) noResults.hidden = visibleCount !== 0;
-      if (reset) reset.hidden = !hasActiveFilters();
-    }
-
-    controls.querySelectorAll("[data-filter-group]").forEach(function (group) {
-      group.addEventListener("click", function (event) {
-        const button = event.target.closest("[data-filter-value]");
-        if (!button) return;
-        const groupName = group.dataset.filterGroup;
-        const value = button.dataset.filterValue;
-        if (groupName === "theme") {
-          if (value === "all") state.themes.clear();
-          else if (state.themes.has(value)) state.themes.delete(value);
-          else state.themes.add(value);
-        } else {
-          state.authorship = value === "all" || state.authorship === value ? "all" : value;
+        statusGroups.forEach(function (group) {
+          group.hidden = !Array.from(group.querySelectorAll("[data-publication]")).some(function (card) {
+            return !card.hidden;
+          });
+        });
+        if (results) {
+          const noun = activeFilters
+            ? (visibleCount === 1 ? " result" : " results")
+            : (visibleCount === 1 ? " research output" : " research outputs");
+          results.textContent = visibleCount + noun;
         }
-        syncButtons(groupName);
-        applyFilters();
-        syncUrl();
-      });
-    });
+        if (noResults) noResults.hidden = visibleCount !== 0;
+        if (reset) reset.hidden = !activeFilters;
+      }
 
-    if (search) {
-      search.addEventListener("input", function () {
-        state.query = search.value.trim().toLowerCase();
-        applyFilters();
-        syncUrl();
+      restorePublicationView = function () {
+        const state = filtersFromLocation();
+        const activeTab = window.location.hash === "#selected-publications" ? selectedTab : allTab;
+        tabs.forEach(function (tab) {
+          const active = tab === activeTab;
+          tab.setAttribute("aria-selected", String(active));
+          tab.setAttribute("tabindex", active ? "0" : "-1");
+          document.getElementById(tab.getAttribute("aria-controls")).hidden = !active;
+        });
+        if (search && search.value !== state.query) search.value = state.query;
+        syncButtons(state);
+        applyFilters(state);
+      };
+
+      function updateLocation(url, mode) {
+        if (url.href !== window.location.href) {
+          window.history[mode === "replace" ? "replaceState" : "pushState"](null, "", url.pathname + url.search + url.hash);
+        }
+        restorePublicationView();
+      }
+
+      function activateTab(tab, moveFocus) {
+        const url = new URL(window.location.href);
+        url.hash = tab === selectedTab ? "selected-publications" : "all-publications";
+        updateLocation(url, "push");
+        if (moveFocus) tab.focus({ preventScroll: true });
+      }
+
+      function updateFilters(state, mode) {
+        const url = new URL(window.location.href);
+        url.searchParams.delete("role");
+        url.searchParams.delete("theme");
+        url.searchParams.delete("q");
+        if (state.authorship !== "all") {
+          const role = findFilterButton("authorship", state.authorship);
+          if (role) url.searchParams.set("role", role.dataset.filterQuery || role.dataset.filterValue);
+        }
+        const themeGroup = controls.querySelector('[data-filter-group="theme"]');
+        if (themeGroup) {
+          themeGroup.querySelectorAll("[data-filter-value]").forEach(function (button) {
+            if (state.themes.has(button.dataset.filterValue)) {
+              url.searchParams.append("theme", button.dataset.filterQuery || button.dataset.filterValue);
+            }
+          });
+        }
+        if (state.query.trim()) url.searchParams.set("q", state.query);
+        url.hash = "all-publications";
+        updateLocation(url, mode);
+      }
+
+      tabList.setAttribute("role", "tablist");
+      tabs.forEach(function (tab, index) {
+        tab.setAttribute("role", "tab");
+        const panel = document.getElementById(tab.getAttribute("aria-controls"));
+        panel.setAttribute("role", "tabpanel");
+        panel.setAttribute("aria-labelledby", tab.id);
+        tab.addEventListener("click", function (event) {
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          activateTab(tab, true);
+        }, true);
+        tab.addEventListener("keydown", function (event) {
+          let nextIndex = null;
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+          if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === "Home") nextIndex = 0;
+          if (event.key === "End") nextIndex = tabs.length - 1;
+          if (event.key === " " || event.key === "Spacebar") nextIndex = index;
+          if (nextIndex === null) return;
+          event.preventDefault();
+          activateTab(tabs[nextIndex], true);
+        });
       });
+
+      controls.querySelectorAll("[data-filter-group]").forEach(function (group) {
+        group.addEventListener("click", function (event) {
+          const button = event.target.closest("[data-filter-value]");
+          if (!button || !group.contains(button)) return;
+          const state = filtersFromLocation();
+          const value = button.dataset.filterValue;
+          if (group.dataset.filterGroup === "theme") {
+            if (value === "all") state.themes.clear();
+            else if (state.themes.has(value)) state.themes.delete(value);
+            else state.themes.add(value);
+          } else {
+            state.authorship = value === "all" || state.authorship === value ? "all" : value;
+          }
+          updateFilters(state, "push");
+        });
+      });
+      if (search) {
+        search.addEventListener("input", function () {
+          const state = filtersFromLocation();
+          state.query = search.value;
+          updateFilters(state, "replace");
+        });
+      }
+      if (reset) {
+        reset.addEventListener("click", function () {
+          updateFilters({ authorship: "all", themes: new Set(), query: "" }, "push");
+          if (search) search.focus();
+        });
+      }
+
+      controls.hidden = false;
+      restorePublicationView();
+      window.addEventListener("popstate", restorePublicationView);
+      window.addEventListener("hashchange", restorePublicationView);
     }
-
-    if (reset) {
-      reset.addEventListener("click", function () {
-        state.authorship = "all";
-        state.themes.clear();
-        state.query = "";
-        if (search) search.value = "";
-        syncButtons("authorship");
-        syncButtons("theme");
-        applyFilters();
-        syncUrl();
-        if (search) search.focus();
-      });
-    }
-
-    syncButtons("authorship");
-    syncButtons("theme");
-    applyFilters();
   }
 
   const navAnchors = Array.from(document.querySelectorAll("#site-nav a[href]"));

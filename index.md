@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Minwoo Seong"
-description: "Human–AI skill learning through multimodal sensing, adaptive coaching, mixed reality, and embodied robot intelligence."
+description: "I study how wearable sensing, AI, and XR interfaces can help people understand their movements and shape their own practice."
 author_profile: true
 hide_title: true
 redirect_from:
@@ -13,9 +13,27 @@ redirect_from:
   <p class="section-eyebrow">Human-centered intelligent systems</p>
   <h1 id="home-title">{{ site.data.research_program.hero.headline }}</h1>
   <div class="hero-copy">
-    <p>I am a Ph.D. candidate at the <a href="{{ site.data.about.lab_url }}">Human-Centered Intelligent Systems Lab</a> at the <a href="{{ site.data.about.institution_url }}">Gwangju Institute of Science and Technology</a>, advised by <a href="{{ site.data.about.advisor_url }}">Prof. {{ site.data.about.advisor_name }}</a>.</p>
     {% for paragraph in site.data.research_program.hero.paragraphs %}
-      <p>{{ paragraph }}</p>
+      <p class="hero-summary">{{ paragraph }}</p>
+    {% endfor %}
+    <p class="hero-affiliation">I am a Ph.D. candidate at the <a href="{{ site.data.about.lab_url }}">Human-Centered Intelligent Systems Lab</a> at the <a href="{{ site.data.about.institution_url }}">Gwangju Institute of Science and Technology</a>, advised by <a href="{{ site.data.about.advisor_url }}">Prof. {{ site.data.about.advisor_name }}</a>.</p>
+    <nav class="hero-actions" aria-label="Profile resources">
+      <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="btn" href="{{ site.data.about.cv }}" target="_blank" rel="noopener">CV</a>
+      <a class="btn" href="mailto:{{ site.data.about.email }}">Email</a>
+    </nav>
+  </div>
+</section>
+
+<section id="research-areas" class="research-section research-areas" aria-labelledby="research-areas-title">
+  <div class="section-heading section-heading--compact"><h2 id="research-areas-title">Research Areas</h2></div>
+  <div class="research-focus-grid">
+    {% for area in site.data.research_program.areas %}
+      <article aria-labelledby="{{ area.id }}">
+        <h3 id="{{ area.id }}">{{ area.title }}</h3>
+        <p>{{ area.description }}</p>
+        <a href="{{ area.work_url | relative_url }}">{{ area.work_title }} <span aria-hidden="true">→</span></a>
+      </article>
     {% endfor %}
   </div>
 </section>

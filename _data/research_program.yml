@@ -1,4 +1,16 @@
 hero:
-  headline: Human–AI Skill Learning through Multimodal Sensing and Embodied Intelligence
+  headline: Interactive Technologies for Self-Directed Sports Practice
   paragraphs:
-    - My HCI research asks how multimodal human demonstrations can become adaptive feedback for learning physical skills. Using racket sports as a testbed, I combine wearable sensing, movement modeling, and human–AI interaction to build systems that support practice.
+    - I study how wearable sensing, AI, and XR interfaces can help people understand their movements and shape their own practice.
+
+areas:
+  - id: understanding-movement
+    title: Understanding movement
+    description: Measuring and modeling movement, physiological signals, and performance to understand what happens during practice.
+    work_title: MultiSenseBadminton
+    work_url: /projects/multisensebadminton/
+  - id: supporting-practice
+    title: Supporting self-directed practice
+    description: Interfaces for comparing movements, interpreting feedback, and shaping what to try next.
+    work_title: Counterfactual motion guidance
+    work_url: /projects/counterfactual-motion-guidance/
