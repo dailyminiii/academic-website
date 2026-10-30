@@ -1,9 +1,24 @@
+reviewed_on: "2026-10-30"
+
 datasets:
   - publication_id: multisensebadminton
     summary: Multimodal wearable and motion data for analyzing badminton strokes and skill levels.
     dataset_url: https://doi.org/10.6084/m9.figshare.c.6725706.v1
     citations_url: https://scholar.google.co.kr/scholar?oi=bibs&hl=en&cites=18224346977664880275,1472936828270918743
     independent:
+      - title: "A Transformer-Based Multimodal Fusion Framework for Ordinal Motor Skill-Level Assessment with Biomechanical Association Analysis"
+        year: 2026
+        venue: Frontiers in Psychology
+        status: Accepted 25 October 2026; final formatted version forthcoming
+        paper_url: https://doi.org/10.3389/fpsyg.2026.1895821
+        evidence_url: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1895821/abstract
+        use: Evaluates BioSkillFormer on MultiSenseBadminton under a subject-independent protocol for ordinal skill-level assessment using multimodal sensor data.
+      - title: "SkillSight: Efficient First-Person Skill Assessment with Gaze"
+        year: 2026
+        venue: CVPR
+        paper_url: https://vision.cs.utexas.edu/projects/skillsight/
+        evidence_url: https://arxiv.org/html/2511.19629v2
+        use: Uses egocentric video and gaze from MultiSenseBadminton to train and evaluate skill-level assessment, including a gaze-only distilled model.
       - title: "Physical Fitness and Tactical Optimization of Badminton Based on Multimodal Fusion and Swarm Intelligence Algorithm"
         year: 2026
         venue: KSII Transactions on Internet and Information Systems
@@ -54,5 +69,6 @@ datasets:
       - title: "What Amplifies Explanation Needs in Autonomous Vehicles?: Feature Interaction Between Maneuver Dynamics and Passenger Physiological Responses"
         year: 2026
         venue: HCI Korea 2026
+        relationship: Follow-up work by lab collaborators
         paper_url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745788
         use: Reanalyzes TimelyTale vehicle-dynamics and passenger-physiology features with SHAP interaction analysis to examine when explanation needs increase.

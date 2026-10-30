@@ -7,6 +7,8 @@ author_profile: true
 
 This curated list links to research that reports using data from MultiSenseBadminton, Engagnition, or TimelyTale. It is not a citation count or an exhaustive list of citing papers. Work I co-authored is listed separately from other publications.
 
+Last reviewed: {{ site.data.dataset_reuse.reviewed_on }}.
+
 {% for dataset in site.data.dataset_reuse.datasets %}
   {% assign source = site.data.research.projects | where: "id", dataset.publication_id | first %}
   <section id="{{ dataset.publication_id }}" class="dataset-reuse-group" aria-labelledby="{{ dataset.publication_id }}-title">
@@ -17,7 +19,7 @@ This curated list links to research that reports using data from MultiSenseBadmi
       <h3>Other publications using the dataset</h3>
       <ul class="dataset-reuse-list">
         {% for study in dataset.independent %}
-          <li><a href="{{ study.paper_url }}">{{ study.title }}</a> <span class="dataset-reuse-meta">{{ study.venue }} · {{ study.year }}</span><br>{{ study.use }}{% if study.evidence_url %} <a href="{{ study.evidence_url }}">Usage evidence</a>{% endif %}</li>
+          <li><a href="{{ study.paper_url }}">{{ study.title }}</a> <span class="dataset-reuse-meta">{{ study.venue }} · {{ study.year }}{% if study.status %} · {{ study.status }}{% endif %}</span>{% if study.relationship %}<br><span class="dataset-reuse-meta">{{ study.relationship }}</span>{% endif %}<br>{{ study.use }}{% if study.evidence_url %} <a href="{{ study.evidence_url }}">Usage evidence</a>{% endif %}</li>
         {% endfor %}
       </ul>
     {% endif %}
