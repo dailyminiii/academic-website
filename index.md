@@ -73,10 +73,6 @@ redirect_from:
       <strong>KCC 2022 Best Paper Award (Top 3%)</strong> — Jun. 2022<br>
       Awarded for <em>VR Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments</em>.
     </li>
-    <li>
-      <strong>GIST Scholarships (B.S., M.S., and Ph.D.)</strong><br>
-      Department-selected scholarships.
-    </li>
   </ul>
 </section>
 
