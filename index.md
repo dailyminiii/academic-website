@@ -45,6 +45,13 @@ redirect_from:
   <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}#selected-publications">View all selected publications →</a>
 </section>
 
+<section id="awards" class="research-section research-section--secondary" aria-labelledby="awards-title">
+  <div class="section-heading section-heading--compact"><h2 id="awards-title">Awards</h2></div>
+  <ul>
+    <li><strong>Special Recognitions for Outstanding Reviews</strong> — CHI 2027 Papers (3 recognitions)</li>
+  </ul>
+</section>
+
 <section id="academic-service" class="research-section research-section--secondary" aria-labelledby="academic-service-title">
   <div class="section-heading section-heading--compact"><h2 id="academic-service-title">Academic Service</h2></div>
   <h3>Reviewer</h3>
