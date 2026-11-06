@@ -46,9 +46,53 @@ redirect_from:
 </section>
 
 <section id="awards" class="research-section research-section--secondary" aria-labelledby="awards-title">
-  <div class="section-heading section-heading--compact"><h2 id="awards-title">Awards</h2></div>
+  <div class="section-heading section-heading--compact"><h2 id="awards-title">Honors, Awards, and Scholarships</h2></div>
   <ul>
     <li><strong>Special Recognitions for Outstanding Reviews</strong> — CHI 2027 Papers (3 recognitions)</li>
+    <li>
+      <strong>2025 GIST RA Scholarship (Outstanding Doctoral Student)</strong> — Dec. 2025<br>
+      GIST Scholarship.
+    </li>
+    <li>
+      <strong>2024 Top-Student Award</strong> — Dec. 2024<br>
+      GIST Scholarship.
+    </li>
+    <li>
+      <strong>KCC 2024 Honorable Mention Award in Undergraduate Division</strong> — Jul. 2024<br>
+      Awarded for <em>Badminton Swing Posture Analysis and Visualization Using Deep Learning-Based Encoder-Decoder Architecture</em>.
+    </li>
+    <li>
+      <strong>CHI 2024 Honorable Mention Award (Top 5%)</strong> — May 2024<br>
+      Awarded for <em>ErgoPulse: Electrifying Your Lower Body With Biomechanical Simulation-based Electrical Muscle Stimulation Haptic System in Virtual Reality</em>.
+    </li>
+    <li>
+      <strong>GIST Scholarship (Ph.D.)</strong> — Sep. 2023 – Present<br>
+      Government-supported full funding.
+    </li>
+    <li>
+      <strong>IJCAI CoachAI Badminton Challenge 2023 Runner-Up (Rank 2)</strong> — Aug. 2023<br>
+      Awarded for <em>MuLMINet: Multi-Layer Multi-Input Transformer Network with Weighted Loss</em>.
+    </li>
+    <li>
+      <strong>KCC 2022 Best Paper Award (Top 3%)</strong> — Jun. 2022<br>
+      Awarded for <em>VR Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments</em>.
+    </li>
+    <li>
+      <strong>GIST Scholarship (M.S.)</strong> — Sep. 2021 – Aug. 2023<br>
+      Government-supported full funding.
+    </li>
+    <li>
+      <strong>GIST Scholarship for GIST Infinite Challenge Project</strong> — Mar. 2021 – Dec. 2021<br>
+      <em>WMVW: Production of VR GIST Campus Map</em>.
+    </li>
+    <li>
+      <strong>GIST Scholarship for GIST Infinite Challenge Project</strong> — Mar. 2020 – Dec. 2020<br>
+      <em>G-Base: Producing and Composing Songs &amp; Music Video</em>.
+    </li>
+    <li>
+      <strong>GIST Scholarship (B.S.)</strong> — Feb. 2017 – Aug. 2021<br>
+      Government-supported full funding.
+    </li>
   </ul>
 </section>
 
