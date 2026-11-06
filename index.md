@@ -70,7 +70,7 @@ redirect_from:
       Awarded for <em>MuLMINet: Multi-Layer Multi-Input Transformer Network with Weighted Loss</em>.
     </li>
     <li>
-      <strong>KCC 2022 Best Paper Award (Top 3%)</strong> — Jun. 2022<br>
+      <strong>KCC 2022 Best Paper Award — First Place (Top 3%)</strong> — Jun. 2022<br>
       Awarded for <em>VR Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments</em>.
     </li>
   </ul>
