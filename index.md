@@ -48,7 +48,7 @@ redirect_from:
 <section id="awards" class="research-section research-section--secondary" aria-labelledby="awards-title">
   <div class="section-heading section-heading--compact"><h2 id="awards-title">Honors, Awards, and Scholarships</h2></div>
   <ul>
-    <li><strong>Special Recognitions for Outstanding Reviews</strong> — CHI 2027 Papers (3 recognitions)</li>
+    <li>2026 — <strong>Special Recognitions for Outstanding Reviews</strong>, CHI 2027 Papers (3 recognitions)</li>
     <li>
       <strong>2025 GIST RA Scholarship (Outstanding Doctoral Student)</strong> — Dec. 2025<br>
       GIST Scholarship.
