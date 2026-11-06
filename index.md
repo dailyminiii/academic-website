@@ -66,10 +66,6 @@ redirect_from:
       Awarded for <em>ErgoPulse: Electrifying Your Lower Body With Biomechanical Simulation-based Electrical Muscle Stimulation Haptic System in Virtual Reality</em>.
     </li>
     <li>
-      <strong>GIST Scholarship (Ph.D.)</strong> — Sep. 2023 – Present<br>
-      Government-supported full funding.
-    </li>
-    <li>
       <strong>IJCAI CoachAI Badminton Challenge 2023 Runner-Up (Rank 2)</strong> — Aug. 2023<br>
       Awarded for <em>MuLMINet: Multi-Layer Multi-Input Transformer Network with Weighted Loss</em>.
     </li>
@@ -78,20 +74,8 @@ redirect_from:
       Awarded for <em>VR Interface Design to Improve Grasping Experience in Block Stacking Activities in Virtual Environments</em>.
     </li>
     <li>
-      <strong>GIST Scholarship (M.S.)</strong> — Sep. 2021 – Aug. 2023<br>
-      Government-supported full funding.
-    </li>
-    <li>
-      <strong>GIST Scholarship for GIST Infinite Challenge Project</strong> — Mar. 2021 – Dec. 2021<br>
-      <em>WMVW: Production of VR GIST Campus Map</em>.
-    </li>
-    <li>
-      <strong>GIST Scholarship for GIST Infinite Challenge Project</strong> — Mar. 2020 – Dec. 2020<br>
-      <em>G-Base: Producing and Composing Songs &amp; Music Video</em>.
-    </li>
-    <li>
-      <strong>GIST Scholarship (B.S.)</strong> — Feb. 2017 – Aug. 2021<br>
-      Government-supported full funding.
+      <strong>GIST Scholarships (B.S., M.S., and Ph.D.)</strong><br>
+      Department-selected scholarships.
     </li>
   </ul>
 </section>
