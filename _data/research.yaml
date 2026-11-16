@@ -18,10 +18,12 @@ projects:
     id: multisensegolf
     system-name: MultiSenseGolf
     gif: assets/img/MultiSenseGolf_setup_and_data.png
-    conference: Scientific Data (accepted 22 October 2026)
-    status: accepted
+    conference: Scientific Data (published online 14 November 2026; article in press)
+    status: published
     year: 2026
     accepted_date: "2026-10-22"
+    published_date: "2026-11-14"
+    pdf: https://www.nature.com/articles/s41597-026-08648-4
     my_role: collaborative
     featured: false
     selected: true
