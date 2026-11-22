@@ -150,6 +150,30 @@
   min-width: 0;
 }
 
+.project-thumb-link {
+  display: block;
+  height: 100%;
+}
+
+.publication-list--home .publication-entry--compact {
+  padding-block: 0.75rem;
+}
+
+.publication-entry--compact .publication-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.65rem;
+}
+
+.publication-entry--compact .publication-body > * {
+  margin: 0;
+}
+
+.publication-entry--compact .publication-summary {
+  flex-basis: 100%;
+}
+
 .publication-authors {
   color: var(--global-text-color-light);
   font-size: 0.85em;

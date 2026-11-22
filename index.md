@@ -1,8 +1,7 @@
 ---
 permalink: /
 title: "Minwoo Seong"
-description: "I design and study interactive technologies for self-directed sports practice. My goal is to help people understand their movements and make informed decisions about how to practice. My experience spans collecting multimodal datasets, developing training systems with wearable sensing and extended reality (XR), and evaluating these systems through user studies."
-excerpt: "I design and study interactive technologies for self-directed sports practice. My goal is to help people understand their movements and make informed decisions about how to practice. My experience spans collecting multimodal datasets, developing training systems with wearable sensing and extended reality (XR), and evaluating these systems through user studies."
+description: "Minwoo Seong studies how wearable sensing and interactive feedback can help athletes understand their movements and decide what to practice next."
 author_profile: true
 hide_title: true
 redirect_from:
@@ -28,20 +27,25 @@ redirect_from:
 
 <section id="selected-research" class="research-section" aria-labelledby="selected-research-title">
   <div class="section-heading">
-    <p class="section-eyebrow">Research trajectory</p>
     <h2 id="selected-research-title">Selected Publications</h2>
-    <p>Six works on sensing, modeling, and coaching physical skills, with a broader application of multimodal human sensing.</p>
   </div>
-  {% assign publication_groups = site.data.research.projects | group_by_exp: "project", "project.published_date | default: project.accepted_date | default: project.year | append: ''" | sort: "name" | reverse %}
-  <div class="publication-list publication-list--home">
-    {% for publication_group in publication_groups %}
-      {% for project in publication_group.items %}
-        {% if project.selected and project.homepage_featured %}
-          {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true home_compact=true %}
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-  </div>
+  {% assign selected = site.data.research.projects | where: "selected", true %}
+  {% assign groups = "featured,recent,more" | split: "," %}
+  {% for group in groups %}
+    {% assign papers = selected | where: "homepage_group", group %}
+    {% if papers.size > 0 %}
+      {% assign brief = true %}
+      {% if group == "featured" %}{% assign brief = false %}{% endif %}
+      {% unless group == "recent" %}{% assign papers = papers | sort: "homepage_order" %}{% endunless %}
+      {% if group == "recent" %}<h3>Recent publication</h3>{% endif %}
+      {% if group == "more" %}<h3>More selected work</h3>{% endif %}
+      <div class="publication-list publication-list--home">
+        {% for project in papers %}
+          {% include publication-card.html project=project show_abstract=true show_dataset_reuse=true home_compact=true compact=brief %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
   <a class="btn btn--primary section-action" href="{{ '/publications/' | relative_url }}#selected-publications">View all selected publications →</a>
 </section>
 

@@ -13,45 +13,60 @@
   {% assign normalized_author = author_name | strip %}
   {% if normalized_author == "Minwoo Seong*" %}{% assign equal_contribution = true %}{% endif %}
 {% endfor %}
-{% assign has_dataset_reuse = false %}
-{% if include.show_dataset_reuse %}
-  {% for dataset in site.data.dataset_reuse.datasets %}
-    {% if dataset.publication_id == project.id %}{% assign has_dataset_reuse = true %}{% endif %}
-  {% endfor %}
+{% assign dataset = nil %}
+{% if include.show_dataset_reuse and project.id %}
+  {% assign dataset = site.data.dataset_reuse.datasets | where: "publication_id", project.id | first %}
+{% endif %}
+{% assign data_url = project.data_url | default: dataset.dataset_url %}
+{% assign home_project_url = nil %}
+{% if include.home_compact and project.project_url %}
+  {% assign home_project_url = project.project_url | relative_url %}
 {% endif %}
 {% if status_value == "published" or status_value == "accepted" or status_value == "under-review" %}
-<article class="publication-entry{% if project.gif %} publication-entry--with-image{% endif %}{% if include.compact %} publication-entry--compact{% endif %}"
+<article class="publication-entry{% if project.gif and include.compact != true %} publication-entry--with-image{% endif %}{% if include.compact %} publication-entry--compact{% endif %}"
   data-publication
   data-role="{{ project.my_role | default: 'unspecified' }}"
   data-themes="{{ project.research_themes | join: ' ' }}"
   data-status="{{ status_value }}">
-  {% if project.gif %}
+  {% if project.gif and include.compact != true %}
     <div class="publication-thumb">
+      {% if home_project_url %}<a class="project-thumb-link" href="{{ home_project_url }}" tabindex="-1" aria-hidden="true">{% endif %}
       <img src="{{ project.gif | relative_url }}" alt="Visual summary for {{ project.title | escape }}" loading="lazy">
+      {% if home_project_url %}</a>{% endif %}
     </div>
   {% endif %}
   <div class="publication-body">
     <div class="publication-kicker">
       {% if project.year %}<span>{{ project.year }}</span>{% endif %}
-      <span class="status-badge status-badge--{{ status_value }}">{{ status_label }}</span>
+      {% unless include.compact and status_value == "published" %}<span class="status-badge status-badge--{{ status_value }}">{{ status_label }}</span>{% endunless %}
       {% if project.my_role == "first" %}<span class="contribution-badge">Lead author</span>{% elsif include.home_compact and project.my_role == "collaborative" %}<span class="contribution-badge">Co-author</span>{% endif %}
       {% if equal_contribution %}<span class="contribution-badge">Equal contribution</span>{% endif %}
     </div>
-    {% if include.nested %}<h4>{{ project.title }}</h4>{% else %}<h3>{{ project.title }}</h3>{% endif %}
+    {% if include.compact %}
+      <h4>{{ project.title | split: ": " | first | escape }}</h4>
+    {% elsif include.nested %}
+      <h4>{{ project.title }}</h4>
+    {% elsif home_project_url %}
+      <h3><a href="{{ home_project_url }}">{{ project.title | escape }}</a></h3>
+    {% else %}
+      <h3>{{ project.title }}</h3>
+    {% endif %}
     {% unless include.home_compact %}<p class="publication-authors">{{ project.authors }}</p>{% endunless %}
-    <p class="publication-venue">{{ project.conference }}</p>
-    {% if project.award %}<p class="publication-award">Award: {{ project.award }}</p>{% endif %}
+    {% unless include.compact %}
+      <p class="publication-venue">{{ project.conference }}</p>
+      {% if project.award %}<p class="publication-award">Award: {{ project.award }}</p>{% endif %}
+    {% endunless %}
     {% if include.show_abstract and project.abstract_short %}<p class="publication-summary">{{ project.abstract_short }}</p>{% endif %}
     <div class="publication-actions" aria-label="Resources for {{ project.title | escape }}">
       {% if project.project_url and include.home_compact != true %}<a class="paper-link" href="{{ project.project_url | relative_url }}">Project</a>{% endif %}
-      {% if project.data_url %}<a class="paper-link" href="{{ project.data_url }}" target="_blank" rel="noopener">Data</a>{% endif %}
+      {% if data_url %}<a class="paper-link" href="{{ data_url }}" target="_blank" rel="noopener">Dataset</a>{% endif %}
       {% if project.pdf %}<a class="paper-link" href="{{ project.pdf }}" target="_blank" rel="noopener">{{ project.pdf_label | default: "Paper" }}</a>{% endif %}
       {% if project.conference-web %}<a class="paper-link" href="{{ project.conference-web }}" target="_blank" rel="noopener">Website</a>{% endif %}
       {% if project.code %}<a class="paper-link" href="{{ project.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-      {% if project.demo %}<a class="paper-link" href="{{ project.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
+      {% if project.demo %}<a class="paper-link" href="{{ project.demo }}" target="_blank" rel="noopener">{{ project.demo_label | default: "Demo" }}</a>{% endif %}
       {% if project.slides %}<a class="paper-link" href="{{ project.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
       {% if project.talk %}<a class="paper-link" href="{{ project.talk }}" target="_blank" rel="noopener">Talk</a>{% endif %}
-      {% if has_dataset_reuse %}<a class="paper-link" href="{{ '/dataset-reuse/' | relative_url }}#{{ project.id }}" aria-label="Studies using the {{ project.title | split: ':' | first | escape }} dataset">Studies using this dataset →</a>{% endif %}
+      {% if dataset %}<a class="paper-link" href="{{ '/dataset-reuse/' | relative_url }}#{{ project.id }}" aria-label="Studies using the {{ project.title | split: ':' | first | escape }} dataset">Studies using this dataset →</a>{% endif %}
     </div>
   </div>
 </article>

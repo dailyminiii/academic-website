@@ -24,12 +24,13 @@ projects:
     accepted_date: "2026-10-22"
     published_date: "2026-11-14"
     pdf: https://www.nature.com/articles/s41597-026-08648-4
+    data_url: https://doi.org/10.7910/DVN/LCCLLW
+    abstract_short: MultiSenseGolf pairs 1,557 swings from 24 golfers with body motion, gaze, foot pressure, and shot outcomes.
     my_role: collaborative
     featured: false
     selected: true
-    homepage_featured: true
+    homepage_group: recent
     selected_order: 1
-    homepage_order: 0
     research_themes: [physical-skill-learning, multimodal-human-modeling]
     authors: Minwoo Oh, <u>Minwoo Seong</u>, Kangbeen Ko, Chaeyeon Lim, Gwangbin Kim, Hyunjin Choi, Joseph DelPreto, Daniela Rus, SeungJun Kim
     tag: SportsHCI
@@ -178,7 +179,7 @@ projects:
     year: 2025
     my_role: collaborative
     selected: true
-    homepage_featured: true
+    homepage_group: more
     selected_order: 9
     homepage_order: 4
     research_themes: [physical-skill-learning, adaptive-embodied-ai]
@@ -344,15 +345,16 @@ projects:
     year: 2024
     my_role: first
     selected: true
-    homepage_featured: true
+    homepage_group: featured
     selected_order: 4
     homepage_order: 2
     research_themes: [physical-skill-learning, adaptive-embodied-ai, multimodal-human-modeling]
-    abstract_short: Wearable-sensor-based counterfactual explanations translate performance differences into actionable badminton motion guidance.
+    abstract_short: Using joint positions from MultiSenseBadminton, we generated alternative badminton strokes and overlaid them on the recorded movements for comparison.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Yumin Kang, Junhyuk Jang, Joseph DelPreto, SeungJun Kim
     pdf: https://arxiv.org/abs/2405.11802
     code: 
     demo: https://youtu.be/o7bDM5yRbtw
+    demo_label: Watch the swing comparison
     slides: 
     talk: 
     tag: SportsHCI2
@@ -409,7 +411,7 @@ projects:
     year: 2024
     my_role: first
     selected: true
-    homepage_featured: true
+    homepage_group: more
     selected_order: 6
     homepage_order: 5
     research_themes: [multimodal-human-modeling, accessibility-assistive-systems]
@@ -435,11 +437,11 @@ projects:
     year: 2024
     my_role: first
     selected: true
-    homepage_featured: true
+    homepage_group: featured
     selected_order: 3
     homepage_order: 1
     research_themes: [physical-skill-learning, multimodal-human-modeling]
-    abstract_short: A multimodal wearable biomechanical dataset for capturing and evaluating badminton performance.
+    abstract_short: We recorded 7,763 badminton strokes from 25 players, combining body motion, gaze, muscle activity, and foot pressure to study how players perform clears and drives.
     authors: <u>Minwoo Seong</u>, Gwangbin Kim, Dohyeon Yeo, Yumin Kang, Heesan Yang, Joseph DelPreto, Wojciech Matusik, Daniela Rus, SeungJun Kim
     pdf: https://www.nature.com/articles/s41597-024-03144-z
     code: https://github.com/dailyminiii/MultiSenseBadminton
@@ -458,9 +460,9 @@ projects:
     year: 2023
     my_role: first
     selected: true
-    homepage_featured: true
+    homepage_group: more
     selected_order: 5
-    homepage_order: 3
+    homepage_order: 6
     research_themes: [physical-skill-learning, adaptive-embodied-ai]
     award: Runner-Up (Rank 2)
     abstract_short: A multi-layer, multi-input transformer for data-driven badminton challenge modeling.
